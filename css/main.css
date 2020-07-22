@@ -19,6 +19,16 @@ body .btn-light:hover {
   background-color: rgba(153, 120, 67, 0.2);
 }
 
+body .btn-link {
+  color: #997843;
+  text-decoration: none !important;
+}
+
+body .btn-link:hover {
+  text-decoration: underline !important;
+  color: #997843 !important;
+}
+
 body .btn-primary {
   background-color: rgba(153, 120, 67, 0.7);
   border-color: rgba(153, 120, 67, 0.7);
@@ -29,7 +39,7 @@ body .btn-primary:hover {
   border-color: rgba(153, 120, 67, 0.9);
 }
 
-body .b-animalcard, body .b-myprofile {
+body .b-animalcard, body .b-myprofile, body .b-clients {
   background-color: #F6FFDE;
 }
 
@@ -47,7 +57,7 @@ body a:hover {
   color: #997843;
 }
 
-body h1 {
+body h1, body h2, body h3 {
   color: #997843;
 }
 
@@ -122,72 +132,4 @@ body .btn > .icon {
   position: relative;
   display: inline-block;
   padding: .375rem .75rem;
-}
-
-body .b-clients .accordionWrapper {
-  padding: 30px;
-  background: #fff;
-  float: left;
-  width: 80%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 10%;
-  -webkit-box-shadow: 0 1.5em 85px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1.5em 85px 0 rgba(0, 0, 0, 0.2);
-}
-
-body .b-clients .accordionItemHeading {
-  cursor: pointer;
-  margin: 0px 0px 10px 0px;
-  padding: 10px;
-  background: #2980b9;
-  color: #fff;
-}
-
-body .b-clients .close .accordionItemContent {
-  height: 0px;
-  -webkit-transition: height 1s ease-out;
-  transition: height 1s ease-out;
-  -webkit-transform: scaleY(0);
-  transform: scaleY(0);
-  float: left;
-  display: block;
-}
-
-body .b-clients .open .accordionItemContent {
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  width: 100%;
-  margin: 0px 0px 10px 0px;
-  display: block;
-  -webkit-transform: scaleY(1);
-  transform: scaleY(1);
-  -webkit-transform-origin: top;
-  transform-origin: top;
-  -webkit-transition: -webkit-transform 0.4s ease-out;
-  -webkit-transition: -webkit-transform 0.4s ease;
-  transition: -webkit-transform 0.4s ease;
-  transition: transform 0.4s ease;
-  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body .b-clients .open .accordionItemHeading {
-  margin: 0px;
-  -webkit-border-top-left-radius: 3px;
-  -webkit-border-top-right-radius: 3px;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-topright: 3px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  -webkit-border-bottom-right-radius: 0px;
-  -webkit-border-bottom-left-radius: 0px;
-  -moz-border-radius-bottomright: 0px;
-  -moz-border-radius-bottomleft: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  background-color: #bdc3c7;
-  color: #7f8c8d;
 }

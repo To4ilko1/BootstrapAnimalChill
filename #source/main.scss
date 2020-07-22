@@ -15,23 +15,28 @@ body{
     }
     .btn-light{
         background-color: rgba(153, 120, 67, 0.3);
-        // border-color: $text-color;
-        // &:hover{
-        //     background-color: rgba(225, 255, 176, 0.6);
-        // }
+        &:hover{
+            background-color: rgba(153, 120, 67, 0.2);
+        }
     }
-    .btn-light:hover{
-        background-color: rgba(153, 120, 67, 0.2);
+    .btn-link{
+        color: $brown;
+        text-decoration: none!important;
+        &:hover{
+            text-decoration: underline!important;
+            color: $brown!important;
+        }
     }
     .btn-primary{
         background-color: rgba(153, 120, 67, 0.7);
         border-color: rgba(153, 120, 67, 0.7);
+        &:hover{
+            background-color: $brown;
+            border-color: rgba(153, 120, 67, 0.9);
+        }
     }
-    .btn-primary:hover{
-        background-color: $brown;
-        border-color: rgba(153, 120, 67, 0.9);
-    }
-    .b-animalcard, .b-myprofile{
+    
+    .b-animalcard, .b-myprofile, .b-clients{
         background-color: $fon;
     }
     .b-myprofile{
@@ -47,7 +52,7 @@ body{
             color: $brown;
         }
     }
-    h1{
+    h1,h2,h3{
         color:$brown;
     }
     .breadcrumb{
@@ -97,101 +102,12 @@ body{
         background-color: rgba(153, 120, 67, 0.8);
     }
     .btn-icon {
-        // padding-top: 0;
-        // padding-bottom: 0;
         padding:0;
     }        
     .btn > .icon {
         position: relative;
-        // left: -.75rem;
         display: inline-block;
         padding: .375rem .75rem;
-        // background: rgba(153, 120, 67, 0.3);
-    }
-    // .accordionWrapper {
-    //     padding: 30px;
-    //     background: #fff;
-    //     float: left;
-    //     width: 80%;
-    //     box-sizing: border-box;
-    //     margin: 10%;
-    //     box-shadow: 0 1.5em 85px 0 rgba(0, 0, 0, 0.2);
-    //   }
-    //   .accordionItemHeading {
-    //     cursor: pointer;
-    //     margin: 0px 0px 10px 0px;
-    //     padding: 10px;
-    //     background: #2980b9;
-    //     color: #fff;
-    //   }
-    .b-clients{
-    
-        .accordionWrapper {
-        padding: 30px;
-        background: #fff;
-        float: left;
-        width: 80%;
-        box-sizing: border-box;
-        margin: 10%;
-        box-shadow: 0 1.5em 85px 0 rgba(0, 0, 0, 0.2);
-        }
-        .accordionItemHeading {
-        cursor: pointer;
-        margin: 0px 0px 10px 0px;
-        padding: 10px;
-        background: #2980b9;
-        color: #fff;
-        }
-        .close .accordionItemContent {
-        height: 0px;
-        transition: height 1s ease-out;
-        -webkit-transform: scaleY(0);
-        -o-transform: scaleY(0);
-        -ms-transform: scaleY(0);
-        transform: scaleY(0);
-        float: left;
-        display: block;
-        }
-        .open .accordionItemContent {
-        padding: 20px;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        width: 100%;
-        margin: 0px 0px 10px 0px;
-        display: block;
-        -webkit-transform: scaleY(1);
-        -o-transform: scaleY(1);
-        -ms-transform: scaleY(1);
-        transform: scaleY(1);
-        -webkit-transform-origin: top;
-        -o-transform-origin: top;
-        -ms-transform-origin: top;
-        transform-origin: top;
-        
-        -webkit-transition: -webkit-transform 0.4s ease-out;
-        -o-transition: -o-transform 0.4s ease;
-        -ms-transition: -ms-transform 0.4s ease;
-        transition: transform 0.4s ease;
-        box-sizing: border-box;
-        }
-        
-        .open .accordionItemHeading {
-        margin: 0px;
-        -webkit-border-top-left-radius: 3px;
-        -webkit-border-top-right-radius: 3px;
-        -moz-border-radius-topleft: 3px;
-        -moz-border-radius-topright: 3px;
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
-        -webkit-border-bottom-right-radius: 0px;
-        -webkit-border-bottom-left-radius: 0px;
-        -moz-border-radius-bottomright: 0px;
-        -moz-border-radius-bottomleft: 0px;
-        border-bottom-right-radius: 0px;
-        border-bottom-left-radius: 0px;
-        background-color: #bdc3c7;
-        color: #7f8c8d;
-        }
     }
 }
 

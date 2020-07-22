@@ -72,23 +72,163 @@
                     <li class="breadcrumb-item active" aria-current="page">Номера отеля</li>
                 </ol>
             </nav>
-            <h1 class="text-center py-3">Номера отеля</h1>
+            
             <div class="row d-flex flex-row justify-content-center col-12">
                 <div class="first-column col-3">
-                    <div class="btn-group-vertical col-12">
+                    <div class="btn-group-vertical col-12 mt-5">
                         <a href="b-animalsinhotel.html" class="btn btn-light text-uppercase">Животные в отеле</a>
                         <a href="b-workers.html" class="btn btn-light text-uppercase">Сотрудники</a>
                         <a href="b-clients.html" class="btn btn-light text-uppercase">Клиенты</a>
-                        <a href="b-orders.html" class="btn btn-light border text-uppercase">Бронирования</a>
+                        <a href="b-orders.html" class="btn btn-light border text-uppercase">Заказы</a>
                         <a href="b-hotelrooms.html" class="btn btn-primary border text-uppercase">Номера отеля</a>
                         <a href="b-chat.html" class="btn btn-light border text-uppercase">Общение</a>
                         <a href="b-myprofile.html" class="btn btn-light text-uppercase">Мой профиль</a>
                         <a href="b-editposition.html" class="btn btn-light text-uppercase">Ред. должностей</a>
                     </div>
                 </div>
-                <div class="second-column col-9 px-0">
-                    
-                    
+                <div class="second-column col-9 px-0 d-flex flex-row flex-wrap justify-content-center">
+                    <h1 class="text-center py-3 col-12">Номера отеля</h1>
+                    <div class="accordion " id="accordionFilter">
+                        <div class="card ">
+                            <div class="card-header p-0" id="headingOne">
+                                <h5 style="background-color: rgb(225, 255, 176);" class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Фильтрация и поиск
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFilter">
+                                <div class="card-body d-flex flex-row justify-content-between">
+                                    <form class="search-form d-flex flex-row flex-wrap col-6 justify-content-center py-4">
+                                        <div class="form-group d-flex flex-row justify-content-between col-12">
+                                            <label class="col-4" for="InputID">ID:</label>
+                                            <input type="text" class="form-control col-8" id="InputID">
+                                        </div>
+                                        <div class="form-group d-flex flex-row justify-content-between col-12">
+                                            <label class="col-4" for="InputFIO">ФИО:</label>
+                                            <input type="text" class="form-control col-8" id="InputFIO">
+                                        </div>
+                                        <div class="form-group d-flex flex-row justify-content-between col-12">
+                                            <label class="col-4" for="InputPhone">Телефон:</label>
+                                            <input type="tel" class="form-control col-8" id="InputPhone">
+                                        </div>
+                                        <div class="form-group d-flex flex-row justify-content-between col-12">
+                                            <label class="col-4" for="SelectPosition">Должность:</label>
+                                            <select class="form-control col-8" id="SelectPosition">
+                                                <option>Администратор</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group d-flex flex-row justify-content-between col-12">
+                                            <label class="col-4" for="SelectShow">Показать по:</label>
+                                            <select class="form-control col-8" id="SelectShow">
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="btn btn-light col-2">ОК</button>
+                                    </form>
+                                    <form class="search-form d-flex flex-row flex-wrap col-4 justify-content-center py-4">
+                                        <div class="form-group d-flex flex-row justify-content-between col-12">
+                                            <label class="col-4" for="InputID">ID:</label>
+                                            <input type="text" class="form-control col-8" id="InputID">
+                                        </div>
+                                        <div class="form-group d-flex flex-row justify-content-between col-12">
+                                            <label class="col-4" for="InputFIO">ФИО:</label>
+                                            <input type="text" class="form-control col-8" id="InputFIO">
+                                        </div>
+                                        <button type="submit" class="btn btn-light col-2">ОК</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card my-3 mx-0 pb-3 d-flex flex-row flex-wrap col-10">
+                        <h5 class="card-title text-center col-12 py-3">ID 0001</h5>
+                        <div class="card-body d-flex flex-row flex-wrap col-12 px-0 justify-content-center">
+                            <div class="d-flex flex-row col-6">
+                                <p class="col-6">Номер комнаты:</p>
+                                <p class="col-6"><a href="#">201</a></p>
+                            </div>
+                            <div class="d-flex flex-row col-6">
+                                <p class="col-8">Тип животных в номере:</p>
+                                <p class="col-4">Кошка</p>
+                            </div>
+                           
+                            <div class="d-flex flex-row col-6">
+                                <p class="col-6">Тип номера:</p>
+                                <p class="col-6">Стандарт</p>
+                            </div>
+                            <div class="col-6"></div>
+                            <div class="loginpass d-flex flex-row col-8 m-3 p-3">
+                                <p class="col-6 mb-0">Животные в номере:</p>
+                                <p class="col-2 mb-0"><a href="b-animalcard.html">Бесси</a></p>
+                                <p class="col-2 mb-0"><a href="b-animalcard.html">Мурка</a></p>
+                            </div>
+                            <div class="d-flex flex-row col-9 justify-content-around mb-3">
+                                <p>Всего мест в номере:</p>
+                                <p>3</p>
+                                <p >Из них заняты:</p>
+                                <p>2</p>
+                                <p>Свободны:</p>
+                                <p>1</p>
+                            </div>
+                            <div class="d-flex flex-row col-8">
+                                <p class="col-7">Стоимость проживания за сутки:</p>
+                                <p class="col-5">450р.</p>
+                            </div>
+                            <div class="col-4"></div>
+                            <div class="d-flex flex-row col-8">
+                                <p class="col-6">Отображение на главной:</p>
+                                <p class="col-5">Не отображается</p>
+                            </div>
+                            <div class="d-flex flex-row col-4 justify-content-end">
+                                <a href="b-cardworkeredit.html" class="btn btn-light">См. больше</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card my-3 mx-0 pb-3 d-flex flex-row flex-wrap col-10">
+                        <h5 class="card-title text-center col-12 py-3">ID 0002</h5>
+                        <div class="card-body d-flex flex-row flex-wrap col-12 px-0 justify-content-center">
+                            <div class="d-flex flex-row col-6">
+                                <p class="col-6">Номер комнаты:</p>
+                                <p class="col-6"><a href="#">202</a></p>
+                            </div>
+                            <div class="d-flex flex-row col-6">
+                                <p class="col-8">Тип животных в номере:</p>
+                                <p class="col-4">Свинка</p>
+                            </div>
+                           
+                            <div class="d-flex flex-row col-6">
+                                <p class="col-6">Тип номера:</p>
+                                <p class="col-6">Люкс</p>
+                            </div>
+                            <div class="col-6"></div>
+                            <div class="loginpass d-flex flex-row col-8 m-3 p-3">
+                                <p class="col-6 mb-0">Животные в номере:</p>
+                                <p class="col-3 mb-0"><a href="b-animalcard.html">Хрюндель</a></p>
+                                <!-- <p class="col-2 mb-0"><a href="b-animalcard.html">Мурка</a></p> -->
+                            </div>
+                            <div class="d-flex flex-row col-9 justify-content-around mb-3">
+                                <p>Всего мест в номере:</p>
+                                <p>2</p>
+                                <p>Из них заняты:</p>
+                                <p>1</p>
+                                <p>Свободны:</p>
+                                <p>1</p>
+                            </div>
+                            <div class="d-flex flex-row col-8">
+                                <p class="col-7">Стоимость проживания за сутки:</p>
+                                <p class="col-5">200р.</p>
+                            </div>
+                            <div class="col-4"></div>
+                            <div class="d-flex flex-row col-8">
+                                <p class="col-6">Отображение на главной:</p>
+                                <p class="col-5">Не отображается</p>
+                            </div>
+                            <div class="d-flex flex-row col-4 justify-content-end">
+                                <a href="b-cardworkeredit.html" class="btn btn-light">См. больше</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <nav aria-label="Page navigation example">
                     <ul class="pagination justify-content-center">

@@ -72,74 +72,93 @@
                     <li class="breadcrumb-item active" aria-current="page">Животные в отеле</li>
                 </ol>
             </nav>
-            <h1 class="text-center py-3">Животные в отеле</h1>
-            <div class="row d-flex flex-row col-12">
+            
+            <div class="row d-flex flex-row justify-content-center col-12">
                 <div class="first-column col-3">
-                    <div class="btn-group-vertical col-12">
+                    <div class="btn-group-vertical col-12 mt-5">
                         <a href="b-animalsinhotel.html" class="btn btn-primary border text-uppercase">Животные в отеле</a>
                         <a href="b-workers.html" class="btn btn-light text-uppercase">Сотрудники</a>
                         <a href="b-clients.html" class="btn btn-light text-uppercase">Клиенты</a>
-                        <a href="b-orders.html" class="btn btn-light text-uppercase">Бронирования</a>
+                        <a href="b-orders.html" class="btn btn-light text-uppercase">Заказы</a>
                         <a href="b-hotelrooms.html" class="btn btn-light border text-uppercase">Номера отеля</a>
                         <a href="b-chat.html" class="btn btn-light border text-uppercase">Общение</a>
                         <a href="b-myprofile.html" class="btn btn-light text-uppercase">Мой профиль</a>
                         <a href="b-editposition.html" class="btn btn-light text-uppercase">Ред. должностей</a>
                     </div>
                 </div>
-                <div class="second-column col-9 px-0">
-                    <div class="filter d-flex flex-row justify-content-around">
-                        <form class="search-form d-flex flex-row flex-wrap col-5 justify-content-center py-4">
-                            <h5>Фильтрация по:</h5>
-                            <div class="form-group d-flex flex-row justify-content-between col-12">
-                                <label class="col-6 px-0" for="SelectAnimal">Тип животного:</label>
-                                <select class="form-control col-6" id="SelectAnimal">
-                                    <option>Не выбрано</option>
-                                    <option>Кошка</option>
-                                </select>
+                <div class="second-column col-9 px-0 d-flex flex-row flex-wrap justify-content-center">
+                    <h1 class="text-center py-3 col-12">Животные в отеле</h1>
+                    <div class="top-btns d-flex flex-row flex-wrap justify-content-start align-items-center">
+                        <a href="b-cardworkeredit.html" class="btn btn-light mr-5">Посмотреть</a>
+                        <div class="accordion " id="accordionFilter">
+                        <div class="card">
+                            <div class="card-header p-0" id="headingOne">
+                                <h5 style="background-color: rgb(225, 255, 176); " class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Фильтрация и поиск
+                                    </button>
+                                </h5>
                             </div>
-                            <div class="form-group d-flex flex-row justify-content-between col-12">
-                                <label class="col-6 px-0" for="InputNameAnimal">Кличка:</label>
-                                <input type="text" class="form-control col-6" id="InputNameAnimal">
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFilter">
+                                <div class="card-body filter d-flex flex-row justify-content-around">
+                                    <form class="search-form d-flex flex-row flex-wrap col-5 justify-content-center py-4">
+                                        <h5>Фильтрация по:</h5>
+                                        <div class="form-group d-flex flex-row justify-content-between col-12">
+                                            <label class="col-6 px-0" for="SelectAnimal">Тип животного:</label>
+                                            <select class="form-control col-6" id="SelectAnimal">
+                                                <option>Не выбрано</option>
+                                                <option>Кошка</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group d-flex flex-row justify-content-between col-12">
+                                            <label class="col-6 px-0" for="InputNameAnimal">Кличка:</label>
+                                            <input type="text" class="form-control col-6" id="InputNameAnimal">
+                                        </div>
+                                        <div class="form-group d-flex flex-row justify-content-between col-12">
+                                            <label class="col-6 px-0" for="InputRoomNumber">Комната №:</label>
+                                            <input type="text" class="form-control col-6" id="InputRoomNumber">
+                                        </div>
+                                        <div class="form-group d-flex flex-row justify-content-between col-12">
+                                            <label class="col-6 px-0" for="inputDateStart">Сроки пребывания с:</label>
+                                            <input type="date" class="form-control col-6" id="inputDateStart">
+                                        </div>
+                                        <div class="form-group d-flex flex-row justify-content-between col-12">
+                                            <label class="col-6 px-0" for="inputDateEnd">По:</label>
+                                            <input type="date" class="form-control col-6" id="inputDateEnd">
+                                        </div>
+                                        <div class="form-group d-flex flex-row justify-content-between col-12">
+                                            <label class="col-6 px-0" for="InputPhone">Номер телефона:</label>
+                                            <input type="text" class="form-control col-6" id="InputPhone">
+                                        </div>
+                                        <button type="submit" class="btn btn-light col-3">Найти</button>
+                                    </form>
+                                    <form class="search-form d-flex flex-row flex-wrap col-5 justify-content-center py-4">
+                                        <h5>Сортировать по:</h5>
+                                        <div class="form-group d-flex flex-row justify-content-between col-12">
+                                            <label class="col-6 px-0" for="SelectAnimal">Тип животного:</label>
+                                            <select class="form-control col-6" id="SelectAnimal">
+                                                <option>Не выбрано</option>
+                                                <option>Кошка</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group d-flex flex-row justify-content-between col-12">
+                                            <label class="col-6 px-0" for="SelectAnimal">Тип животного:</label>
+                                            <select class="form-control col-6" id="SelectAnimal">
+                                                <option>Не выбрано</option>
+                                                <option>Кошка</option>
+                                            </select>
+                                        </div>
+            
+                                        <button type="submit" class="btn btn-light col-3">Ок</button>
+                                    </form>
+                                </div>
                             </div>
-                            <div class="form-group d-flex flex-row justify-content-between col-12">
-                                <label class="col-6 px-0" for="InputRoomNumber">Комната №:</label>
-                                <input type="text" class="form-control col-6" id="InputRoomNumber">
-                            </div>
-                            <div class="form-group d-flex flex-row justify-content-between col-12">
-                                <label class="col-6 px-0" for="inputDateStart">Сроки пребывания с:</label>
-                                <input type="date" class="form-control col-6" id="inputDateStart">
-                            </div>
-                            <div class="form-group d-flex flex-row justify-content-between col-12">
-                                <label class="col-6 px-0" for="inputDateEnd">По:</label>
-                                <input type="date" class="form-control col-6" id="inputDateEnd">
-                            </div>
-                            <div class="form-group d-flex flex-row justify-content-between col-12">
-                                <label class="col-6 px-0" for="InputPhone">Номер телефона:</label>
-                                <input type="text" class="form-control col-6" id="InputPhone">
-                            </div>
-                            <button type="submit" class="btn btn-light col-3">Найти</button>
-                        </form>
-                        <form class="search-form d-flex flex-row flex-wrap col-5 justify-content-center py-4">
-                            <h5>Сортировать по:</h5>
-                            <div class="form-group d-flex flex-row justify-content-between col-12">
-                                <label class="col-6 px-0" for="SelectAnimal">Тип животного:</label>
-                                <select class="form-control col-6" id="SelectAnimal">
-                                    <option>Не выбрано</option>
-                                    <option>Кошка</option>
-                                </select>
-                            </div>
-                            <div class="form-group d-flex flex-row justify-content-between col-12">
-                                <label class="col-6 px-0" for="SelectAnimal">Тип животного:</label>
-                                <select class="form-control col-6" id="SelectAnimal">
-                                    <option>Не выбрано</option>
-                                    <option>Кошка</option>
-                                </select>
-                            </div>
-
-                            <button type="submit" class="btn btn-light col-3">Ок</button>
-                        </form>
+                        </div>
+                        </div>
                     </div>
-                    
+                    <div class="card my-3 mx-0 pb-3 d-flex flex-row flex-wrap col-10">
+                        <a href="b-animalcard.html">Карточка животного</a>
+                    </div>
                 </div>
             </div>
         </section>

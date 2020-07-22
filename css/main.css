@@ -1,0 +1,193 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #F6FFDE;
+  color: #1F2326;
+  font-size: 0.9em;
+}
+
+body .loginpass {
+  background-color: #E1FFB0;
+}
+
+body .btn-light {
+  background-color: rgba(153, 120, 67, 0.3);
+}
+
+body .btn-light:hover {
+  background-color: rgba(153, 120, 67, 0.2);
+}
+
+body .btn-primary {
+  background-color: rgba(153, 120, 67, 0.7);
+  border-color: rgba(153, 120, 67, 0.7);
+}
+
+body .btn-primary:hover {
+  background-color: #997843;
+  border-color: rgba(153, 120, 67, 0.9);
+}
+
+body .b-animalcard, body .b-myprofile {
+  background-color: #F6FFDE;
+}
+
+body .b-myprofile .search-form {
+  background-color: rgba(225, 255, 176, 0.6);
+}
+
+body a {
+  color: #997843;
+  text-decoration: none;
+}
+
+body a:hover {
+  text-decoration: underline;
+  color: #997843;
+}
+
+body h1 {
+  color: #997843;
+}
+
+body .breadcrumb {
+  background-color: #F6FFDE;
+}
+
+body .b-header {
+  background-color: #E1FFB0;
+}
+
+body .b-header .social a {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  float: left;
+  background: #F6FFDE;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 3px;
+  color: #000;
+}
+
+body .b-header .facebook a:hover {
+  background: #3b5998;
+  color: #fff;
+  border-radius: 5px;
+}
+
+body .b-header .vk a:hover {
+  background: #5d84ae;
+  color: #fff;
+  border-radius: 5px;
+}
+
+body .b-header .instagram a:hover {
+  color: #fff;
+  border-radius: 5px;
+  background: #f09433;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+body .navigation-menu {
+  background-color: #997843;
+}
+
+body .navigation-menu .nav-item .nav-link {
+  color: #F6FFDE;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: lighter;
+}
+
+body .navigation-menu .nav-item:hover {
+  background-color: #F6FFDE;
+}
+
+body .navigation-menu .nav-item:hover > a:hover {
+  color: #1F2326;
+}
+
+body .nav-pills .nav-item .active {
+  background-color: rgba(153, 120, 67, 0.8);
+}
+
+body .btn-icon {
+  padding: 0;
+}
+
+body .btn > .icon {
+  position: relative;
+  display: inline-block;
+  padding: .375rem .75rem;
+}
+
+body .b-clients .accordionWrapper {
+  padding: 30px;
+  background: #fff;
+  float: left;
+  width: 80%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 10%;
+  -webkit-box-shadow: 0 1.5em 85px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1.5em 85px 0 rgba(0, 0, 0, 0.2);
+}
+
+body .b-clients .accordionItemHeading {
+  cursor: pointer;
+  margin: 0px 0px 10px 0px;
+  padding: 10px;
+  background: #2980b9;
+  color: #fff;
+}
+
+body .b-clients .close .accordionItemContent {
+  height: 0px;
+  -webkit-transition: height 1s ease-out;
+  transition: height 1s ease-out;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  float: left;
+  display: block;
+}
+
+body .b-clients .open .accordionItemContent {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+  display: block;
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .b-clients .open .accordionItemHeading {
+  margin: 0px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: #bdc3c7;
+  color: #7f8c8d;
+}

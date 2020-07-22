@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>AnimalChill</title>
+    </head>
+    <body>
+        <section class="b-myprofile">
+            <header class="b-header d-flex flex-row justify-content-around">
+                <div class="logo d-flex flex-column align-items-center">
+                    <img src="img/logo_new.svg" width="70" height="70" alt="AnimalsChill" class="logo">
+                    <p><a href="index.html">Отель для животных</a></p>
+                </div> 
+                <div class="phone d-flex flex-row align-items-center">
+                    <img src="img/phone.png" alt="">
+                    <p class="pl-3 mb-0">88005553535</p>
+                </div>
+                <div class="clock d-flex flex-row align-items-center">
+                    <img src="img/clock.png" alt="">
+                    <p class="pl-3 mb-0">пн-пт: 14:00-22:00<br>пн-пт: 11:00-22:00</p>
+                </div>
+                <div class="location d-flex flex-row align-items-center">
+                    <img src="img/location.png" alt="">
+                    <p class="pl-3 mb-0">Ул. Ленина, д.11</p>
+                </div>
+                <div class="contacts d-flex flex-row">
+                    <div class="social instagram d-flex flex-row align-items-center">
+                        <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                    </div>
+                    <div class="social facebook d-flex flex-row align-items-center mx-3">
+                        <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                    </div>
+                    <div class="social vk d-flex flex-row align-items-center">
+                        <a href="#" target="_blank"><i class="fa fa-vk fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="login d-flex flex-column">
+                    <p class="mt-3 mb-1"><a class="link-logout" href="b-myprofile.html">Точилова Елизавета</a></p>
+                    <a href="#" class="btn btn-light">Выйти</a>
+                </div>
+            </header>
+            <ul class="nav justify-content-center navigation-menu">
+                <li class="nav-item">
+                <a class="nav-link active" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">О нас</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Условия заселения</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Цены</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Сотрудники</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+            </ul>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="b-clients.html">Клиенты</a></li>
+                    <li class="breadcrumb-item"><a href="b-cardclient.html">Карточка клиента</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Редактирование клиента</li>
+                </ol>
+            </nav>
+            <h1 class="text-center py-3">Клиент</h1>
+            <div class="row d-flex flex-row justify-content-center col-12">
+                <div class="first-column col-3">
+                    <div class="btn-group-vertical col-12">
+                        <a href="b-animalsinhotel.html" class="btn btn-light text-uppercase">Животные в отеле</a>
+                        <a href="b-workers.html" class="btn btn-light text-uppercase">Сотрудники</a>
+                        <a href="b-clients.html" class="btn btn-light text-uppercase">Клиенты</a>
+                        <a href="b-orders.html" class="btn btn-light border text-uppercase">Бронирования</a>
+                        <a href="b-hotelrooms.html" class="btn btn-light border text-uppercase">Номера отеля</a>
+                        <a href="b-chat.html" class="btn btn-light border text-uppercase">Общение</a>
+                        <a href="b-myprofile.html" class="btn btn-primary text-uppercase">Мой профиль</a>
+                        <a href="b-editposition.html" class="btn btn-light text-uppercase">Ред. должностей</a>
+                    </div>
+                </div>
+                <div class="second-column col-9 px-0">
+                    <div class="card my-3 mx-0 pb-3 d-flex flex-row flex-wrap col-10">
+                        <h5 class="card-title text-center col-12 py-3">ID 0001</h5>
+                        <div class="card-body d-flex flex-row flex-wrap justify-content-center align-items-center col-12 px-0">
+                            <div class="d-flex flex-row justify-content-between col-6 my-2">
+                                <label class="col-4" for="InputClientFIO">ФИО:</label>
+                                <input type="text" class="form-control col-8" id="InputClientFIO">
+                            </div>
+                            <div class="d-flex flex-row justify-content-between col-6 my-2">
+                                <label class="col-4" for="InputClientPhone">Телефон:</label>
+                                <input type="text" class="form-control col-8" id="InputClientPhone">
+                            </div>
+                            <div class="d-flex flex-row justify-content-between col-6 my-2">
+                                <label class="col-4" for="InputClientAddress">Адрес:</label>
+                                <input type="text" class="form-control col-8" id="InputClientAddress">
+                            </div>
+                            <div class="d-flex flex-row justify-content-between col-6 my-2">
+                                <label class="col-4" for="InputClientEmail">E-mail:</label>
+                                <input type="text" class="form-control col-8" id="InputClientEmail">
+                            </div>
+                            <div class="d-flex flex-row justify-content-between col-6 my-2">
+                                <label class="col-4" for="InputClientBirth">Дата рождения:</label>
+                                <input type="date" class="form-control col-8" id="InputClientBirth">
+                            </div>
+                            <div class="d-flex flex-row justify-content-between col-6 my-2">
+                                <p class="col-4">Пол:</p>
+                                <div class="form-check col-4">
+                                    <input class="form-check-input" type="radio" name="Radios" id="Radios1" value="option1">
+                                    <label class="form-check-label" for="Radios1">Женский</label>
+                                </div>
+                                <div class="form-check col-4">
+                                    <input class="form-check-input" type="radio" name="Radios" id="Radios2" value="option2" checked>
+                                    <label class="form-check-label" for="Radios2">Мужской</label>
+                                </div>
+                            </div>
+                            <div class="loginpass d-flex flex-row flex-wrap justify-content-center col-6 m-3 p-3">
+                                <label class="col-4 p-2" for="InputClientLogin">Логин:</label>
+                                <input type="text" class="form-control col-8 p-2" id="InputClientLogin">
+                                <label class="col-4 p-2" for="InputClientPassword">Пароль:</label>
+                                <input type="text" class="form-control col-8 p-2" id="InputClientPassword">
+                            </div>
+                           
+                            
+                            <div class="d-flex flex-row justify-content-between col-12 px-0 my-1">
+                                <a href="b-cardclient.html" class="btn btn-light col-3">Отмена</a>
+                                <a href="b-cardclientedit.html" class="btn btn-light col-3">Сохранить</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>

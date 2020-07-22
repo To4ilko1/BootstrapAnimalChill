@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>AnimalChill</title>
+    </head>
+    <body>
+        <section class="b-myprofile">
+            <header class="b-header d-flex flex-row justify-content-around">
+                <div class="logo d-flex flex-column align-items-center">
+                    <img src="img/logo_new.svg" width="70" height="70" alt="AnimalsChill" class="logo">
+                    <p><a href="index.html">Отель для животных</a></p>
+                </div> 
+                <div class="phone d-flex flex-row align-items-center">
+                    <img src="img/phone.png" alt="">
+                    <p class="pl-3 mb-0">88005553535</p>
+                </div>
+                <div class="clock d-flex flex-row align-items-center">
+                    <img src="img/clock.png" alt="">
+                    <p class="pl-3 mb-0">пн-пт: 14:00-22:00<br>пн-пт: 11:00-22:00</p>
+                </div>
+                <div class="location d-flex flex-row align-items-center">
+                    <img src="img/location.png" alt="">
+                    <p class="pl-3 mb-0">Ул. Ленина, д.11</p>
+                </div>
+                <div class="contacts d-flex flex-row">
+                    <div class="social instagram d-flex flex-row align-items-center">
+                        <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                    </div>
+                    <div class="social facebook d-flex flex-row align-items-center mx-3">
+                        <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                    </div>
+                    <div class="social vk d-flex flex-row align-items-center">
+                        <a href="#" target="_blank"><i class="fa fa-vk fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="login d-flex flex-column">
+                    <p class="mt-3 mb-1"><a class="link-logout" href="b-myprofile.html">Точилова Елизавета</a></p>
+                    <a href="#" class="btn btn-light">Выйти</a>
+                </div>
+            </header>
+            <ul class="nav justify-content-center navigation-menu">
+                <li class="nav-item">
+                <a class="nav-link active" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">О нас</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Условия заселения</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Цены</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Сотрудники</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+            </ul>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="#">Личный кабинет</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Животные в отеле</li>
+                </ol>
+            </nav>
+            <h1 class="text-center py-3">Животные в отеле</h1>
+            <div class="row d-flex flex-row col-12">
+                <div class="first-column col-3">
+                    <div class="btn-group-vertical col-12">
+                        <a href="b-animalsinhotel.html" class="btn btn-primary border text-uppercase">Животные в отеле</a>
+                        <a href="b-workers.html" class="btn btn-light text-uppercase">Сотрудники</a>
+                        <a href="b-clients.html" class="btn btn-light text-uppercase">Клиенты</a>
+                        <a href="b-orders.html" class="btn btn-light text-uppercase">Бронирования</a>
+                        <a href="b-hotelrooms.html" class="btn btn-light border text-uppercase">Номера отеля</a>
+                        <a href="b-chat.html" class="btn btn-light border text-uppercase">Общение</a>
+                        <a href="b-myprofile.html" class="btn btn-light text-uppercase">Мой профиль</a>
+                        <a href="b-editposition.html" class="btn btn-light text-uppercase">Ред. должностей</a>
+                    </div>
+                </div>
+                <div class="second-column col-9 px-0">
+                    <div class="filter d-flex flex-row justify-content-around">
+                        <form class="search-form d-flex flex-row flex-wrap col-5 justify-content-center py-4">
+                            <h5>Фильтрация по:</h5>
+                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                <label class="col-6 px-0" for="SelectAnimal">Тип животного:</label>
+                                <select class="form-control col-6" id="SelectAnimal">
+                                    <option>Не выбрано</option>
+                                    <option>Кошка</option>
+                                </select>
+                            </div>
+                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                <label class="col-6 px-0" for="InputNameAnimal">Кличка:</label>
+                                <input type="text" class="form-control col-6" id="InputNameAnimal">
+                            </div>
+                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                <label class="col-6 px-0" for="InputRoomNumber">Комната №:</label>
+                                <input type="text" class="form-control col-6" id="InputRoomNumber">
+                            </div>
+                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                <label class="col-6 px-0" for="inputDateStart">Сроки пребывания с:</label>
+                                <input type="date" class="form-control col-6" id="inputDateStart">
+                            </div>
+                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                <label class="col-6 px-0" for="inputDateEnd">По:</label>
+                                <input type="date" class="form-control col-6" id="inputDateEnd">
+                            </div>
+                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                <label class="col-6 px-0" for="InputPhone">Номер телефона:</label>
+                                <input type="text" class="form-control col-6" id="InputPhone">
+                            </div>
+                            <button type="submit" class="btn btn-light col-3">Найти</button>
+                        </form>
+                        <form class="search-form d-flex flex-row flex-wrap col-5 justify-content-center py-4">
+                            <h5>Сортировать по:</h5>
+                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                <label class="col-6 px-0" for="SelectAnimal">Тип животного:</label>
+                                <select class="form-control col-6" id="SelectAnimal">
+                                    <option>Не выбрано</option>
+                                    <option>Кошка</option>
+                                </select>
+                            </div>
+                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                <label class="col-6 px-0" for="SelectAnimal">Тип животного:</label>
+                                <select class="form-control col-6" id="SelectAnimal">
+                                    <option>Не выбрано</option>
+                                    <option>Кошка</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-light col-3">Ок</button>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>

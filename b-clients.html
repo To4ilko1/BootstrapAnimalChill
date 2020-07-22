@@ -127,10 +127,19 @@
                             </div>
                             <button type="submit" class="btn btn-light col-2">ОК</button>
                         </form> -->
-                        <div class="accordionWrapper">
-                            <div class="accordionItem close">
-                                <h2 class="accordionItemHeading">Фильтрация и сортировка +</h2>
-                                <div class="accordionItemContent">
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                              <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Collapsible Group Item #1
+                                  </button>
+                                </h5>
+                              </div>
+                          
+                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
                                     <div class="top-container col-12 my-3 px-0">
                                         <form class="search-form d-flex flex-row flex-wrap col-6 justify-content-center py-4">
                                             <div class="form-group d-flex flex-row justify-content-between col-12">
@@ -168,9 +177,8 @@
                                         </form>
                                     </div>
                                 </div>
+                              </div>
                             </div>
-                        </div>
-                    <!-- </div> -->
                     <div class="bottom-container col-12 px-0">
                         <div class="card my-3 mx-0 pb-3 d-flex flex-row flex-wrap col-10">
                             <h5 class="card-title text-center col-12 py-3">ID 0001</h5>
@@ -307,8 +315,6 @@
                 </nav>
             </div>
         </section>
-        
-        <script src="js/script.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

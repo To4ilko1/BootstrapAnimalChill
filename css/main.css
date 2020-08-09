@@ -39,7 +39,7 @@ body .btn-primary:hover {
   border-color: rgba(153, 120, 67, 0.9);
 }
 
-body .b-animalcard, body .b-myprofile, body .b-clients {
+body .b-animalcard, body .b-myprofile, body .b-clients, body .b-hotelrooms, body .b-animalsinhotel, body .b-finance {
   background-color: #F6FFDE;
 }
 

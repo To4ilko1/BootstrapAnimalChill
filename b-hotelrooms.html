@@ -8,7 +8,7 @@
         <title>AnimalChill</title>
     </head>
     <body>
-        <section class="b-myprofile">
+        <section class="b-hotelrooms">
             <header class="b-header d-flex flex-row justify-content-around">
                 <div class="logo d-flex flex-column align-items-center">
                     <img src="img/logo_new.svg" width="70" height="70" alt="AnimalsChill" class="logo">
@@ -72,7 +72,6 @@
                     <li class="breadcrumb-item active" aria-current="page">Номера отеля</li>
                 </ol>
             </nav>
-            
             <div class="row d-flex flex-row justify-content-center col-12">
                 <div class="first-column col-3">
                     <div class="btn-group-vertical col-12 mt-5">
@@ -84,59 +83,63 @@
                         <a href="b-chat.html" class="btn btn-light border text-uppercase">Общение</a>
                         <a href="b-myprofile.html" class="btn btn-light text-uppercase">Мой профиль</a>
                         <a href="b-editposition.html" class="btn btn-light text-uppercase">Ред. должностей</a>
+                        <a href="b-finance.html" class="btn btn-light text-uppercase">Финансы</a>
                     </div>
                 </div>
                 <div class="second-column col-9 px-0 d-flex flex-row flex-wrap justify-content-center">
                     <h1 class="text-center py-3 col-12">Номера отеля</h1>
-                    <div class="accordion " id="accordionFilter">
-                        <div class="card ">
-                            <div class="card-header p-0" id="headingOne">
-                                <h5 style="background-color: rgb(225, 255, 176);" class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Фильтрация и поиск
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFilter">
-                                <div class="card-body d-flex flex-row justify-content-between">
-                                    <form class="search-form d-flex flex-row flex-wrap col-6 justify-content-center py-4">
-                                        <div class="form-group d-flex flex-row justify-content-between col-12">
-                                            <label class="col-4" for="InputID">ID:</label>
-                                            <input type="text" class="form-control col-8" id="InputID">
-                                        </div>
-                                        <div class="form-group d-flex flex-row justify-content-between col-12">
-                                            <label class="col-4" for="InputFIO">ФИО:</label>
-                                            <input type="text" class="form-control col-8" id="InputFIO">
-                                        </div>
-                                        <div class="form-group d-flex flex-row justify-content-between col-12">
-                                            <label class="col-4" for="InputPhone">Телефон:</label>
-                                            <input type="tel" class="form-control col-8" id="InputPhone">
-                                        </div>
-                                        <div class="form-group d-flex flex-row justify-content-between col-12">
-                                            <label class="col-4" for="SelectPosition">Должность:</label>
-                                            <select class="form-control col-8" id="SelectPosition">
-                                                <option>Администратор</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group d-flex flex-row justify-content-between col-12">
-                                            <label class="col-4" for="SelectShow">Показать по:</label>
-                                            <select class="form-control col-8" id="SelectShow">
-                                                <option>5</option>
-                                            </select>
-                                        </div>
-                                        <button type="submit" class="btn btn-light col-2">ОК</button>
-                                    </form>
-                                    <form class="search-form d-flex flex-row flex-wrap col-4 justify-content-center py-4">
-                                        <div class="form-group d-flex flex-row justify-content-between col-12">
-                                            <label class="col-4" for="InputID">ID:</label>
-                                            <input type="text" class="form-control col-8" id="InputID">
-                                        </div>
-                                        <div class="form-group d-flex flex-row justify-content-between col-12">
-                                            <label class="col-4" for="InputFIO">ФИО:</label>
-                                            <input type="text" class="form-control col-8" id="InputFIO">
-                                        </div>
-                                        <button type="submit" class="btn btn-light col-2">ОК</button>
-                                    </form>
+                    <div class="top-btns d-flex flex-row flex-wrap justify-content-start">
+                        <a href="b-cardhotelroomedit.html" class="btn btn-light mr-5">Добавить номер</a>
+                        <div class="accordion " id="accordionFilter">
+                            <div class="card ">
+                                <div class="card-header p-0" id="headingOne">
+                                    <h5 style="background-color: rgb(225, 255, 176);" class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Фильтрация и поиск
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFilter">
+                                    <div class="card-body d-flex flex-row justify-content-between">
+                                        <form class="search-form d-flex flex-row flex-wrap col-6 justify-content-center py-4">
+                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                                <label class="col-4" for="InputID">ID:</label>
+                                                <input type="text" class="form-control col-8" id="InputID">
+                                            </div>
+                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                                <label class="col-4" for="InputFIO">ФИО:</label>
+                                                <input type="text" class="form-control col-8" id="InputFIO">
+                                            </div>
+                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                                <label class="col-4" for="InputPhone">Телефон:</label>
+                                                <input type="tel" class="form-control col-8" id="InputPhone">
+                                            </div>
+                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                                <label class="col-4" for="SelectPosition">Должность:</label>
+                                                <select class="form-control col-8" id="SelectPosition">
+                                                    <option>Администратор</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                                <label class="col-4" for="SelectShow">Показать по:</label>
+                                                <select class="form-control col-8" id="SelectShow">
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <button type="submit" class="btn btn-light col-2">ОК</button>
+                                        </form>
+                                        <form class="search-form d-flex flex-row flex-wrap col-4 justify-content-center py-4">
+                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                                <label class="col-4" for="InputID">ID:</label>
+                                                <input type="text" class="form-control col-8" id="InputID">
+                                            </div>
+                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                                <label class="col-4" for="InputFIO">ФИО:</label>
+                                                <input type="text" class="form-control col-8" id="InputFIO">
+                                            </div>
+                                            <button type="submit" class="btn btn-light col-2">ОК</button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -177,11 +180,11 @@
                             </div>
                             <div class="col-4"></div>
                             <div class="d-flex flex-row col-8">
-                                <p class="col-6">Отображение на главной:</p>
+                                <p class="col-7">Отображение на главной:</p>
                                 <p class="col-5">Не отображается</p>
                             </div>
                             <div class="d-flex flex-row col-4 justify-content-end">
-                                <a href="b-cardworkeredit.html" class="btn btn-light">См. больше</a>
+                                <a href="b-cardhotelroom.html" class="btn btn-light">См. больше</a>
                             </div>
                         </div>
                     </div>
@@ -221,11 +224,11 @@
                             </div>
                             <div class="col-4"></div>
                             <div class="d-flex flex-row col-8">
-                                <p class="col-6">Отображение на главной:</p>
+                                <p class="col-7">Отображение на главной:</p>
                                 <p class="col-5">Не отображается</p>
                             </div>
                             <div class="d-flex flex-row col-4 justify-content-end">
-                                <a href="b-cardworkeredit.html" class="btn btn-light">См. больше</a>
+                                <a href="b-cardhotelroom.html" class="btn btn-light">См. больше</a>
                             </div>
                         </div>
                     </div>

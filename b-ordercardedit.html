@@ -68,9 +68,10 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                    <li class="breadcrumb-item"><a href="b-clients.html">Клиенты</a></li>
-                    <li class="breadcrumb-item"><a href="b-cardclient.html">Карточка клиента</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Редактирование клиента</li>
+                    <li class="breadcrumb-item"><a href="b-animalsinhotel.html">Личный кабинет</a></li>
+                    <li class="breadcrumb-item"><a href="b-orders.html">Заказы</a></li>
+                    <li class="breadcrumb-item"><a href="b-ordercard.html">Карточка заказа</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Редактирование заказа</li>
                 </ol>
             </nav>
             <div class="row d-flex flex-row justify-content-center col-12">
@@ -79,63 +80,79 @@
                         <a href="b-animalsinhotel.html" class="btn btn-light text-uppercase">Животные в отеле</a>
                         <a href="b-workers.html" class="btn btn-light text-uppercase">Сотрудники</a>
                         <a href="b-clients.html" class="btn btn-light text-uppercase">Клиенты</a>
-                        <a href="b-orders.html" class="btn btn-light border text-uppercase">Заказы</a>
+                        <a href="b-orders.html" class="btn btn-primary border text-uppercase">Заказы</a>
                         <a href="b-hotelrooms.html" class="btn btn-light border text-uppercase">Номера отеля</a>
                         <a href="b-chat.html" class="btn btn-light border text-uppercase">Общение</a>
-                        <a href="b-myprofile.html" class="btn btn-primary text-uppercase">Мой профиль</a>
+                        <a href="b-myprofile.html" class="btn btn-light text-uppercase">Мой профиль</a>
                         <a href="b-editposition.html" class="btn btn-light text-uppercase">Ред. должностей</a>
                         <a href="b-finance.html" class="btn btn-light text-uppercase">Финансы</a>
                     </div>
                 </div>
                 <div class="second-column col-9 px-0 d-flex flex-row flex-wrap justify-content-center">
-                    <h1 class="text-center py-3 col-12">Клиент</h1>
-                    <div class="card my-3 mx-0 pb-3 d-flex flex-row flex-wrap col-10">
-                        <h5 class="card-title text-center col-12 py-3">ID 0001</h5>
-                        <div class="card-body d-flex flex-row flex-wrap justify-content-center align-items-center col-12 px-0">
-                            <div class="d-flex flex-row justify-content-between col-6 my-2">
-                                <label class="col-4" for="InputClientFIO">ФИО:</label>
-                                <input type="text" class="form-control col-8" id="InputClientFIO">
-                            </div>
-                            <div class="d-flex flex-row justify-content-between col-6 my-2">
-                                <label class="col-4" for="InputClientPhone">Телефон:</label>
-                                <input type="text" class="form-control col-8" id="InputClientPhone">
-                            </div>
-                            <div class="d-flex flex-row justify-content-between col-6 my-2">
-                                <label class="col-4" for="InputClientAddress">Адрес:</label>
-                                <input type="text" class="form-control col-8" id="InputClientAddress">
-                            </div>
-                            <div class="d-flex flex-row justify-content-between col-6 my-2">
-                                <label class="col-4" for="InputClientEmail">E-mail:</label>
-                                <input type="text" class="form-control col-8" id="InputClientEmail">
-                            </div>
-                            <div class="d-flex flex-row justify-content-between col-6 my-2">
-                                <label class="col-4" for="InputClientBirth">Дата рождения:</label>
-                                <input type="date" class="form-control col-8" id="InputClientBirth">
-                            </div>
-                            <div class="d-flex flex-row justify-content-between col-6 my-2">
-                                <p class="col-4">Пол:</p>
-                                <div class="form-check col-4">
-                                    <input class="form-check-input" type="radio" name="Radios" id="Radios1" value="option1">
-                                    <label class="form-check-label" for="Radios1">Женский</label>
+                    <h1 class="text-center py-3 col-12">Заказ</h1>
+                        <div class="card my-3 mx-0 pb-3 d-flex flex-row flex-wrap col-10">
+                            <h5 class="card-title text-center col-12 py-3">ID 0001</h5>
+                            <div class="card-body d-flex flex-row flex-wrap justify-content-center col-12 px-0">
+                                <div class="d-flex flex-row col-8">
+                                    <p class="col-3">ФИО:</p>
+                                    <p class="col-9"><a href="#">Точилова Елизавета Александровна</a></p>
                                 </div>
-                                <div class="form-check col-4">
-                                    <input class="form-check-input" type="radio" name="Radios" id="Radios2" value="option2" checked>
-                                    <label class="form-check-label" for="Radios2">Мужской</label>
+                                
+                                <div class="d-flex flex-row col-4">
+                                    <p class="col-6">Животное:</p>
+                                    <p class="col-6">Кошка</p>
+                                </div>
+                                    <div class="d-flex flex-row col-8">
+                                    <p class="col-3">Телефон:</p>
+                                    <p class="col-9">89500768814</p>
+                                </div>
+                                <div class="d-flex flex-row col-4">
+                                    <p class="col-6">Кличка:</p>
+                                    <p class="col-6"><a href="#">Бесси</a></p>
+                                </div>
+                                <div class="loginpass d-flex flex-row flex-wrap justify-content-center col-9 my-3">
+                                    <div class="roomtype d-flex flex-row justify-content-between py-2 col-9">
+                                        <p>Тип номера:</p>
+                                        <p><a href="#">Эконом</a></p>
+                                        <p>Номер комнаты:</p>
+                                        <p><a href="#">201</a></p>
+                                    </div>
+                                    <div class="dateandtime d-flex flex-row justify-content-between py-2 col-9">
+                                        <p>Дата и время заезда животного:</p>
+                                        <p>05.09.19 12:00</p>
+                                    </div>
+                                    <div class="dateandtime d-flex flex-row justify-content-between py-2 col-9">
+                                        <p>Дата и время выезда животного:</p>
+                                        <p>13.09.19 14:00</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row col-9 justify-content-around mb-3">
+                                <p>Всего мест в номере:</p>
+                                <p>3</p>
+                                <p >Из них заняты:</p>
+                                <p>2</p>
+                                <p>Свободны:</p>
+                                <p>1</p>
+                            </div>
+                                <div class="d-flex flex-column col-12">
+                                    <p class="col-4 pt-3">Комментарий:</p>
+                                    <p class="col-12">Мою собаку надо кормить 7 раз в день</p>
+                                </div>
+                                <div class="d-flex flex-row col-12 pt-4">
+                                    <p class="col-2">Итого:</p>
+                                    <p class="col-2">3000 р.</p>
+                                
+                                    <p class="col-2">Оплачено:</p>
+                                    <p class="col-2">2500 р.</p>
+                                
+                                    <p class="col-2">Остаток:</p>
+                                    <p class="col-2">500 р.</p>
+                                </div>
+                                <div class="d-flex flex-row justify-content-between col-12">
+                                    <a href="#" class="btn btn-light col-3">Отмена</a>
+                                    <a href="#" class="btn btn-light col-3">Сохранить</a>
                                 </div>
                             </div>
-                            <div class="loginpass d-flex flex-row flex-wrap justify-content-center col-6 m-3 p-3">
-                                <label class="col-4 p-2" for="InputClientLogin">Логин:</label>
-                                <input type="text" class="form-control col-8 p-2" id="InputClientLogin">
-                                <label class="col-4 p-2" for="InputClientPassword">Пароль:</label>
-                                <input type="text" class="form-control col-8 p-2" id="InputClientPassword">
-                            </div>
-                           
-                            
-                            <div class="d-flex flex-row justify-content-between col-12 px-0 my-1">
-                                <a href="b-cardclient.html" class="btn btn-light col-3">Отмена</a>
-                                <a href="b-cardclientedit.html" class="btn btn-light col-3">Сохранить</a>
-                            </div>
-                            
                         </div>
                     </div>
                 </div>
@@ -196,8 +213,8 @@
                 </div>
             </div>
         </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
 </html>

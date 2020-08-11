@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 body {
   padding: 0;
@@ -5,6 +6,8 @@ body {
   background-color: #F6FFDE;
   color: #1F2326;
   font-size: 0.9em;
+  /*стили футер*/
+  /*стили футер*/
 }
 
 body .loginpass {
@@ -132,4 +135,45 @@ body .btn > .icon {
   position: relative;
   display: inline-block;
   padding: .375rem .75rem;
+}
+
+body footer {
+  background-color: #E1FFB0;
+}
+
+body footer .cont-footer a {
+  text-decoration: none;
+  color: #1F2326;
+}
+
+body footer .cont-footer a:hover {
+  color: #997843;
+  text-decoration: underline;
+}
+
+body footer .cont-footer .headline {
+  color: #997843;
+}
+
+body footer .cont-footer .block1 {
+  padding-top: 10px;
+}
+
+body footer .cont-footer .block1 > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body footer .cont-footer .block1 > div > img {
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
 }

@@ -7,7 +7,6 @@ body {
   color: #1F2326;
   font-size: 0.9em;
   /*стили футер*/
-  /*стили футер*/
 }
 
 body .loginpass {
@@ -176,4 +175,23 @@ body footer .cont-footer .block1 > div > img {
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
+}
+
+body .first-column-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  body .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: flex-column;
+            flex-direction: flex-column;
+  }
+  body .first-column-mobile {
+    display: block;
+  }
+  body .first-column {
+    display: none;
+  }
 }

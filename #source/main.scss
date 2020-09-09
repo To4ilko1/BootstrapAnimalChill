@@ -109,77 +109,48 @@ body{
         display: inline-block;
         padding: .375rem .75rem;
     }
-/*стили футер*/
-footer {
-    
-    background-color: #E1FFB0;
-    .cont-footer {
-        & a{
-            text-decoration: none;
-            color:#1F2326;
-            &:hover{
-                color: #997843;
-                text-decoration: underline;
+    /*стили футер*/
+    footer {
+        background-color: #E1FFB0;
+        .cont-footer {
+            & a{
+                text-decoration: none;
+                color:#1F2326;
+                &:hover{
+                    color: #997843;
+                    text-decoration: underline;
+                }
             }
-        }
-        & .headline{
-            color:#997843;
-        }
-        .block1{
-            padding-top:10px;
-            &>div{
-                display: flex;
-                flex-direction: row;
-                &>img{
-                    margin-right: 10px;
-                    display:flex;
-                    align-self: center;
+            & .headline{
+                color:#997843;
+            }
+            .block1{
+                padding-top:10px;
+                &>div{
+                    display: flex;
+                    flex-direction: row;
+                    &>img{
+                        margin-right: 10px;
+                        display:flex;
+                        align-self: center;
+                    }
                 }
             }
         }
     }
-}
-
-
-
-
-
-
-
-
-
-/*стили футер*/
-    // footer{
-    //     background-color: $green;
-
-    //     .cont-footer{
-    //         & a{
-    //             text-decoration: none;
-    //             color:#1F2326;
-    //             &:hover{
-    //                 color: #997843;
-    //                 text-decoration: underline;
-    //             }
-    //         }
-    //         & div{
-    //             padding-top:10px;
-    //         }
-    //         & .headline{
-    //             color:#997843;
-    //         }
-    //         .block1>div{
-    //             display: flex;
-    //             flex-direction: row;
-    //         }
-    //         .block1{
-    //             padding-top:20px;
-    //         }
-    //         .block1>div>img{
-    //             margin-right: 10px;
-    //             display:flex;
-    //             align-self: center;
-    //         }
-    //     }
-    // }
+    .first-column-mobile{
+        display: none;
+    }
+    @media (max-width: 600px) { 
+        .row{
+            flex-direction: flex-column;
+        }
+        .first-column-mobile{
+            display: block;
+        }
+        .first-column{
+            display: none;
+        }
+     }
 }
 

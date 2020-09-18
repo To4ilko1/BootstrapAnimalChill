@@ -52,6 +52,12 @@ body{
             color: $brown;
         }
     }
+    .page-link{
+        color: $brown;
+        &:hover{
+            color: $brown;
+        }
+    }
     h1,h2,h3{
         color:$brown;
     }

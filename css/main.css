@@ -59,6 +59,14 @@ body a:hover {
   color: #997843;
 }
 
+body .page-link {
+  color: #997843;
+}
+
+body .page-link:hover {
+  color: #997843;
+}
+
 body h1, body h2, body h3 {
   color: #997843;
 }

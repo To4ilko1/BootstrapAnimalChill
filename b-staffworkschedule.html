@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>AnimalChill</title>
+    </head>
+    <body>
+        <section class="b-myprofile">
+            <header class="b-header d-flex flex-row justify-content-around">
+                <div class="logo d-flex flex-column align-items-center">
+                    <img src="img/logo_new.svg" width="70" height="70" alt="AnimalsChill" class="logo">
+                    <p><a href="index.html">Отель для животных</a></p>
+                </div> 
+                <div class="phone d-flex flex-row align-items-center">
+                    <img src="img/phone.png" alt="">
+                    <p class="pl-3 mb-0">88005553535</p>
+                </div>
+                <div class="clock d-flex flex-row align-items-center">
+                    <img src="img/clock.png" alt="">
+                    <p class="pl-3 mb-0">пн-пт: 14:00-22:00<br>пн-пт: 11:00-22:00</p>
+                </div>
+                <div class="location d-flex flex-row align-items-center">
+                    <img src="img/location.png" alt="">
+                    <p class="pl-3 mb-0">Ул. Ленина, д.11</p>
+                </div>
+                <div class="contacts d-flex flex-row">
+                    <div class="social instagram d-flex flex-row align-items-center">
+                        <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                    </div>
+                    <div class="social facebook d-flex flex-row align-items-center mx-3">
+                        <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                    </div>
+                    <div class="social vk d-flex flex-row align-items-center">
+                        <a href="#" target="_blank"><i class="fa fa-vk fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="login d-flex flex-column">
+                    <p class="mt-3 mb-1"><a class="link-logout" href="b-myprofile.html">Точилова Елизавета</a></p>
+                    <a href="#" class="btn btn-light">Выйти</a>
+                </div>
+            </header>
+            <ul class="nav justify-content-center navigation-menu">
+                <li class="nav-item">
+                <a class="nav-link active" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">О нас</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Условия заселения</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Цены</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Сотрудники</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+            </ul>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="b-animalsinhotel.html">Личный кабинет</a></li>
+                    <li class="breadcrumb-item"><a href="b-workers.html">Сотрудники</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">График работы сотрудников</li>
+                </ol>
+            </nav>
+            <div class="row d-flex flex-row justify-content-center col-12">
+                <div class="first-column col-3">
+                    <div class="btn-group-vertical col-12 mt-5">
+                        <a href="b-animalsinhotel.html" class="btn btn-light text-uppercase">Животные в отеле</a>
+                        <a href="b-workers.html" class="btn btn-primary text-uppercase">Сотрудники</a>
+                        <a href="b-clients.html" class="btn btn-light text-uppercase">Клиенты</a>
+                        <a href="b-orders.html" class="btn btn-light border text-uppercase">Заказы</a>
+                        <a href="b-hotelrooms.html" class="btn btn-light border text-uppercase">Номера отеля</a>
+                        <a href="b-chat.html" class="btn btn-light border text-uppercase">Общение</a>
+                        <a href="b-myprofile.html" class="btn btn-light text-uppercase">Мой профиль</a>
+                        <a href="b-editposition.html" class="btn btn-light text-uppercase">Ред. должностей</a>
+                        <a href="b-finance.html" class="btn btn-light text-uppercase">Финансы</a>
+                        <a href="b-reviews.html" class="btn btn-light text-uppercase">Отзывы</a>
+                    </div>
+                </div>
+                <div class="second-column col-9 px-0 d-flex flex-row flex-wrap justify-content-center">
+                    <h1 class="text-center py-3 col-12">График работы сотрудников</h1>
+                    <div class="top-btns d-flex flex-row justify-content-center pb-4 col-12">
+                        <a href="b-cardworkeredit.html" class="btn btn-light mr-5">Редактировать график работы</a>
+                        <div class="accordion " id="accordionFilter">
+                            <div class="card ">
+                                <div class="card-header p-0" id="headingOne">
+                                    <h5 style="background-color: rgb(225, 255, 176);" class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Фильтрация и поиск
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFilter">
+                                    <div class="card-body d-flex flex-row justify-content-between">
+                                        <form class="search-form d-flex flex-row flex-wrap col-6 justify-content-center py-4">
+                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                                <label class="col-4" for="InputID">ID:</label>
+                                                <input type="text" class="form-control col-8" id="InputID">
+                                            </div>
+                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                                <label class="col-4" for="InputFIO">ФИО:</label>
+                                                <input type="text" class="form-control col-8" id="InputFIO">
+                                            </div>
+                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                                <label class="col-4" for="InputPhone">Телефон:</label>
+                                                <input type="tel" class="form-control col-8" id="InputPhone">
+                                            </div>
+                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                                <label class="col-4" for="SelectPosition">Должность:</label>
+                                                <select class="form-control col-8" id="SelectPosition">
+                                                    <option>Администратор</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                                <label class="col-4" for="SelectShow">Показать по:</label>
+                                                <select class="form-control col-8" id="SelectShow">
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <button type="submit" class="btn btn-light col-2">ОК</button>
+                                        </form>
+                                        <form class="search-form d-flex flex-row flex-wrap col-4 justify-content-center py-4">
+                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                                <label class="col-4" for="InputID">ID:</label>
+                                                <input type="text" class="form-control col-8" id="InputID">
+                                            </div>
+                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                                <label class="col-4" for="InputFIO">ФИО:</label>
+                                                <input type="text" class="form-control col-8" id="InputFIO">
+                                            </div>
+                                            <button type="submit" class="btn btn-light col-2">ОК</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex col-12 flex-row align-items-center my-3">
+                        <p class="my-0">Выбрать месяц:</p>
+                        <select class="form-control col-3 ml-3" id="SelectAnimalType">
+                            <option>Сентябрь</option>
+                            <option>Октябрь</option>
+                            <option>Ноябрь</option>
+                            <option>Декабрь</option>
+                            <option>Январь</option>
+                            <option>Февраль</option>
+                        </select>
+                    </div>
+                    <table class="table table-bordered sheduleWorkerTable">
+                        <thead>
+                            <tr>
+                                <th scope="col">Сотрудники</th>
+                                <th scope="col">ПН</th>
+                                <th scope="col">ВТ</th>
+                                <th scope="col">СР</th>
+                                <th scope="col">ЧТ</th>
+                                <th scope="col">ПТ</th>
+                                <th scope="col">СБ</th>
+                                <th scope="col">ВС</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" rowspan="5">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="badge badge-pill badge-primary">Точилова</a></li>
+                                        <li><a href="#" class="badge badge-pill badge-success">Юрков</a></li>
+                                        <li><a href="#" class="badge badge-pill badge-danger">Петрова</a></li>
+                                        <li><a href="#" class="badge badge-pill badge-warning">Харжеева</a></li>
+                                        <li><a href="#" class="badge badge-pill badge-dark">Тюхай</a></li>
+                                        <li><a href="#" class="badge badge-pill badge-light">Копылов</a></li>
+                                    </ul>
+                                </th>
+                                <td class="p-2" scope="col">
+                                    <div>
+                                        <div>1</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-primary mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-success mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-danger">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>2</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-warning mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-dark mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-light">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>3</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-primary mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-success mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-danger">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>4</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-warning mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-dark mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-light">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>5</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-primary mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-success mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-danger">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>6</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-warning mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-dark mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-light">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>7</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-primary mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-success mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-danger">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td scope="col">
+                                    <div>
+                                        <div>8</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-warning mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-dark mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-light">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>9</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-primary mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-success mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-danger">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>10</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-warning mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-dark mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-light">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>11</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-primary mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-success mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-danger">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>12</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-warning mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-dark mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-light">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>13</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-primary mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-success mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-danger">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>14</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-warning mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-dark mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-light">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td scope="col">
+                                    <div>
+                                        <div>15</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-primary mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-success mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-danger">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>16</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-warning mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-dark mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-light">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>17</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-primary mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-success mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-danger">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>18</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-warning mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-dark mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-light">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>19</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-primary mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-success mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-danger">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>20</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-warning mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-dark mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-light">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>21</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-primary mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-success mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-danger">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td scope="col">
+                                    <div>
+                                        <div>22</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-warning mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-dark mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-light">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>23</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-primary mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-success mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-danger">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>24</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-warning mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-dark mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-light">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>25</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-primary mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-success mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-danger">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>26</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-warning mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-dark mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-light">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>27</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-primary mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-success mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-danger">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>28</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-warning mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-dark mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-light">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td scope="col">
+                                    <div>
+                                        <div>29</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-primary mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-success mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-danger">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>30</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-warning mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-dark mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-light">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td scope="col">
+                                    <div>
+                                        <div>31</div>
+                                        <div class="tableText">
+                                            <p class="badge badge-pill badge-primary mb-0">5:00-14:00</p><br>
+                                            <p class="badge badge-pill badge-success mb-0">14:00-22:00</p><br>
+                                            <p class="badge badge-pill badge-danger">22:00-5:00</p>
+                                        </div>
+                                        <div class="d-flex col-12 justify-content-end px-0">
+                                            <a href="#"><img src="img/add.svg" width="25"></a>
+                                        </div>
+                                    </div>
+                                </td>
+        
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        
+        <footer>
+            <div class="cont cont-footer d-flex flex-wrap justify-content-around py-2 mt-5">
+                <div class="block d-flex flex-column pt-2">
+                    <div class="headline"><h5>Меню</h5></div>
+                    <div class="block1">
+                        <div class="pt-2"><p class="mb-0 py-1"><a href="index.html">Главная</a></p></div>
+                        <div><p class="mb-0 py-1"><a href="conditions.html">Условия</a></p></div>
+                        <div><p class="mb-0 py-1"><a href="prices.html">Цены</a></p></div>
+                        <div><p class="mb-0 py-1"><a href="workers.html">Сотрудники</a></p></div>
+                        <div><p class="mb-0 py-1"><a href="reviews.html">Отзывы</a></p></div>
+                        <div><p class="mb-0 py-1"><a href="contacts.html">Контакты</a></p></div>
+                    </div>
+                </div>
+                <div class="block d-flex flex-column pt-2">
+                    <div class="headline"><h5>Режим работы</h5></div>
+                    <div class="block1">
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <img src="img/clock.svg" width="20" height="20" alt="">
+                            <p class="mb-0">пн-пт: 14:00-22:00<br>пн-пт: 11:00-22:00</p>
+                        </div>
+                        <br>
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <img src="img/pin.svg" width="20" height="20" alt="">
+                            <p class="mb-0">Ул. Ленина, 11<br>Иркутск, Россия</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="block d-flex flex-column pt-2">
+                    <div class="headline"><h5>Контакты</h5></div>
+                    <div class="block1">
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <img src="img/instagram.svg" width="20" height="20" alt="">
+                            <p class="mb-0"><a href=#>ChillForAnimals</a></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <img src="img/facebook.svg" width="20" height="20" alt="">
+                            <p class="mb-0"><a href=#>ChillForAnimals</a></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <img src="img/twitter.svg" width="20" height="20" alt="">
+                            <p class="mb-0"><a href=#>ChillForAnimals</a></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <img src="img/phone.svg" width="20" height="20" alt="">
+                            <p class="mb-0"><a href=#>8-950-076-88-14</a></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <img src="img/email.svg" width="20" height="20" alt="">
+                            <p class="mb-0"><a href=#>chillFA@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>

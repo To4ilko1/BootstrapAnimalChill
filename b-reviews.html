@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>AnimalChill</title>
+    </head>
+    <body>
+        <section class="b-myprofile">
+            <header class="b-header d-flex flex-row justify-content-around">
+                <div class="logo d-flex flex-column align-items-center">
+                    <img src="img/logo_new.svg" width="70" height="70" alt="AnimalsChill" class="logo">
+                    <p><a href="index.html">Отель для животных</a></p>
+                </div> 
+                <div class="phone d-flex flex-row align-items-center">
+                    <img src="img/phone.png" alt="">
+                    <p class="pl-3 mb-0">88005553535</p>
+                </div>
+                <div class="clock d-flex flex-row align-items-center">
+                    <img src="img/clock.png" alt="">
+                    <p class="pl-3 mb-0">пн-пт: 14:00-22:00<br>пн-пт: 11:00-22:00</p>
+                </div>
+                <div class="location d-flex flex-row align-items-center">
+                    <img src="img/location.png" alt="">
+                    <p class="pl-3 mb-0">Ул. Ленина, д.11</p>
+                </div>
+                <div class="contacts d-flex flex-row">
+                    <div class="social instagram d-flex flex-row align-items-center">
+                        <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                    </div>
+                    <div class="social facebook d-flex flex-row align-items-center mx-3">
+                        <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                    </div>
+                    <div class="social vk d-flex flex-row align-items-center">
+                        <a href="#" target="_blank"><i class="fa fa-vk fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="login d-flex flex-column">
+                    <p class="mt-3 mb-1"><a class="link-logout" href="b-myprofile.html">Точилова Елизавета</a></p>
+                    <a href="#" class="btn btn-light">Выйти</a>
+                </div>
+            </header>
+            <ul class="nav justify-content-center navigation-menu">
+                <li class="nav-item">
+                <a class="nav-link active" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">О нас</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Условия заселения</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Цены</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Сотрудники</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+            </ul>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="b-animalsinhotel.html">Личный кабинет</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Отзывы</li>
+                </ol>
+            </nav>
+            <div class="row d-flex flex-row justify-content-center col-12">
+                <div class="first-column col-3">
+                    <div class="btn-group-vertical col-12 mt-5">
+                        <a href="b-animalsinhotel.html" class="btn btn-light text-uppercase">Животные в отеле</a>
+                        <a href="b-workers.html" class="btn btn-light text-uppercase">Сотрудники</a>
+                        <a href="b-clients.html" class="btn btn-light text-uppercase">Клиенты</a>
+                        <a href="b-orders.html" class="btn btn-light border text-uppercase">Заказы</a>
+                        <a href="b-hotelrooms.html" class="btn btn-light border text-uppercase">Номера отеля</a>
+                        <a href="b-chat.html" class="btn btn-light border text-uppercase">Общение</a>
+                        <a href="b-myprofile.html" class="btn btn-light text-uppercase">Мой профиль</a>
+                        <a href="b-editposition.html" class="btn btn-light text-uppercase">Ред. должностей</a>
+                        <a href="b-finance.html" class="btn btn-light text-uppercase">Финансы</a>
+                        <a href="b-reviews.html" class="btn btn-primary text-uppercase">Отзывы</a>
+                    </div>
+                </div>
+                <div class="second-column col-9 px-0 d-flex flex-row flex-wrap justify-content-center">
+                    <h1 class="text-center py-3 col-12">Отзывы</h1>
+                    <ul class="nav nav-justified nav-tabs col-12" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="notpublished-tab" data-toggle="tab" href="#notpublished" role="tab" aria-controls="home" aria-selected="true">Неопубликованные</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="published-tab" data-toggle="tab" href="#published" role="tab" aria-controls="profile" aria-selected="false">Опубликованные</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content card col-12" id="myTabContent">
+                        <div class="tab-pane fade show active" id="notpublished" role="tabpanel" aria-labelledby="notpublished-tab">
+                            <div class="searchfilter col-12 d-flex flex-row justify-content-around pt-4 pb-0">
+                                <div class="accordion" id="accordionFilter">
+                                    <div class="card">
+                                        <div class="card-header p-0" id="headingOne">
+                                            <h5 style="background-color: rgb(225, 255, 176); " class="mb-0">
+                                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    Фильтрация и поиск
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFilter">
+                                            <div class="card-body">
+                                                <div class="top-container d-flex flex-row justify-content-between col-12 my-3 px-0">
+                                                    <form class="search-form d-flex flex-row flex-wrap col-6 justify-content-center py-4">
+                                                        <div class="form-group d-flex flex-row justify-content-between col-12">
+                                                            <label class="col-4" for="InputID">ID:</label>
+                                                            <input type="text" class="form-control col-8" id="InputID">
+                                                        </div>
+                                                        <div class="form-group d-flex flex-row justify-content-between col-12">
+                                                            <label class="col-4" for="InputFIO">ФИО:</label>
+                                                            <input type="text" class="form-control col-8" id="InputFIO">
+                                                        </div>
+                                                       
+                                                        <div class="form-group d-flex flex-row justify-content-between col-12">
+                                                            <label class="col-4" for="SelectPosition">Должность:</label>
+                                                            <select class="form-control col-8" id="SelectPosition">
+                                                                <option>Администратор</option>
+                                                            </select>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-light col-2">ОК</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards-shedule d-flex flex-row justify-content-around flex-wrap py-4">
+                                <div class="card loginpass my-3 py-2 d-flex flex-column align-items-start justify-content-start" style="width: 19rem;">
+                                    <div class="card-body py-0">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Дата:</b></p>
+                                            <p class="col-6 mb-1">ПН 16.09.19</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>ФИО:</b></p>
+                                            <p class="col-6 mb-1">Юрков Г.Ю.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Телефон:</b></p>
+                                            <p class="col-6 mb-1">89500768815</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Животное:</b></p>
+                                            <p class="col-6 mb-1">Кошка</p>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <p class="col-6 mb-1"><b>Отзыв:</b></p>
+                                            <p class="card-text col-12">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Оценка:</b></p>
+                                            <p class="col-6 mb-1">4</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="top-btn d-flex flex-column align-items-center"  style="width: 19rem;">
+                                        <a href="b-review.html" class="btn btn-light col-6">См. больше</a>
+                                    </div>
+                                </div>
+                                <div class="card loginpass my-3 py-2 d-flex flex-column align-items-start justify-content-start" style="width: 19rem;">
+                                    <div class="card-body py-0">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Дата:</b></p>
+                                            <p class="col-6 mb-1">ПН 16.09.19</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>ФИО:</b></p>
+                                            <p class="col-6 mb-1">Юрков Г.Ю.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Телефон:</b></p>
+                                            <p class="col-6 mb-1">89500768815</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Животное:</b></p>
+                                            <p class="col-6 mb-1">Кошка</p>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <p class="col-6 mb-1"><b>Отзыв:</b></p>
+                                            <p class="card-text col-12">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Оценка:</b></p>
+                                            <p class="col-6 mb-1">4</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="top-btn d-flex flex-column align-items-center"  style="width: 19rem;">
+                                        <a href="#" class="btn btn-light col-6">См. больше</a>
+                                    </div>
+                                </div>
+                                <div class="card loginpass my-3 py-2 d-flex flex-column align-items-start justify-content-start" style="width: 19rem;">
+                                    <div class="card-body py-0">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Дата:</b></p>
+                                            <p class="col-6 mb-1">ПН 16.09.19</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>ФИО:</b></p>
+                                            <p class="col-6 mb-1">Юрков Г.Ю.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Телефон:</b></p>
+                                            <p class="col-6 mb-1">89500768815</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Животное:</b></p>
+                                            <p class="col-6 mb-1">Кошка</p>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <p class="col-6 mb-1"><b>Отзыв:</b></p>
+                                            <p class="card-text col-12">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Оценка:</b></p>
+                                            <p class="col-6 mb-1">4</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="top-btn d-flex flex-column align-items-center"  style="width: 19rem;">
+                                        <a href="#" class="btn btn-light col-6">См. больше</a>
+                                    </div>
+                                </div>
+                                <div class="card loginpass my-3 py-2 d-flex flex-column align-items-start justify-content-start" style="width: 19rem;">
+                                    <div class="card-body py-0">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Дата:</b></p>
+                                            <p class="col-6 mb-1">ПН 16.09.19</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>ФИО:</b></p>
+                                            <p class="col-6 mb-1">Юрков Г.Ю.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Телефон:</b></p>
+                                            <p class="col-6 mb-1">89500768815</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Животное:</b></p>
+                                            <p class="col-6 mb-1">Кошка</p>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <p class="col-6 mb-1"><b>Отзыв:</b></p>
+                                            <p class="card-text col-12">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Оценка:</b></p>
+                                            <p class="col-6 mb-1">4</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="top-btn d-flex flex-column align-items-center"  style="width: 19rem;">
+                                        <a href="#" class="btn btn-light col-6">См. больше</a>
+                                    </div>
+                                </div>
+                                <div class="card loginpass my-3 py-2 d-flex flex-column align-items-start justify-content-start" style="width: 19rem;">
+                                    <div class="card-body py-0">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Дата:</b></p>
+                                            <p class="col-6 mb-1">ПН 16.09.19</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>ФИО:</b></p>
+                                            <p class="col-6 mb-1">Юрков Г.Ю.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Телефон:</b></p>
+                                            <p class="col-6 mb-1">89500768815</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Животное:</b></p>
+                                            <p class="col-6 mb-1">Кошка</p>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <p class="col-6 mb-1"><b>Отзыв:</b></p>
+                                            <p class="card-text col-12">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Оценка:</b></p>
+                                            <p class="col-6 mb-1">4</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="top-btn d-flex flex-column align-items-center"  style="width: 19rem;">
+                                        <a href="#" class="btn btn-light col-6">См. больше</a>
+                                    </div>
+                                </div>
+                                <div class="card loginpass my-3 py-2 d-flex flex-column align-items-start justify-content-start" style="width: 19rem;">
+                                    <div class="card-body py-0">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Дата:</b></p>
+                                            <p class="col-6 mb-1">ПН 16.09.19</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>ФИО:</b></p>
+                                            <p class="col-6 mb-1">Юрков Г.Ю.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Телефон:</b></p>
+                                            <p class="col-6 mb-1">89500768815</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Животное:</b></p>
+                                            <p class="col-6 mb-1">Кошка</p>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <p class="col-6 mb-1"><b>Отзыв:</b></p>
+                                            <p class="card-text col-12">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Оценка:</b></p>
+                                            <p class="col-6 mb-1">4</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="top-btn d-flex flex-column align-items-center"  style="width: 19rem;">
+                                        <a href="#" class="btn btn-light col-6">См. больше</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="published" role="tabpanel" aria-labelledby="published-tab">
+                            <div class="searchfilter col-12 d-flex flex-row justify-content-around pt-4 pb-0">
+                                <div class="accordion" id="accordionFilter">
+                                    <div class="card">
+                                        <div class="card-header p-0" id="headingOne">
+                                            <h5 style="background-color: rgb(225, 255, 176); " class="mb-0">
+                                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    Фильтрация и поиск
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFilter">
+                                            <div class="card-body">
+                                                <div class="top-container d-flex flex-row justify-content-between col-12 my-3 px-0">
+                                                    <form class="search-form d-flex flex-row flex-wrap col-6 justify-content-center py-4">
+                                                        <div class="form-group d-flex flex-row justify-content-between col-12">
+                                                            <label class="col-4" for="InputID">ID:</label>
+                                                            <input type="text" class="form-control col-8" id="InputID">
+                                                        </div>
+                                                        <div class="form-group d-flex flex-row justify-content-between col-12">
+                                                            <label class="col-4" for="InputFIO">ФИО:</label>
+                                                            <input type="text" class="form-control col-8" id="InputFIO">
+                                                        </div>
+                                                       
+                                                        <div class="form-group d-flex flex-row justify-content-between col-12">
+                                                            <label class="col-4" for="SelectPosition">Должность:</label>
+                                                            <select class="form-control col-8" id="SelectPosition">
+                                                                <option>Администратор</option>
+                                                            </select>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-light col-2">ОК</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards-shedule d-flex flex-row justify-content-around flex-wrap py-4">
+                                <div class="card loginpass my-3 py-2 d-flex flex-column align-items-start justify-content-start" style="width: 19rem;">
+                                    <div class="card-body py-0">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Дата:</b></p>
+                                            <p class="col-6 mb-1">ПН 16.09.19</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>ФИО:</b></p>
+                                            <p class="col-6 mb-1">Юрков Г.Ю.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Телефон:</b></p>
+                                            <p class="col-6 mb-1">89500768815</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Животное:</b></p>
+                                            <p class="col-6 mb-1">Кошка</p>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <p class="col-6 mb-1"><b>Отзыв:</b></p>
+                                            <p class="card-text col-12">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Оценка:</b></p>
+                                            <p class="col-6 mb-1">4</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="top-btn d-flex flex-column align-items-center"  style="width: 19rem;">
+                                        <a href="#" class="btn btn-light col-6">См. больше</a>
+                                    </div>
+                                </div>
+                                <div class="card loginpass my-3 py-2 d-flex flex-column align-items-start justify-content-start" style="width: 19rem;">
+                                    <div class="card-body py-0">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Дата:</b></p>
+                                            <p class="col-6 mb-1">ПН 16.09.19</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>ФИО:</b></p>
+                                            <p class="col-6 mb-1">Юрков Г.Ю.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Телефон:</b></p>
+                                            <p class="col-6 mb-1">89500768815</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Животное:</b></p>
+                                            <p class="col-6 mb-1">Кошка</p>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <p class="col-6 mb-1"><b>Отзыв:</b></p>
+                                            <p class="card-text col-12">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Оценка:</b></p>
+                                            <p class="col-6 mb-1">4</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="top-btn d-flex flex-column align-items-center"  style="width: 19rem;">
+                                        <a href="#" class="btn btn-light col-6">См. больше</a>
+                                    </div>
+                                </div>
+                                <div class="card loginpass my-3 py-2 d-flex flex-column align-items-start justify-content-start" style="width: 19rem;">
+                                    <div class="card-body py-0">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Дата:</b></p>
+                                            <p class="col-6 mb-1">ПН 16.09.19</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>ФИО:</b></p>
+                                            <p class="col-6 mb-1">Юрков Г.Ю.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Телефон:</b></p>
+                                            <p class="col-6 mb-1">89500768815</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Животное:</b></p>
+                                            <p class="col-6 mb-1">Кошка</p>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <p class="col-6 mb-1"><b>Отзыв:</b></p>
+                                            <p class="card-text col-12">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Оценка:</b></p>
+                                            <p class="col-6 mb-1">4</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="top-btn d-flex flex-column align-items-center"  style="width: 19rem;">
+                                        <a href="#" class="btn btn-light col-6">См. больше</a>
+                                    </div>
+                                </div>
+                                <div class="card loginpass my-3 py-2 d-flex flex-column align-items-start justify-content-start" style="width: 19rem;">
+                                    <div class="card-body py-0">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Дата:</b></p>
+                                            <p class="col-6 mb-1">ПН 16.09.19</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>ФИО:</b></p>
+                                            <p class="col-6 mb-1">Юрков Г.Ю.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Телефон:</b></p>
+                                            <p class="col-6 mb-1">89500768815</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Животное:</b></p>
+                                            <p class="col-6 mb-1">Кошка</p>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <p class="col-6 mb-1"><b>Отзыв:</b></p>
+                                            <p class="card-text col-12">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Оценка:</b></p>
+                                            <p class="col-6 mb-1">4</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="top-btn d-flex flex-column align-items-center"  style="width: 19rem;">
+                                        <a href="#" class="btn btn-light col-6">См. больше</a>
+                                    </div>
+                                </div>
+                                <div class="card loginpass my-3 py-2 d-flex flex-column align-items-start justify-content-start" style="width: 19rem;">
+                                    <div class="card-body py-0">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Дата:</b></p>
+                                            <p class="col-6 mb-1">ПН 16.09.19</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>ФИО:</b></p>
+                                            <p class="col-6 mb-1">Юрков Г.Ю.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Телефон:</b></p>
+                                            <p class="col-6 mb-1">89500768815</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Животное:</b></p>
+                                            <p class="col-6 mb-1">Кошка</p>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <p class="col-6 mb-1"><b>Отзыв:</b></p>
+                                            <p class="card-text col-12">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Оценка:</b></p>
+                                            <p class="col-6 mb-1">4</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="top-btn d-flex flex-column align-items-center"  style="width: 19rem;">
+                                        <a href="#" class="btn btn-light col-6">См. больше</a>
+                                    </div>
+                                </div>
+                                <div class="card loginpass my-3 py-2 d-flex flex-column align-items-start justify-content-start" style="width: 19rem;">
+                                    <div class="card-body py-0">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Дата:</b></p>
+                                            <p class="col-6 mb-1">ПН 16.09.19</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>ФИО:</b></p>
+                                            <p class="col-6 mb-1">Юрков Г.Ю.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Телефон:</b></p>
+                                            <p class="col-6 mb-1">89500768815</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Животное:</b></p>
+                                            <p class="col-6 mb-1">Кошка</p>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <p class="col-6 mb-1"><b>Отзыв:</b></p>
+                                            <p class="card-text col-12">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="col-6 mb-1"><b>Оценка:</b></p>
+                                            <p class="col-6 mb-1">4</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="top-btn d-flex flex-column align-items-center"  style="width: 19rem;">
+                                        <a href="#" class="btn btn-light col-6">См. больше</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <footer>
+            <div class="cont cont-footer d-flex flex-wrap justify-content-around py-2 mt-5">
+                <div class="block d-flex flex-column pt-2">
+                    <div class="headline"><h5>Меню</h5></div>
+                    <div class="block1">
+                        <div class="pt-2"><p class="mb-0 py-1"><a href="index.html">Главная</a></p></div>
+                        <div><p class="mb-0 py-1"><a href="conditions.html">Условия</a></p></div>
+                        <div><p class="mb-0 py-1"><a href="prices.html">Цены</a></p></div>
+                        <div><p class="mb-0 py-1"><a href="workers.html">Сотрудники</a></p></div>
+                        <div><p class="mb-0 py-1"><a href="reviews.html">Отзывы</a></p></div>
+                        <div><p class="mb-0 py-1"><a href="contacts.html">Контакты</a></p></div>
+                    </div>
+                </div>
+                <div class="block d-flex flex-column pt-2">
+                    <div class="headline"><h5>Режим работы</h5></div>
+                    <div class="block1">
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <img src="img/clock.svg" width="20" height="20" alt="">
+                            <p class="mb-0">пн-пт: 14:00-22:00<br>пн-пт: 11:00-22:00</p>
+                        </div>
+                        <br>
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <img src="img/pin.svg" width="20" height="20" alt="">
+                            <p class="mb-0">Ул. Ленина, 11<br>Иркутск, Россия</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="block d-flex flex-column pt-2">
+                    <div class="headline"><h5>Контакты</h5></div>
+                    <div class="block1">
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <img src="img/instagram.svg" width="20" height="20" alt="">
+                            <p class="mb-0"><a href=#>ChillForAnimals</a></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <img src="img/facebook.svg" width="20" height="20" alt="">
+                            <p class="mb-0"><a href=#>ChillForAnimals</a></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <img src="img/twitter.svg" width="20" height="20" alt="">
+                            <p class="mb-0"><a href=#>ChillForAnimals</a></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <img src="img/phone.svg" width="20" height="20" alt="">
+                            <p class="mb-0"><a href=#>8-950-076-88-14</a></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center py-2">
+                            <img src="img/email.svg" width="20" height="20" alt="">
+                            <p class="mb-0"><a href=#>chillFA@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>

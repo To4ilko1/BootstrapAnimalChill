@@ -69,8 +69,8 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Главная</a></li>
                     <li class="breadcrumb-item"><a href="b-animalsinhotel.html">Личный кабинет</a></li>
-                    <li class="breadcrumb-item"><a href="b-myprofile.html">Мой профиль</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Редактировать мой профиль</li>
+                    <li class="breadcrumb-item"><a href="b-reviews.html">Отзывы</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Карточка отзыва</li>
                 </ol>
             </nav>
             <div class="row d-flex flex-row justify-content-center col-12">
@@ -82,50 +82,77 @@
                         <a href="b-orders.html" class="btn btn-light border text-uppercase">Заказы</a>
                         <a href="b-hotelrooms.html" class="btn btn-light border text-uppercase">Номера отеля</a>
                         <a href="b-chat.html" class="btn btn-light border text-uppercase">Общение</a>
-                        <a href="b-myprofile.html" class="btn btn-primary text-uppercase">Мой профиль</a>
+                        <a href="b-myprofile.html" class="btn btn-light text-uppercase">Мой профиль</a>
                         <a href="b-editposition.html" class="btn btn-light text-uppercase">Ред. должностей</a>
                         <a href="b-finance.html" class="btn btn-light text-uppercase">Финансы</a>
-                        <a href="b-reviews.html" class="btn btn-light text-uppercase">Отзывы</a>
+                        <a href="b-reviews.html" class="btn btn-primary text-uppercase">Отзывы</a>
                     </div>
                 </div>
                 <div class="second-column col-9 px-0 d-flex flex-row flex-wrap justify-content-center">
-                    <h1 class="text-center py-3">Мой профиль</h1>
-                    <div class="card col-10 d-flex flex-row py-3">
-                        <div class="col-5 px-0 d-flex flex-row">
-                            <img src="img/user-1.jpg" width="250" height="250" alt="">
-                            <div class="edit-btn d-flex flex-column justify-content-between">
-                                <button type="button" class="btn btn-light p-2">
-                                    <img src="img/pen.svg" width="30" height="30">
-                                </button>
-                                <button type="button" class="btn btn-light p-2">
-                                    <img src="img/delete-button.svg" width="30" height="30">
-                                </button>
-                            </div>
+                    <h1 class="text-center py-3 col-12">Отзыв</h1>
+                    <div class="card my-3 mx-0 pb-3 d-flex flex-row align-items-start flex-wrap col-10">
+                        <h5 class="card-title text-center col-12 py-3">ID 0001</h5>
+                        <div class="contetnfirst d-flex flex-row flex-wrap justify-content-center col-5">
+                            <img src="img/pet-1.jpg" class="card-img-left col-9 py-3 px-0" alt="Животное">
                         </div>
-                        <div class="col-7 mt-4 d-flex flex-column">
-                            <div class="d-flex flex-row my-2">
-                                <label class="col-4" for="InputID">ФИО:</label>
-                                <input type="text" class="form-control col-8" id="InputID">
+                        <div class="card-body col-7 d-flex flex-row flex-wrap px-0">
+                            <div class="d-flex flex-row justify-content-start align-items-center col-12 pl-0">
+                                <p class="col-5"><b>ФИО:</b></p>
+                                <p class="pl-3">Георгий Юрков</p>
                             </div>
-                            <div class="d-flex flex-row my-2">
-                                <label class="col-4" for="InputID">Телефон:</label>
-                                <input type="text" class="form-control col-8" id="InputID">
+                            <div class="d-flex flex-row justify-content-start align-items-center col-12 pl-0">
+                                <p class="col-5"><b>Телефон:</b></p>
+                                <p class="pl-3">880005553535</p>
+                            </div>
+                            <div class="d-flex flex-row justify-content-start align-items-center col-12 pl-0">
+                                <p class="col-5"><b>Дата:</b></p>
+                                <p class="pl-3">20.09.20</p>
+                            </div>
+                            <div class="d-flex flex-row justify-content-start align-items-center col-12 pl-0">
+                                <p class="col-5"><b>Тип животного:</b></p>
+                                <p class="pl-3">Кошка</p>
                             </div>
                             
-                            <div class="d-flex flex-row my-2">
-                                <label class="col-4" for="InputID">E-mail:</label>
-                                <input type="text" class="form-control col-8" id="InputID">
+                            <div class="d-flex flex-column col-12">
+                                <p><b>Текст отзыва:</b></p>
+                                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
-                            <div class="d-flex flex-row my-2">
-                                <label class="col-4" for="InputID">Дата рождения:</label>
-                                <input type="text" class="form-control col-8" id="InputID">
+                            <div class="d-flex flex-row justify-content-start align-items-center col-12 pl-0">
+                                <p class="col-5"><b>Статус:</b></p>
+                                <p class="pl-3">Опубликован</p>
                             </div>
-                            <div class="edit-btn d-flex flex-row justify-content-between">
-                                <a href="b-myprofile.html" class="btn btn-light align-self-center my-3 col-4">Отмена</a>
-                                <a href="b-myprofile.html" class="btn btn-light align-self-center my-3 col-4">Сохранить</a>
+                            <div class="d-flex flex-row justify-content-start align-items-center col-12 pl-0">
+                                <p class="col-5"><b>Оценка:</b></p>
+                                <p class="pl-3">5 звезд</p>
                             </div>
                         </div>
+                        <div class="d-flex flex-row justify-content-end col-12  my-1">
+                            <a href="b-reviewedit.html" class="btn btn-light col-3">Редактировать</a>
+                        </div>
                     </div>
+                    
+                    <h3 class="my-3">Комментарии к отзыву</h3>
+                    <div class="card loginpass my-3 py-2 d-flex flex-column align-items-start justify-content-start col-10">
+                        <div class="d-flex flex-row col-12">
+                            <p><b>Пользователь:</b></p>
+                            <p class="ml-3"><a href="b-cardclient.html">princesss_97</a></p>
+                        </div>
+                        <div class="d-flex flex-column col-12">
+                            <p><b>Комментарий:</b></p>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card loginpass my-3 py-2 d-flex flex-column align-items-start justify-content-start col-10">
+                        <div class="d-flex flex-row col-12">
+                            <p><b>Пользователь:</b></p>
+                            <p class="ml-3"><a href="b-cardclient.html">gogganesko</a></p>
+                        </div>
+                        <div class="d-flex flex-column col-12">
+                            <p><b>Комментарий:</b></p>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         

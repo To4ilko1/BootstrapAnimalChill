@@ -72,7 +72,7 @@
                     <li class="breadcrumb-item active" aria-current="page">Клиенты</li>
                 </ol>
             </nav>
-            <div class="row d-flex flex-row justify-content-center col-12">
+            <div class="row d-flex flex-row justify-content-center col-12 pb-4 mx-0">
                 <div class="first-column col-3">
                     <div class="btn-group-vertical col-12 mt-5">
                         <a href="b-animalsinhotel.html" class="btn btn-light text-uppercase">Животные в отеле</a>
@@ -92,49 +92,81 @@
                     <div class="top-btns d-flex flex-row flex-wrap justify-content-start">
                         <a href="b-cardclientedit.html" class="btn btn-light mr-5">Добавить клиента</a>
                         <div class="accordion " id="accordionFilter">
-                            <div class="card">
+                            <div class="card ">
                                 <div class="card-header p-0" id="headingOne">
-                                    <h5 style="background-color: rgb(225, 255, 176); " class="mb-0">
-                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <h5 style="background-color: rgb(225, 255, 176);" class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                             Фильтрация и поиск
                                         </button>
                                     </h5>
                                 </div>
                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFilter">
-                                    <div class="card-body">
-                                        <form class="search-form d-flex flex-row flex-wrap col-6 justify-content-center py-4">
-                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                    <div class="d-flex flex-row justify-content-between align-items-start px-3">
+                                        <form class="d-flex flex-row flex-wrap col-6 py-3 px-0">
+                                            <h5 class="col-12 py-2">Фильтрация по:</h5>
+                                            <div class="form-check d-flex flex-row col-12 align-items-center py-2 px-0">
                                                 <label class="col-4" for="InputID">ID:</label>
-                                                <input type="text" class="form-control col-8" id="InputID">
+                                                <input type="text" class="form-control col-6" id="InputID">
                                             </div>
-                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                            <div class="form-check d-flex flex-row col-12 align-items-center py-2 px-0">
                                                 <label class="col-4" for="InputFIO">ФИО:</label>
-                                                <input type="text" class="form-control col-8" id="InputFIO">
+                                                <input type="text" class="form-control col-6" id="InputFIO">
                                             </div>
-                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                            <div class="form-check d-flex flex-row col-12 align-items-center py-2 px-0">
                                                 <label class="col-4" for="InputPhone">Телефон:</label>
-                                                <input type="tel" class="form-control col-8" id="InputPhone">
+                                                <input type="tel" class="form-control col-6" id="InputPhone">
                                             </div>
-                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                            <div class="form-check d-flex flex-row col-12 align-items-center py-2 px-0">
                                                 <label class="col-4" for="SelectPosition">Животное:</label>
-                                                <select class="form-control col-8" id="SelectPosition">
+                                                <select class="form-control col-6" id="SelectPosition">
                                                     <option>Кошка</option>
+                                                    <option>Собака</option>
                                                 </select>
                                             </div>
-                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                            <div class="form-check d-flex flex-row col-12 align-items-center py-2 px-0">
                                                 <label class="col-4" for="SelectPosition">Тип номера:</label>
-                                                <select class="form-control col-8" id="SelectPosition">
+                                                <select class="form-control col-6" id="SelectPosition">
                                                     <option>Эконом</option>
+                                                    <option>Люкс</option>
                                                 </select>
                                             </div>
-                                            <p>Сроки пребывания с по</p>
-                                            <div class="form-group d-flex flex-row justify-content-between col-12">
-                                                <label class="col-4" for="SelectShow">Показать по:</label>
-                                                <select class="form-control col-8" id="SelectShow">
-                                                    <option>5</option>
+                                            <div class="form-check d-flex flex-row flex-wrap justify-content-start col-11 align-items-center py-2 px-0 mr-0">
+                                                <label class="col-9" for="InputPhone">Сроки пребывания:</label>
+                                                <input type="date" class="form-control col-5 mx-3" id="InputDateStart">
+                                                <input type="date" class="form-control col-5" id="InputDateStart">
+                                            </div>
+                                            <div class="form-check d-flex flex-row col-12 align-items-center py-2 px-0">
+                                                <label class="col-4" for="SelectPosition">Показать по:</label>
+                                                <select class="form-control col-6" id="SelectPosition">
+                                                    <option>6</option>
+                                                    <option>12</option>
                                                 </select>
                                             </div>
-                                            <button type="submit" class="btn btn-light col-2">ОК</button>
+                                            <div class="d-flex flex-row col-12 justify-content-center my-2">
+                                                <a href="#" class="btn btn-light col-5">Найти</a>
+                                            </div>
+                                        </form>
+                                        <form class="d-flex flex-row flex-wrap col-5 py-3 px-0">
+                                            <h5 class="col-12 py-2 px-0">Сортировать по:</h5>
+                                            <div class="form-check d-flex flex-row col-12 align-items-center py-2">
+                                                <input class="form-check-input" type="radio" name="Radios" id="Radios1" value="option1" checked>
+                                                <label class="form-check-label col-4" for="Radios1">ID:</label>
+                                                <select class="form-control col-7" id="SelectShow">
+                                                    <option>По возрастанию</option>
+                                                    <option>По убыванию</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-check d-flex flex-row col-12 align-items-center py-2">
+                                                <input class="form-check-input" type="radio" name="Radios" id="Radios2" value="option2">
+                                                <label class="form-check-label col-4" for="Radios2">ФИО:</label>
+                                                <select class="form-control col-7" id="SelectShow">
+                                                    <option>По возрастанию</option>
+                                                    <option>По убыванию</option>
+                                                </select>
+                                            </div>
+                                            <div class="d-flex flex-row col-12 justify-content-center my-2">
+                                                <a href="#" class="btn btn-light col-5">ОК</a>
+                                            </div>
                                         </form>
                                     </div>
                                 </div>
@@ -260,23 +292,23 @@
                         </div>
                     </div>
                 </div>
+                <nav aria-label="Page navigation" class="pt-4">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Предыдущая</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                        <a class="page-link" href="#">Следующая</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Предыдущая</a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                    <a class="page-link" href="#">Следующая</a>
-                    </li>
-                </ul>
-            </nav>
-        
+        </section>
         <footer>
-            <div class="cont cont-footer d-flex flex-wrap justify-content-around mt-5">
+            <div class="cont cont-footer d-flex flex-wrap justify-content-around py-2">
                 <div class="block d-flex flex-column pt-2">
                     <div class="headline"><h5>Меню</h5></div>
                     <div class="block1">
@@ -330,7 +362,7 @@
                 </div>
             </div>
         </footer>
-    </section>
+    
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

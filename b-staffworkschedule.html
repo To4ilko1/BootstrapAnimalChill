@@ -73,7 +73,7 @@
                     <li class="breadcrumb-item active" aria-current="page">График работы сотрудников</li>
                 </ol>
             </nav>
-            <div class="row d-flex flex-row justify-content-center col-12">
+            <div class="row d-flex flex-row justify-content-center col-12 pb-4 mx-0">
                 <div class="first-column col-3">
                     <div class="btn-group-vertical col-12 mt-5">
                         <a href="b-animalsinhotel.html" class="btn btn-light text-uppercase">Животные в отеле</a>
@@ -90,7 +90,7 @@
                 </div>
                 <div class="second-column col-9 px-0 d-flex flex-row flex-wrap justify-content-center">
                     <h1 class="text-center py-3 col-12">График работы сотрудников</h1>
-                    <div class="top-btns d-flex flex-row justify-content-center pb-4 col-12">
+                    <div class="top-btns d-flex flex-row flex-wrap justify-content-center pb-4 col-12">
                         <a href="b-staffworkscheduleedit.html" class="btn btn-light mr-5">Редактировать график работы</a>
                         <div class="accordion " id="accordionFilter">
                             <div class="card ">
@@ -102,44 +102,39 @@
                                     </h5>
                                 </div>
                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFilter">
-                                    <div class="card-body d-flex flex-row justify-content-between">
-                                        <form class="search-form d-flex flex-row flex-wrap col-6 justify-content-center py-4">
-                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                    <div class="d-flex flex-row justify-content-between align-items-start px-3">
+                                        <form class="d-flex flex-row flex-wrap col-12 py-3 px-0">
+                                            <h5 class="col-12 py-2">Фильтрация по:</h5>
+                                            <div class="form-check d-flex flex-row col-6 align-items-center py-2 px-0">
                                                 <label class="col-4" for="InputID">ID:</label>
-                                                <input type="text" class="form-control col-8" id="InputID">
+                                                <input type="text" class="form-control col-6" id="InputID">
                                             </div>
-                                            <div class="form-group d-flex flex-row justify-content-between col-12">
-                                                <label class="col-4" for="InputFIO">ФИО:</label>
-                                                <input type="text" class="form-control col-8" id="InputFIO">
-                                            </div>
-                                            <div class="form-group d-flex flex-row justify-content-between col-12">
-                                                <label class="col-4" for="InputPhone">Телефон:</label>
-                                                <input type="tel" class="form-control col-8" id="InputPhone">
-                                            </div>
-                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                            <div class="form-check d-flex flex-row col-6 align-items-center py-2 px-0">
                                                 <label class="col-4" for="SelectPosition">Должность:</label>
-                                                <select class="form-control col-8" id="SelectPosition">
+                                                <select class="form-control col-6" id="SelectPosition">
                                                     <option>Администратор</option>
+                                                    <option>Менеджер</option>
                                                 </select>
                                             </div>
-                                            <div class="form-group d-flex flex-row justify-content-between col-12">
-                                                <label class="col-4" for="SelectShow">Показать по:</label>
-                                                <select class="form-control col-8" id="SelectShow">
-                                                    <option>5</option>
-                                                </select>
-                                            </div>
-                                            <button type="submit" class="btn btn-light col-2">ОК</button>
-                                        </form>
-                                        <form class="search-form d-flex flex-row flex-wrap col-4 justify-content-center py-4">
-                                            <div class="form-group d-flex flex-row justify-content-between col-12">
-                                                <label class="col-4" for="InputID">ID:</label>
-                                                <input type="text" class="form-control col-8" id="InputID">
-                                            </div>
-                                            <div class="form-group d-flex flex-row justify-content-between col-12">
+                                            <div class="form-check d-flex flex-row col-6 align-items-center py-2 px-0">
                                                 <label class="col-4" for="InputFIO">ФИО:</label>
-                                                <input type="text" class="form-control col-8" id="InputFIO">
+                                                <input type="text" class="form-control col-6" id="InputFIO">
                                             </div>
-                                            <button type="submit" class="btn btn-light col-2">ОК</button>
+                                            <div class="form-check d-flex flex-row col-6 align-items-center py-2 px-0">
+                                                <label class="col-4" for="InputPhone">E-mail:</label>
+                                                <input type="tel" class="form-control col-6" id="InputPhone">
+                                            </div>
+                                            <div class="form-check d-flex flex-row col-6 align-items-center py-2 px-0">
+                                                <label class="col-4" for="InputPhone">Телефон:</label>
+                                                <input type="tel" class="form-control col-6" id="InputPhone">
+                                            </div>
+                                            <div class="form-check d-flex flex-row col-6 align-items-center py-2 px-0">
+                                                <label class="col-4" for="InputPhone">Адрес:</label>
+                                                <input type="tel" class="form-control col-6" id="InputPhone">
+                                            </div>
+                                            <div class="d-flex flex-row col-12 justify-content-center my-2">
+                                                <a href="#" class="btn btn-light col-2">Найти</a>
+                                            </div>
                                         </form>
                                     </div>
                                 </div>
@@ -603,9 +598,9 @@
                     </table>
                 </div>
             </div>
-        
+        </section>
         <footer>
-            <div class="cont cont-footer d-flex flex-wrap justify-content-around py-2 mt-5">
+            <div class="cont cont-footer d-flex flex-wrap justify-content-around py-2">
                 <div class="block d-flex flex-column pt-2">
                     <div class="headline"><h5>Меню</h5></div>
                     <div class="block1">
@@ -659,7 +654,7 @@
                 </div>
             </div>
         </footer>
-    </section>
+    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

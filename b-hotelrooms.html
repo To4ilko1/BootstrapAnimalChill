@@ -72,7 +72,7 @@
                     <li class="breadcrumb-item active" aria-current="page">Номера отеля</li>
                 </ol>
             </nav>
-            <div class="row d-flex flex-row justify-content-center col-12">
+            <div class="row d-flex flex-row justify-content-center col-12 pb-4 mx-0">
                 <div class="first-column col-3">
                     <div class="btn-group-vertical col-12 mt-5">
                         <a href="b-animalsinhotel.html" class="btn btn-light text-uppercase">Животные в отеле</a>
@@ -102,44 +102,105 @@
                                     </h5>
                                 </div>
                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFilter">
-                                    <div class="card-body d-flex flex-row justify-content-between">
-                                        <form class="search-form d-flex flex-row flex-wrap col-6 justify-content-center py-4">
-                                            <div class="form-group d-flex flex-row justify-content-between col-12">
-                                                <label class="col-4" for="InputID">ID:</label>
-                                                <input type="text" class="form-control col-8" id="InputID">
+                                    <div class="d-flex flex-row justify-content-between align-items-start px-3">
+                                        <form class="d-flex flex-row flex-wrap col-7 py-3 px-0">
+                                            <h5 class="col-12 py-2">Фильтрация по:</h5>
+                                            <div class="form-check d-flex flex-row col-12 align-items-center py-2 px-0">
+                                                <label class="col-2" for="InputID">ID:</label>
+                                                <input type="text" class="form-control col-2 mr-3" id="InputID">
+                                                <label class="col-3" for="InputPhone">Комната №:</label>
+                                                <input type="tel" class="form-control col-2" id="InputPhone">
                                             </div>
-                                            <div class="form-group d-flex flex-row justify-content-between col-12">
-                                                <label class="col-4" for="InputFIO">ФИО:</label>
-                                                <input type="text" class="form-control col-8" id="InputFIO">
-                                            </div>
-                                            <div class="form-group d-flex flex-row justify-content-between col-12">
-                                                <label class="col-4" for="InputPhone">Телефон:</label>
-                                                <input type="tel" class="form-control col-8" id="InputPhone">
-                                            </div>
-                                            <div class="form-group d-flex flex-row justify-content-between col-12">
-                                                <label class="col-4" for="SelectPosition">Должность:</label>
-                                                <select class="form-control col-8" id="SelectPosition">
-                                                    <option>Администратор</option>
+                                            <!-- <div class="form-check d-flex flex-row col-12 align-items-center py-2 px-0">
+                                                <label class="col-6" for="InputPhone">Комната №:</label>
+                                                <input type="tel" class="form-control col-2" id="InputPhone">
+                                            </div> -->
+                                            <div class="form-check d-flex flex-row col-12 align-items-center py-2 px-0">
+                                                <label class="col-5" for="SelectPosition">Тип животного:</label>
+                                                <select class="form-control col-5" id="SelectPosition">
+                                                    <option>Кошка</option>
+                                                    <option>Собака</option>
                                                 </select>
                                             </div>
-                                            <div class="form-group d-flex flex-row justify-content-between col-12">
-                                                <label class="col-4" for="SelectShow">Показать по:</label>
-                                                <select class="form-control col-8" id="SelectShow">
-                                                    <option>5</option>
+                                            <div class="form-check d-flex flex-row col-12 align-items-center py-2 px-0">
+                                                <label class="col-5" for="InputFIO">Кличка:</label>
+                                                <input type="text" class="form-control col-5" id="InputFIO">
+                                            </div>
+                                            <div class="form-check d-flex flex-row col-12 align-items-center py-2 px-0">
+                                                <label class="col-5" for="InputPhone">Телефон хозяина:</label>
+                                                <input type="tel" class="form-control col-5" id="InputPhone">
+                                            </div>
+                                            <div class="form-check d-flex flex-row col-12 align-items-center py-2 px-0">
+                                                <label class="col-5" for="SelectPosition">Тип номера:</label>
+                                                <select class="form-control col-5" id="SelectPosition">
+                                                    <option>Стандарт</option>
+                                                    <option>Люкс</option>
                                                 </select>
                                             </div>
-                                            <button type="submit" class="btn btn-light col-2">ОК</button>
+                                            <div class="form-check d-flex flex-row col-12 align-items-center py-2 px-0">
+                                                <label class="col-5" for="SelectPosition">Кол-во мест:</label>
+                                                <select class="form-control col-2" id="SelectPosition">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                                
+                                            </div>
+                                            <div class="form-check d-flex flex-row col-12 align-items-center py-2 px-0">
+                                                <label class="col-5" for="SelectPosition">Свободные места:</label>
+                                                    <select class="form-control col-2" id="SelectPosition">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                </div>
+                                            <div class="form-check d-flex flex-row flex-wrap justify-content-between col-10 align-items-center py-2 px-0 mr-0">
+                                                <label class="col-12" for="InputPhone">Сроки пребывания:</label>
+                                                <input type="date" class="form-control col-5 ml-3" id="InputDateStart">
+                                                <input type="date" class="form-control col-5" id="InputDateStart">
+                                            </div>
+                                            <div class="form-check d-flex flex-row col-10 justify-content-between align-items-center py-2 px-0">
+                                                <div class="d-flex flex-row col-8 px-0">
+                                                    <label class="col-7" for="StartCost">По стоимости от:</label>
+                                                    <input type="tel" class="form-control col-4" id="StartCost">
+                                                </div>
+                                                <div class="d-flex flex-row col-4 px-0 justify-content-end">
+                                                    <label for="FinalCost" class="col-5">До:</label>
+                                                    <input type="tel" class="form-control col-7 ml-2" id="FinalCost">
+                                                </div>
+                                            </div>
+                                             <div class="form-check d-flex flex-row col-12 align-items-center py-2 px-0">
+                                                <label class="col-5" for="SelectPosition">Статус:</label>
+                                                <select class="form-control col-5" id="SelectPosition">
+                                                    <option>Отображается</option>
+                                                    <option>Не отображается</option>
+                                                </select>
+                                            </div>
+                                            <div class="d-flex flex-row col-12 justify-content-center my-2">
+                                                <a href="#" class="btn btn-light col-6">Найти</a>
+                                            </div>
                                         </form>
-                                        <form class="search-form d-flex flex-row flex-wrap col-4 justify-content-center py-4">
-                                            <div class="form-group d-flex flex-row justify-content-between col-12">
-                                                <label class="col-4" for="InputID">ID:</label>
-                                                <input type="text" class="form-control col-8" id="InputID">
+                                        <form class="d-flex flex-row flex-wrap col-5 py-3 px-0">
+                                            <h5 class="col-12 py-2 px-0">Сортировать по:</h5>
+                                            <div class="form-check d-flex flex-row col-12 align-items-center py-2">
+                                                <input class="form-check-input" type="radio" name="Radios" id="Radios1" value="option1" checked>
+                                                <label class="form-check-label col-4" for="Radios1">ID:</label>
+                                                <select class="form-control col-7" id="SelectShow">
+                                                    <option>По возрастанию</option>
+                                                    <option>По убыванию</option>
+                                                </select>
                                             </div>
-                                            <div class="form-group d-flex flex-row justify-content-between col-12">
-                                                <label class="col-4" for="InputFIO">ФИО:</label>
-                                                <input type="text" class="form-control col-8" id="InputFIO">
+                                            <div class="form-check d-flex flex-row col-12 align-items-center py-2">
+                                                <input class="form-check-input" type="radio" name="Radios" id="Radios2" value="option2">
+                                                <label class="form-check-label col-4" for="Radios2">Номер комнаты:</label>
+                                                <select class="form-control col-7" id="SelectShow">
+                                                    <option>По возрастанию</option>
+                                                    <option>По убыванию</option>
+                                                </select>
                                             </div>
-                                            <button type="submit" class="btn btn-light col-2">ОК</button>
+                                            <div class="d-flex flex-row col-12 justify-content-center my-2">
+                                                <a href="#" class="btn btn-light col-5">ОК</a>
+                                            </div>
                                         </form>
                                     </div>
                                 </div>
@@ -235,7 +296,7 @@
                         </div>
                     </div>
                 </div>
-                <nav aria-label="Page navigation example">
+                <nav aria-label="Page navigation" class="pt-4">
                     <ul class="pagination justify-content-center">
                         <li class="page-item disabled">
                         <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Предыдущая</a>

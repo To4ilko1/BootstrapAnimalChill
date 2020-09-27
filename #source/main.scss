@@ -114,6 +114,14 @@ body{
         display: inline-block;
         padding: .375rem .75rem;
     }
+    #topNubex {
+        position: fixed;
+        right: 45px;
+        bottom: 45px;
+       }
+    #topNubex:hover{
+        cursor: pointer;
+    }
     /*стили футер*/
     footer {
         background-color: #E1FFB0;

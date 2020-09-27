@@ -144,6 +144,16 @@ body .btn > .icon {
   padding: .375rem .75rem;
 }
 
+body #topNubex {
+  position: fixed;
+  right: 45px;
+  bottom: 45px;
+}
+
+body #topNubex:hover {
+  cursor: pointer;
+}
+
 body footer {
   background-color: #E1FFB0;
 }

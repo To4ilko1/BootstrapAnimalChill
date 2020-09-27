@@ -15,31 +15,31 @@
                     <p><a href="index.html">Отель для животных</a></p>
                 </div> 
                 <div class="phone d-flex flex-row align-items-center">
-                        <img src="img/phone.png" alt="">
-                        <p class="pl-3 mb-0">88005553535</p>
+                    <img src="img/phone.png" alt="">
+                    <p class="pl-3 mb-0">88005553535</p>
                 </div>
                 <div class="clock d-flex flex-row align-items-center">
-                        <img src="img/clock.png" alt="">
-                        <p class="pl-3 mb-0">пн-пт: 14:00-22:00<br>пн-пт: 11:00-22:00</p>
+                    <img src="img/clock.png" alt="">
+                    <p class="pl-3 mb-0">пн-пт: 14:00-22:00<br>пн-пт: 11:00-22:00</p>
                 </div>
                 <div class="location d-flex flex-row align-items-center">
-                        <img src="img/location.png" alt="">
-                        <p class="pl-3 mb-0">Ул. Ленина, д.11</p>
+                    <img src="img/location.png" alt="">
+                    <p class="pl-3 mb-0">Ул. Ленина, д.11</p>
                 </div>
                 <div class="contacts d-flex flex-row">
-                        <div class="social instagram d-flex flex-row align-items-center">
-                            <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-                        </div>
-                        <div class="social facebook d-flex flex-row align-items-center mx-3">
-                            <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-                        </div>
-                        <div class="social vk d-flex flex-row align-items-center">
-                            <a href="#" target="_blank"><i class="fa fa-vk fa-2x"></i></a>
-                        </div>
+                    <div class="social instagram d-flex flex-row align-items-center">
+                        <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                    </div>
+                    <div class="social facebook d-flex flex-row align-items-center mx-3">
+                        <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                    </div>
+                    <div class="social vk d-flex flex-row align-items-center">
+                        <a href="#" target="_blank"><i class="fa fa-vk fa-2x"></i></a>
+                    </div>
                 </div>
                 <div class="login d-flex flex-column">
-                        <p class="mt-3 mb-1"><a class="link-logout" href="b-myprofile.html">Точилова Елизавета</a></p>
-                        <a href="#" class="btn btn-light">Выйти</a>
+                    <p class="mt-3 mb-1"><a class="link-logout" href="b-myprofile.html">Точилова Елизавета</a></p>
+                    <a href="#" class="btn btn-light">Выйти</a>
                 </div>
             </header>
             <ul class="nav justify-content-center navigation-menu">
@@ -936,9 +936,7 @@
                     </div>
                 </div>
             </div>
-                    </div>
-                </div>
-            </div>
+            <div id="topNubex"><img src="img/pointer-inside-a-circle.svg" width="40px" height="40px" /></div>
         </section>
         <footer>
             <div class="cont cont-footer d-flex flex-wrap justify-content-around py-2">
@@ -995,15 +993,23 @@
                 </div>
             </div>
         </footer>
-        <script>
-            $(function () {
-                $('#datetimepicker1').datetimepicker(
-                    {format: 'HH:mm', locale: 'ru'}
-                );
-            });
-        </script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(function() {
+        $(window).scroll(function() {
+        if($(this).scrollTop() != 0) {
+        $('#topNubex').fadeIn();
+        } else {
+        $('#topNubex').fadeOut();
+        }
+        });
+        $('#topNubex').click(function() {
+        $('body,html').animate({scrollTop:0},700);
+        });
+        });
+        </script>
     </body>
 </html>

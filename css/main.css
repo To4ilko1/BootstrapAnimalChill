@@ -9,6 +9,10 @@ body {
   /*стили футер*/
 }
 
+body .big-txt {
+  font-size: 1.2em;
+}
+
 body .loginpass {
   background-color: #E1FFB0;
 }

@@ -10,6 +10,9 @@ body{
     background-color: $fon;
     color: $text-color;
     font-size: 0.9em;
+    .big-txt{
+        font-size:1.2em;
+    }
     .loginpass{
         background-color: #E1FFB0;
     }

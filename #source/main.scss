@@ -5,6 +5,9 @@ $fon: #F6FFDE;
 $text-color: #1F2326;
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 body{
+    .fortable{
+        max-width: 950px;
+    }
     .htooltip span { /* Внешний вид нашего тултипа */
         background-color: rgba(0,0,0, 0.8);
         border-radius: 15px 15px 0px 15px;

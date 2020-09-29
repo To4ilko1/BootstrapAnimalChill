@@ -9,7 +9,7 @@
     </head>
     <body>
         <section class="b-clients">
-            <header class="b-header d-flex flex-row justify-content-around">
+            <header class="b-header d-flex flex-row flex-wrap justify-content-around">
                 <div class="logo d-flex flex-column align-items-center">
                     <img src="img/logo_new.svg" width="70" height="70" alt="AnimalsChill" class="logo">
                     <p><a href="index.html">Отель для животных</a></p>
@@ -73,6 +73,23 @@
                 </ol>
             </nav>
             <div class="row d-flex flex-row justify-content-center col-12 pb-4 mx-0">
+                <div class="first-column-mobile col-12">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Меню
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a href="b-animalsinhotel.html" class="dropdown-item">Животные в отеле</a>
+                        <a href="b-workers.html" class="dropdown-item border" style="background-color: rgba(153, 120, 67, 0.3);">Сотрудники</a>
+                        <a href="b-clients.html" class="dropdown-item">Клиенты</a>
+                        <a href="b-orders.html" class="dropdown-item">Заказы</a>
+                        <a href="b-hotelrooms.html" class="dropdown-item">Номера отеля</a>
+                        <a href="b-chat.html" class="dropdown-item">Общение</a>
+                        <a href="b-myprofile.html" class="dropdown-item">Мой профиль</a>
+                        <a href="b-editposition.html" class="dropdown-item">Ред. должностей</a>
+                        <a href="b-finance.html" class="dropdown-item">Финансы</a>
+                        <a href="b-reviews.html" class="dropdown-item">Отзывы</a>
+                      </div>
+                </div>
                 <div class="first-column col-3">
                     <div class="btn-group-vertical col-12 mt-5">
                         <a href="b-animalsinhotel.html" class="btn btn-light text-uppercase">Животные в отеле</a>
@@ -87,10 +104,10 @@
                         <a href="b-reviews.html" class="btn btn-light text-uppercase">Отзывы</a>
                     </div>
                 </div>
-                <div class="second-column col-9 px-0 d-flex flex-row flex-wrap justify-content-center">
+                <div class="second-column col-md-12 col-lg-9 px-0 d-flex flex-row flex-wrap justify-content-center">
                     <h1 class="text-center py-3 col-12">Клиенты</h1>
                     <div class="top-btns d-flex flex-row flex-wrap justify-content-start">
-                        <a href="b-cardclientedit.html" class="btn btn-light mr-5">Добавить клиента</a>
+                        <a href="b-cardclientedit.html" class="addsmth btn btn-light mr-5">Добавить клиента</a>
                         <div class="accordion " id="accordionFilter">
                             <div class="card ">
                                 <div class="card-header p-0" id="headingOne">
@@ -173,28 +190,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card my-3 mx-0 pb-3 d-flex flex-row flex-wrap col-10">
+                    <div class="card my-3 mx-0 pb-3 d-flex flex-row flex-wrap col-12 col-sm-10">
                         <h5 class="card-title text-center col-12 py-3">ID 0001</h5>
                         <div class="card-body d-flex flex-row flex-wrap col-12 px-0">
-                            <div class="d-flex flex-row justify-content-between col-6">
-                                <p class="col-3">ФИО:</p>
+                            <div class="d-flex flex-row justify-content-between col-12 col-md-6">
+                                <p class="col-4 col-md-3">ФИО:</p>
                                 <p class="col-9"><a href="#">Собаков Михаил Дмитриевич</a></p>
                             </div>
-                            <div class="d-flex flex-row justify-content-between col-6">
+                            <div class="d-flex flex-row justify-content-between col-12 col-md-6">
                                 <p class="col-4">Телефон:</p>
                                 <p class="col-8">89500768814</p>
                             </div>
-                            <div class="d-flex flex-row justify-content-between col-6">
-                                <p class="col-3">Адрес:</p>
+                            <div class="d-flex flex-row justify-content-between col-12 col-md-6">
+                                <p class="col-4 col-md-3">Адрес:</p>
                                 <p class="col-9">М/н Первомайский, д. 8</p>
                             </div>
-                            <div class="d-flex flex-row justify-content-between col-6">
+                            <div class="d-flex flex-row justify-content-between col-12 col-md-6">
                                 <p class="col-4">E-mail:</p>
                                 <p class="col-8">sobaka67@mail.ru</p>
                             </div>
-
-                            <div class="d-flex flex-column justify-content-between col-12">
-                                <p class="col-4">Информация о животном:</p>
+                            <div class="d-flex flex-column justify-content-between align-items-start col-12">
+                                <p class=" col-12 col-md-4">Информация о животном:</p>
                                 <table class="table col-12">
                                     <thead>
                                         <tr>
@@ -226,37 +242,38 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="d-flex flex-row justify-content-between col-9">
-                                <p class="col-5 my-2">Количество посещений:</p>
-                                <p class="col-7 my-2">7</p>
-                            </div>
-                            <div class="d-flex flex-row justify-content-between col-3">
-                                <a href="b-cardclient.html" class="btn btn-light">См. больше</a>
+                            <div class="d-flex flex-row flex-wrap justify-content-between col-12 pr-0">
+                                <div class="d-flex flex-row justify-content-start col-12 col-sm-7 col-md-9">
+                                    <p class="my-2">Количество посещений:</p>
+                                     <p class="my-2 ml-3">7</p>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center col-12 col-sm-5 col-md-3">
+                                    <a href="b-cardclient.html" class="btn btn-light">См. больше</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card my-3 mx-0 pb-3 d-flex flex-row flex-wrap col-10">
+                    <div class="card my-3 mx-0 pb-3 d-flex flex-row flex-wrap col-12 col-sm-10">
                         <h5 class="card-title text-center col-12 py-3">ID 0002</h5>
                         <div class="card-body d-flex flex-row flex-wrap col-12 px-0">
-                            <div class="d-flex flex-row justify-content-between col-6">
-                                <p class="col-3">ФИО:</p>
+                            <div class="d-flex flex-row justify-content-between col-12 col-md-6">
+                                <p class="col-4 col-md-3">ФИО:</p>
                                 <p class="col-9"><a href="#">Рыбкова Алина Владимировна</a></p>
                             </div>
-                            <div class="d-flex flex-row justify-content-between col-6">
+                            <div class="d-flex flex-row justify-content-between col-12 col-md-6">
                                 <p class="col-4">Телефон:</p>
                                 <p class="col-8">88005553535</p>
                             </div>
-                            <div class="d-flex flex-row justify-content-between col-6">
-                                <p class="col-3">Адрес:</p>
+                            <div class="d-flex flex-row justify-content-between col-12 col-md-6">
+                                <p class="col-4 col-md-3">Адрес:</p>
                                 <p class="col-9">М/н Юбилейный, д. 73а</p>
                             </div>
-                            <div class="d-flex flex-row justify-content-between col-6">
+                            <div class="d-flex flex-row justify-content-between col-12 col-md-6">
                                 <p class="col-4">E-mail:</p>
                                 <p class="col-8">alinkaMaLiNka87@gmail.com</p>
                             </div>
-
                             <div class="d-flex flex-column justify-content-between col-12">
-                                <p class="col-4">Информация о животном:</p>
+                                <p class=" col-12 col-md-4">Информация о животном:</p>
                                 <table class="table col-12">
                                     <thead>
                                         <tr>
@@ -282,12 +299,14 @@
                                     </tbody>
                                     </table>
                             </div>
-                            <div class="d-flex flex-row justify-content-between col-9">
-                                <p class="col-5 my-2">Количество посещений:</p>
-                                <p class="col-7 my-2">3</p>
-                            </div>
-                            <div class="d-flex flex-row justify-content-between col-3">
-                                <a href="#" class="btn btn-light">См. больше</a>
+                            <div class="d-flex flex-row flex-wrap justify-content-between col-12 pr-0">
+                                <div class="d-flex flex-row justify-content-start col-12 col-sm-7 col-md-9">
+                                    <p class="my-2">Количество посещений:</p>
+                                     <p class="my-2 ml-3">3</p>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center col-12 col-sm-5 col-md-3">
+                                    <a href="#" class="btn btn-light">См. больше</a>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -263,6 +263,9 @@ body .first-column-mobile {
 }
 
 @media (min-width: 0) and (max-width: 576.98px) {
+  body .colors {
+    width: 100% !important;
+  }
   body .edpos .card {
     width: 100% !important;
   }
@@ -313,6 +316,9 @@ body .first-column-mobile {
 
 @media (min-width: 576.98px) and (max-width: 767.98px) {
   body .edpos .card {
+    width: 49% !important;
+  }
+  body .colors {
     width: 49% !important;
   }
   body .row {

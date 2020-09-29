@@ -213,6 +213,9 @@ body{
         // .b-finance .b-header .location,.b-finance .b-header .clock{
         //     display: none;
         // }
+        .colors{
+            width:100%!important;
+        }
         .edpos .card{
             width: 100%!important;
         }
@@ -250,6 +253,9 @@ body{
     @media (min-width: 576.98px) and (max-width: 767.98px) { 
         .edpos .card{
             width: 49%!important;
+        }
+        .colors{
+            width:49%!important;
         }
         .row{
             flex-direction: flex-column;

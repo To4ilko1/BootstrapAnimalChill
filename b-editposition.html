@@ -8,7 +8,7 @@
         <title>AnimalChill</title>
     </head>
     <body>
-        <section class="b-myprofile">
+        <section class="b-editposition">
             <header class="b-header d-flex flex-row justify-content-around">
                 <div class="logo d-flex flex-column align-items-center">
                     <img src="img/logo_new.svg" width="70" height="70" alt="AnimalsChill" class="logo">
@@ -73,6 +73,23 @@
                 </ol>
             </nav>
             <div class="row d-flex flex-row justify-content-center col-12 pb-4 mx-0">
+                <div class="first-column-mobile col-12">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Меню
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a href="b-animalsinhotel.html" class="dropdown-item">Животные в отеле</a>
+                        <a href="b-workers.html" class="dropdown-item border" style="background-color: rgba(153, 120, 67, 0.3);">Сотрудники</a>
+                        <a href="b-clients.html" class="dropdown-item">Клиенты</a>
+                        <a href="b-orders.html" class="dropdown-item">Заказы</a>
+                        <a href="b-hotelrooms.html" class="dropdown-item">Номера отеля</a>
+                        <a href="b-chat.html" class="dropdown-item">Общение</a>
+                        <a href="b-myprofile.html" class="dropdown-item">Мой профиль</a>
+                        <a href="b-editposition.html" class="dropdown-item">Ред. должностей</a>
+                        <a href="b-finance.html" class="dropdown-item">Финансы</a>
+                        <a href="b-reviews.html" class="dropdown-item">Отзывы</a>
+                      </div>
+                </div>
                 <div class="first-column col-3">
                     <div class="btn-group-vertical col-12 mt-5">
                         <a href="b-animalsinhotel.html" class="btn btn-light text-uppercase">Животные в отеле</a>
@@ -87,80 +104,93 @@
                         <a href="b-reviews.html" class="btn btn-light text-uppercase">Отзывы</a>
                     </div>
                 </div>
-                <div class="second-column col-9 px-0 d-flex flex-row flex-wrap justify-content-center">
+                <div class="second-column col-md-12 col-lg-9 px-0 d-flex flex-row flex-wrap justify-content-center">
                     <h1 class="text-center py-3 col-12">Редактирование должностей</h1>
                     <div class="top-btns d-flex flex-row flex-wrap justify-content-center col-12 align-items-start">
                         <a class="btn btn-light" data-toggle="modal" data-target="#staticBackdrop">Добавить должность</a>
                     </div>
-                    <div class="form-group d-flex flex-row justify-content-between align-items-center col-11 my-2">
-                        <h5 class="col-2">Должность:</h5>
-                        <p class="col-3 mb-2">Администратор</p>
-                        <h5 class="col-2 pl-5 pr-0">Ставка:</h5>
-                        <p class="col-2 pl-0 mb-2">40 000 р</p>
-                        <a class="btn btn-light col-2" data-toggle="modal" data-target="#staticBackdrop">Редактировать</a>
-                    </div>
-                    <div class="form-group d-flex flex-row justify-content-between align-items-center col-11 my-2">
-                        <h5 class="col-2">Должность:</h5>
-                        <p class="col-3 mb-2">Менеджер</p>
-                        <h5 class="col-2 pl-5 pr-0">Ставка:</h5>
-                        <p class="col-2 pl-0 mb-2">35 000 р</p>
-                        <a class="btn btn-light col-2" data-toggle="modal" data-target="#staticBackdrop">Редактировать</a>
-                    </div>
-                    <div class="form-group d-flex flex-row justify-content-between align-items-center col-11 my-2">
-                        <h5 class="col-2">Должность:</h5>
-                        <p class="col-3 mb-2">Администратор</p>
-                        <h5 class="col-2 pl-5 pr-0">Ставка:</h5>
-                        <p class="col-2 pl-0 mb-2">40 000 р</p>
-                        <a class="btn btn-light col-2" data-toggle="modal" data-target="#staticBackdrop">Редактировать</a>
-                    </div>
-                    <div class="form-group d-flex flex-row justify-content-between align-items-center col-11 my-2">
-                        <h5 class="col-2">Должность:</h5>
-                        <p class="col-3 mb-2">Менеджер</p>
-                        <h5 class="col-2 pl-5 pr-0">Ставка:</h5>
-                        <p class="col-2 pl-0 mb-2">35 000 р</p>
-                        <a class="btn btn-light col-2" data-toggle="modal" data-target="#staticBackdrop">Редактировать</a>
-                    </div>
-                    <div class="form-group d-flex flex-row justify-content-between align-items-center col-11 my-2">
-                        <h5 class="col-2">Должность:</h5>
-                        <p class="col-3 mb-2">Администратор</p>
-                        <h5 class="col-2 pl-5 pr-0">Ставка:</h5>
-                        <p class="col-2 pl-0 mb-2">40 000 р</p>
-                        <a class="btn btn-light col-2" data-toggle="modal" data-target="#staticBackdrop">Редактировать</a>
-                    </div>
-                    <div class="form-group d-flex flex-row justify-content-between align-items-center col-11 my-2">
-                        <h5 class="col-2">Должность:</h5>
-                        <p class="col-3 mb-2">Менеджер</p>
-                        <h5 class="col-2 pl-5 pr-0">Ставка:</h5>
-                        <p class="col-2 pl-0 mb-2">35 000 р</p>
-                        <a class="btn btn-light col-2" data-toggle="modal" data-target="#staticBackdrop">Редактировать</a>
-                    </div>
-                    <div class="form-group d-flex flex-row justify-content-between align-items-center col-11 my-2">
-                        <h5 class="col-2">Должность:</h5>
-                        <p class="col-3 mb-2">Администратор</p>
-                        <h5 class="col-2 pl-5 pr-0">Ставка:</h5>
-                        <p class="col-2 pl-0 mb-2">40 000 р</p>
-                        <a class="btn btn-light col-2" data-toggle="modal" data-target="#staticBackdrop">Редактировать</a>
-                    </div>
-                    <div class="form-group d-flex flex-row justify-content-between align-items-center col-11 my-2">
-                        <h5 class="col-2">Должность:</h5>
-                        <p class="col-3 mb-2">Менеджер</p>
-                        <h5 class="col-2 pl-5 pr-0">Ставка:</h5>
-                        <p class="col-2 pl-0 mb-2">35 000 р</p>
-                        <a class="btn btn-light col-2" data-toggle="modal" data-target="#staticBackdrop">Редактировать</a>
-                    </div>
-                    <div class="form-group d-flex flex-row justify-content-between align-items-center col-11 my-2">
-                        <h5 class="col-2">Должность:</h5>
-                        <p class="col-3 mb-2">Администратор</p>
-                        <h5 class="col-2 pl-5 pr-0">Ставка:</h5>
-                        <p class="col-2 pl-0 mb-2">40 000 р</p>
-                        <a class="btn btn-light col-2" data-toggle="modal" data-target="#staticBackdrop">Редактировать</a>
-                    </div>
-                    <div class="form-group d-flex flex-row justify-content-between align-items-center col-11 my-2">
-                        <h5 class="col-2">Должность:</h5>
-                        <p class="col-3 mb-2">Менеджер</p>
-                        <h5 class="col-2 pl-5 pr-0">Ставка:</h5>
-                        <p class="col-2 pl-0 mb-2">35 000 р</p>
-                        <a class="btn btn-light col-2" data-toggle="modal" data-target="#staticBackdrop">Редактировать</a>
+                    <div class="edpos cards d-flex flex-row flex-wrap col-12 justify-content-between py-3">
+                        <div class="card d-flex flex-row flex-wrap align-items-start my-2 py-4" style="width:31%;">
+                            <h5 class="col-6">Должность:</h5>
+                            <p class="col-6">Администратор</p>
+                            <h5 class="col-6">Ставка:</h5>
+                            <p class="col-6">40 000 р</p>
+                            <div class="d-flex flex-row justify-content-center col-12 px-0">
+                                <a class="btn btn-light col-7" data-toggle="modal" data-target="#staticBackdrop">Редактировать</a>
+                            </div>
+                        </div>
+                        <div class="card d-flex flex-row flex-wrap align-items-start my-2 py-4" style="width:31%;">
+                            <h5 class="col-6">Должность:</h5>
+                            <p class="col-6">Менеджер</p>
+                            <h5 class="col-6">Ставка:</h5>
+                            <p class="col-6">35 000 р</p>
+                            <div class="d-flex flex-row justify-content-center col-12 px-0">
+                                <a class="btn btn-light col-7" data-toggle="modal" data-target="#staticBackdrop">Редактировать</a>
+                            </div>
+                        </div>
+                        <div class="card d-flex flex-row flex-wrap align-items-start my-2 py-4" style="width:31%;">
+                            <h5 class="col-6">Должность:</h5>
+                            <p class="col-6">Администратор</p>
+                            <h5 class="col-6">Ставка:</h5>
+                            <p class="col-6">40 000 р</p>
+                            <div class="d-flex flex-row justify-content-center col-12 px-0">
+                                <a class="btn btn-light col-7" data-toggle="modal" data-target="#staticBackdrop">Редактировать</a>
+                            </div>
+                        </div>
+                        <div class="card d-flex flex-row flex-wrap align-items-start my-2 py-4" style="width:31%;">
+                            <h5 class="col-6">Должность:</h5>
+                            <p class="col-6">Администратор</p>
+                            <h5 class="col-6">Ставка:</h5>
+                            <p class="col-6">40 000 р</p>
+                            <div class="d-flex flex-row justify-content-center col-12 px-0">
+                                <a class="btn btn-light col-7" data-toggle="modal" data-target="#staticBackdrop">Редактировать</a>
+                            </div>
+                        </div>
+                        <div class="card d-flex flex-row flex-wrap align-items-start my-2 py-4" style="width:31%;">
+                            <h5 class="col-6">Должность:</h5>
+                            <p class="col-6">Менеджер</p>
+                            <h5 class="col-6">Ставка:</h5>
+                            <p class="col-6">35 000 р</p>
+                            <div class="d-flex flex-row justify-content-center col-12 px-0">
+                                <a class="btn btn-light col-7" data-toggle="modal" data-target="#staticBackdrop">Редактировать</a>
+                            </div>
+                        </div>
+                        <div class="card d-flex flex-row flex-wrap align-items-start my-2 py-4" style="width:31%;">
+                            <h5 class="col-6">Должность:</h5>
+                            <p class="col-6">Администратор</p>
+                            <h5 class="col-6">Ставка:</h5>
+                            <p class="col-6">40 000 р</p>
+                            <div class="d-flex flex-row justify-content-center col-12 px-0">
+                                <a class="btn btn-light col-7" data-toggle="modal" data-target="#staticBackdrop">Редактировать</a>
+                            </div>
+                        </div>
+                        <div class="card d-flex flex-row flex-wrap align-items-start my-2 py-4" style="width:31%;">
+                            <h5 class="col-6">Должность:</h5>
+                            <p class="col-6">Администратор</p>
+                            <h5 class="col-6">Ставка:</h5>
+                            <p class="col-6">40 000 р</p>
+                            <div class="d-flex flex-row justify-content-center col-12 px-0">
+                                <a class="btn btn-light col-7" data-toggle="modal" data-target="#staticBackdrop">Редактировать</a>
+                            </div>
+                        </div>
+                        <div class="card d-flex flex-row flex-wrap align-items-start my-2 py-4" style="width:31%;">
+                            <h5 class="col-6">Должность:</h5>
+                            <p class="col-6">Менеджер</p>
+                            <h5 class="col-6">Ставка:</h5>
+                            <p class="col-6">35 000 р</p>
+                            <div class="d-flex flex-row justify-content-center col-12 px-0">
+                                <a class="btn btn-light col-7" data-toggle="modal" data-target="#staticBackdrop">Редактировать</a>
+                            </div>
+                        </div>
+                        <div class="card d-flex flex-row flex-wrap align-items-start my-2 py-4" style="width:31%;">
+                            <h5 class="col-6">Должность:</h5>
+                            <p class="col-6">Администратор</p>
+                            <h5 class="col-6">Ставка:</h5>
+                            <p class="col-6">40 000 р</p>
+                            <div class="d-flex flex-row justify-content-center col-12 px-0">
+                                <a class="btn btn-light col-7" data-toggle="modal" data-target="#staticBackdrop">Редактировать</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Modal -->

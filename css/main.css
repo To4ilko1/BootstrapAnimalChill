@@ -104,7 +104,7 @@ body .btn-primary:hover {
   border-color: rgba(153, 120, 67, 0.9);
 }
 
-body .b-animalcard, body .b-myprofile, body .b-clients, body .b-hotelrooms, body .b-animalsinhotel, body .b-finance {
+body section {
   background-color: #F6FFDE;
 }
 
@@ -262,7 +262,74 @@ body .first-column-mobile {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 0) and (max-width: 576.98px) {
+  body .edpos .card {
+    width: 100% !important;
+  }
+  body .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: flex-column;
+            flex-direction: flex-column;
+  }
+  body .first-column-mobile {
+    display: block;
+  }
+  body .first-column {
+    display: none;
+  }
+  body .top-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .top-btns .addsmth {
+    margin: 3% 0 !important;
+  }
+  body .cont-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    margin-left: 34%;
+  }
+  body .b-finance .card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576.98px) and (max-width: 767.98px) {
+  body .edpos .card {
+    width: 49% !important;
+  }
+  body .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: flex-column;
+            flex-direction: flex-column;
+  }
+  body .first-column-mobile {
+    display: block;
+  }
+  body .first-column {
+    display: none;
+  }
+}
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {
   body .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

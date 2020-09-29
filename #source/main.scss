@@ -87,7 +87,10 @@ body{
             border-color: rgba(153, 120, 67, 0.9);
         }
     }
-    .b-animalcard, .b-myprofile, .b-clients,.b-hotelrooms,.b-animalsinhotel, .b-finance{
+    // .b-animalcard, .b-myprofile, .b-clients,.b-hotelrooms,.b-animalsinhotel, .b-finance{
+    //     background-color: $fon;
+    // }
+    section{
         background-color: $fon;
     }
     .b-myprofile{
@@ -206,7 +209,48 @@ body{
     .first-column-mobile{
         display: none;
     }
-    @media (max-width: 600px) { 
+    @media (min-width: 0) and (max-width: 576.98px) { 
+        // .b-finance .b-header .location,.b-finance .b-header .clock{
+        //     display: none;
+        // }
+        .edpos .card{
+            width: 100%!important;
+        }
+        .row{
+            flex-direction: flex-column;
+        }
+        .first-column-mobile{
+            display: block;
+        }
+        .first-column{
+            display: none;
+        }
+        .top-btns{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            .addsmth{
+                margin: 3% 0!important;
+            }
+        }
+        .cont-footer{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            margin-left: 34%;
+        }
+        .b-finance .card{
+            width: 100%;
+        }
+     }
+    //  @media (max-width: 414px) { 
+        
+    //  }
+    // Малые девайсы («ландшафтные», < 768px)
+    @media (min-width: 576.98px) and (max-width: 767.98px) { 
+        .edpos .card{
+            width: 49%!important;
+        }
         .row{
             flex-direction: flex-column;
         }
@@ -217,5 +261,26 @@ body{
             display: none;
         }
      }
+
+// Средние девайсы («таблетки», < 992px) 
+    @media (min-width: 767.98px) and (max-width: 991.98px) {
+        .row{
+            flex-direction: flex-column;
+        }
+        .first-column-mobile{
+            display: block;
+        }
+        .first-column{
+            display: none;
+        }
+        // .edpos .card a{
+        //     width: 100%!important;
+        // }
+    }
+
+// Большие девайсы (большие десктопы, < 1200px)
+    @media (max-width: 1199.98px) {
+
+    }
 }
 

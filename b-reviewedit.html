@@ -9,7 +9,7 @@
     </head>
     <body>
         <section class="b-myprofile">
-            <header class="b-header d-flex flex-row justify-content-around">
+            <header class="b-header d-flex flex-row flex-wrap justify-content-around">
                 <div class="logo d-flex flex-column align-items-center">
                     <img src="img/logo_new.svg" width="70" height="70" alt="AnimalsChill" class="logo">
                     <p><a href="index.html">Отель для животных</a></p>
@@ -75,6 +75,23 @@
                 </ol>
             </nav>
             <div class="row d-flex flex-row justify-content-center col-12 pb-4 mx-0">
+                <div class="first-column-mobile col-12">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Меню
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a href="b-animalsinhotel.html" class="dropdown-item">Животные в отеле</a>
+                        <a href="b-workers.html" class="dropdown-item border" style="background-color: rgba(153, 120, 67, 0.3);">Сотрудники</a>
+                        <a href="b-clients.html" class="dropdown-item">Клиенты</a>
+                        <a href="b-orders.html" class="dropdown-item">Заказы</a>
+                        <a href="b-hotelrooms.html" class="dropdown-item">Номера отеля</a>
+                        <a href="b-chat.html" class="dropdown-item">Общение</a>
+                        <a href="b-myprofile.html" class="dropdown-item">Мой профиль</a>
+                        <a href="b-editposition.html" class="dropdown-item">Ред. должностей</a>
+                        <a href="b-finance.html" class="dropdown-item">Финансы</a>
+                        <a href="b-reviews.html" class="dropdown-item">Отзывы</a>
+                      </div>
+                </div>
                 <div class="first-column col-3">
                     <div class="btn-group-vertical col-12 mt-5">
                         <a href="b-animalsinhotel.html" class="btn btn-light text-uppercase">Животные в отеле</a>
@@ -89,11 +106,11 @@
                         <a href="b-reviews.html" class="btn btn-primary text-uppercase">Отзывы</a>
                     </div>
                 </div>
-                <div class="second-column col-9 px-0 d-flex flex-row flex-wrap justify-content-center">
+                <div class="second-column col-md-12 col-lg-9 px-0 d-flex flex-row flex-wrap justify-content-center">
                     <h1 class="text-center py-3 col-12">Редактирование отзыва</h1>
-                    <div class="card my-3 mx-0 pb-3 d-flex flex-row flex-wrap col-10">
+                    <div class="card my-3 mx-0 pb-3 d-flex flex-row flex-wrap col-12 col-md-10">
                         <h5 class="card-title text-center col-12 py-3">ID 0001</h5>
-                        <div class="contetnfirst d-flex flex-column col-5">
+                        <div class="contetnfirst d-flex flex-column col-12 col-sm-5">
                             <div class="d-flex flex-row">
                                 <div class="col-9 px-0">
                                     <img src="img/pet-1.jpg" class="card-img-left py-3 px-0" width="100%" alt="Животное">
@@ -112,7 +129,7 @@
                                 <a href="#" class="btn btn-light col-12">Удалить отзыв</a>
                             </div>
                         </div>
-                        <div class="card-body col-7 d-flex flex-row flex-wrap px-0">
+                        <div class="card-body col-12 col-sm-7 d-flex flex-row flex-wrap px-0">
                             <div class="d-flex flex-row justify-content-between align-items-center col-12 my-2 pl-0">
                                 <label class="col-5" for="InputClientFIO">ФИО:</label>
                                 <input type="text" class="form-control col-7" id="InputClientFIO" placeholder="Георгий Юрков">
@@ -152,15 +169,15 @@
                             </div>
                         </div>
                         <div class="d-flex flex-row justify-content-between col-12  my-1">
-                            <a href="b-cardclient.html" class="btn btn-light col-3">Отмена</a>
-                            <a href="b-cardclientedit.html" class="btn btn-light col-3">Сохранить</a>
+                            <a href="b-cardclient.html" class="btn btn-light col-6 col-md-3">Отмена</a>
+                            <a href="b-cardclientedit.html" class="btn btn-light col-6 col-md-3">Сохранить</a>
                         </div>
                     </div>
                     <h3 class="my-3">Комментарии к отзыву</h3>
                     <div class="d-flex flex-row justify-content-center col-12  my-1">
-                        <a href="#" class="btn btn-light col-3">Добавить комментарий</a>
+                        <a href="#" class="btn btn-light col-6 col-md-3">Добавить комментарий</a>
                     </div>
-                    <div class="card loginpass my-3 py-2 d-flex flex-column align-items-start justify-content-start col-10">
+                    <div class="card loginpass my-3 py-2 d-flex flex-column align-items-start justify-content-start col-12 col-md-10">
                         <div class="d-flex flex-row col-12 my-2">
                             <p><b>Пользователь:</b></p>
                             <p class="ml-3"><a href="b-cardclient.html">princesss_97</a></p>
@@ -170,11 +187,11 @@
                             <textarea class="form-control col-12 " id="TextareaCommentAnimal" rows="3">Some quick example text to build on the card title and make up the bulk of the card's content.</textarea>
                         </div>
                         <div class="d-flex flex-row justify-content-between col-12  my-1">
-                            <a href="b-cardclient.html" class="btn btn-light col-3">Отмена</a>
-                            <a href="b-cardclientedit.html" class="btn btn-light col-3">Сохранить</a>
+                            <a href="b-cardclient.html" class="btn btn-light col-6 col-md-3">Отмена</a>
+                            <a href="b-cardclientedit.html" class="btn btn-light col-6 col-md-3">Сохранить</a>
                         </div>
                     </div>
-                    <div class="card loginpass my-3 py-2 d-flex flex-column align-items-start justify-content-start col-10">
+                    <div class="card loginpass my-3 py-2 d-flex flex-column align-items-start justify-content-start col-12 col-md-10">
                         <div class="d-flex flex-row col-12 my-2">
                             <p><b>Пользователь:</b></p>
                             <p class="ml-3"><a href="b-cardclient.html">gogganesko</a></p>
@@ -184,8 +201,8 @@
                             <textarea class="form-control col-12 " id="TextareaCommentAnimal" rows="3">Some quick example text to build on the card title and make up the bulk of the card's content.</textarea>
                         </div>
                         <div class="d-flex flex-row justify-content-between col-12  my-1">
-                            <a href="b-cardclient.html" class="btn btn-light col-3">Отмена</a>
-                            <a href="b-cardclientedit.html" class="btn btn-light col-3">Сохранить</a>
+                            <a href="b-cardclient.html" class="btn btn-light col-6 col-md-3">Отмена</a>
+                            <a href="b-cardclientedit.html" class="btn btn-light col-6 col-md-3">Сохранить</a>
                         </div>
                     </div>
                 </div>

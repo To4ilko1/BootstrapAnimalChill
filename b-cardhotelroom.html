@@ -9,7 +9,7 @@
     </head>
     <body>
         <section class="b-hotelrooms">
-            <header class="b-header d-flex flex-row justify-content-around">
+            <header class="b-header d-flex flex-row flex-wrap justify-content-around">
                 <div class="logo d-flex flex-column align-items-center">
                     <img src="img/logo_new.svg" width="70" height="70" alt="AnimalsChill" class="logo">
                     <p><a href="index.html">Отель для животных</a></p>
@@ -74,6 +74,23 @@
                 </ol>
             </nav>
             <div class="row d-flex flex-row justify-content-center col-12 pb-4 mx-0">
+                <div class="first-column-mobile col-12">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Меню
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a href="b-animalsinhotel.html" class="dropdown-item">Животные в отеле</a>
+                        <a href="b-workers.html" class="dropdown-item border" style="background-color: rgba(153, 120, 67, 0.3);">Сотрудники</a>
+                        <a href="b-clients.html" class="dropdown-item">Клиенты</a>
+                        <a href="b-orders.html" class="dropdown-item">Заказы</a>
+                        <a href="b-hotelrooms.html" class="dropdown-item">Номера отеля</a>
+                        <a href="b-chat.html" class="dropdown-item">Общение</a>
+                        <a href="b-myprofile.html" class="dropdown-item">Мой профиль</a>
+                        <a href="b-editposition.html" class="dropdown-item">Ред. должностей</a>
+                        <a href="b-finance.html" class="dropdown-item">Финансы</a>
+                        <a href="b-reviews.html" class="dropdown-item">Отзывы</a>
+                      </div>
+                </div>
                 <div class="first-column col-3">
                     <div class="btn-group-vertical col-12 mt-5">
                         <a href="b-animalsinhotel.html" class="btn btn-light text-uppercase">Животные в отеле</a>
@@ -88,49 +105,46 @@
                         <a href="b-reviews.html" class="btn btn-light text-uppercase">Отзывы</a>
                     </div>
                 </div>
-                <div class="second-column col-9 px-0 d-flex flex-row flex-wrap justify-content-center">
+                <div class="second-column col-md-12 col-lg-9 px-0 d-flex flex-row flex-wrap justify-content-center">
                     <h1 class="text-center py-3 col-12">Номер отеля</h1>
-                    <div class="card my-3 mx-0 pb-3 d-flex flex-row flex-wrap col-10">
+                    <div class="card my-3 mx-0 pb-3 d-flex flex-row flex-wrap col-12 col-md-10">
                         <h5 class="card-title text-center col-12 py-3">ID 0001</h5>
                         <div class="card-body d-flex flex-row flex-wrap col-12 px-0 justify-content-center">
-                            <div class="d-flex flex-row col-6">
-                                <p class="col-6">Номер комнаты:</p>
-                                <p class="col-6"><a href="#">201</a></p>
+                            <div class="d-flex flex-row col-12 col-md-6">
+                                <p class="col-8 col-md-6">Номер комнаты:</p>
+                                <p class="col-4 col-md-6"><a href="#">201</a></p>
                             </div>
-                            <div class="d-flex flex-row col-6">
+                            <div class="d-flex flex-row col-12 col-md-6">
                                 <p class="col-8">Тип животных в номере:</p>
                                 <p class="col-4">Кошка</p>
                             </div>
                            
-                            <div class="d-flex flex-row col-6">
-                                <p class="col-6">Тип номера:</p>
-                                <p class="col-6">Стандарт</p>
+                            <div class="d-flex flex-row col-12 col-md-6">
+                                <p class="col-8 col-md-6">Тип номера:</p>
+                                <p class="col-4 col-md-6">Стандарт</p>
                             </div>
                             <div class="col-6"></div>
-                            <div class="loginpass d-flex flex-row align-items-center col-9 m-3 p-3">
-                                <p class="col-4 mb-0">Животные в номере:</p>
-                                <p class="col-2 mb-0"><a href="b-animalcard.html">Бесси</a></p>
-                                <p class="col-2 mb-0"><a href="b-animalcard.html">Мурка</a></p>
+                            <div class="loginpass d-flex flex-row flex-wrap justify-content-center align-items-center col-12 col-lg-9 m-3 p-3">
+                                <p class="col-6 col-md-4 mb-0">Животные в номере:</p>
+                                <p class="col-3 col-sm-2 mb-0"><a href="b-animalcard.html">Бесси</a></p>
+                                <p class="col-3 col-sm-2 mb-0"><a href="b-animalcard.html">Мурка</a></p>
                                 <a href="b-finance.html" class="btn btn-light">Подселить животное</a>
                             </div>
-                            <div class="d-flex flex-row col-9 justify-content-around mb-3">
-                                <p>Всего мест в номере:</p>
-                                <p>3</p>
-                                <p >Из них заняты:</p>
-                                <p>2</p>
-                                <p>Свободны:</p>
-                                <p>1</p>
+                            <div class="d-flex flex-row flex-wrap col-9 justify-content-around mb-3">
+                                <p>Всего мест в номере: 3</p>
+                                <p >Из них заняты: 2</p>
+                                <p>Свободны: 1</p>
                             </div>
-                            <div class="d-flex flex-row col-8">
+                            <div class="d-flex flex-row col-12 col-md-8">
                                 <p class="col-7">Стоимость проживания за сутки:</p>
                                 <p class="col-5">450р.</p>
                             </div>
                             <div class="col-4"></div>
-                            <div class="d-flex flex-row col-8">
+                            <div class="d-flex flex-row col-12 col-md-8">
                                 <p class="col-7">Отображение на главной:</p>
                                 <p class="col-5">Не отображается</p>
                             </div>
-                            <div class="d-flex flex-row col-4 justify-content-end">
+                            <div class="d-flex flex-row col-12 col-md-4 justify-content-center justify-content-md-end">
                                 <a href="b-cardhotelroomedit.html" class="btn btn-light">Редактировать</a>
                             </div>
                         </div>
@@ -149,29 +163,24 @@
                         </ul>
                         <div class="tab-content card col-12" id="myTabContent">
                             <div class="tab-pane fade show active" id="roomworkinghour" role="tabpanel" aria-labelledby="roomworkinghour-tab">
-                                <div class="title d-flex flex-row col-12 justify-content-center py-4">
-                                    <h5 class="pr-3">Расписание комнаты №:</h5>
-                                    <h5 class="pr-5"><a href="#">201</a></h5>
-                                    <h5 class="pr-3">на:</h5>
-                                    <h5>16.09.2019</h5>
+                                <div class="title d-flex flex-row flex-wrap col-12 justify-content-center py-4">
+                                    <h5 class="pr-3">Расписание комнаты №: <a href="#">201</a></h5>
+                                    <h5 class="pl-0 pl-md-5">на: 16.09.2019</h5>
                                 </div>
-                                <div class="searchfilter col-12 d-flex flex-row justify-content-around pb-4">
-                                    <div class="changedate d-flex flex-row justify-content-between col-12">
-                                        <div class="data col-6 d-flex flex-row align-items-center">
-                                            <label for="inputDate">Выбрать другую дату:</label>
-                                            <input type="date" class="form-control col-6 ml-3">
-                                        </div>
-                                        <div class="dopinfo col-4 d-flex flex-row flex-wrap">
-                                            <p class="col-8">Тип номера:</p>
-                                            <p>Стандарт</p>
-                                            <p class="col-8">Для животных:</p>
-                                            <p>Кошка</p>
-                                        </div>
+                                <div class="searchfilter col-12 d-flex flex-row flex-wrap justify-content-around pb-4">
+                                    <div class="data col-12 col-md-6 d-flex flex-row align-items-center">
+                                        <label for="inputDate">Выбрать другую дату:</label>
+                                        <input type="date" class="form-control col-7 col-md-6 ml-3">
                                     </div>
-                                    
+                                    <div class="dopinfo col-12 col-md-4 d-flex flex-row flex-wrap">
+                                        <p class="col-7 pl-0">Тип номера:</p>
+                                        <p>Стандарт</p>
+                                        <p class="col-7 pl-0">Для животных:</p>
+                                        <p>Кошка</p>
+                                    </div>
                                 </div>
-                                <div class="btn-add d-flex justify-content-end col-12 px-0">
-                                    <button type="button" class="btn btn-light col-2 mr-4">Добавить поручение</button>
+                                <div class="btn-add d-flex justify-content-center justify-content-md-end col-12 px-0">
+                                    <button type="button" class="btn btn-light col-8 col-md-2 mr-4">Добавить поручение</button>
                                 </div>
                                 <div class="cards-shedule d-flex flex-row justify-content-around flex-wrap py-4">
                                 
@@ -316,9 +325,9 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="employmentschedule" role="tabpanel" aria-labelledby="employmentschedule-tab">
-                                <div class="d-flex col-12 flex-row flex-wrap align-items-center my-3  px-0">
+                                <div class="d-flex col-12 flex-row flex-wrap align-items-center my-3 px-0">
                                     <p class="my-0 pl-3">Выбрать месяц:</p>
-                                    <select class="form-control col-2 ml-3" id="SelectAnimalType">
+                                    <select class="form-control col-6 col-md-2 ml-3" id="SelectAnimalType">
                                         <option>Сентябрь</option>
                                         <option>Октябрь</option>
                                         <option>Ноябрь</option>
@@ -329,10 +338,13 @@
                                     <div class="col-12 d-flex flex-row flex-wrap align-items-center py-3"> 
                                         <img src="img/green-color.png" width="40px" height="40px" alt="" style="border-radius: 30px;">
                                         <p class="mb-0 ml-2">&#8212; Оплачено</p>
+                                    
                                         <img src="img/yellow-color.png" class="ml-5" width="40px" height="40px" alt="" style="border-radius: 30px;">
                                         <p class="mb-0 ml-2">&#8212; Не оплачено</p>
+                                    
                                         <img src="img/orange-color.png" class="ml-5" width="40px" height="40px" alt="" style="border-radius: 30px;">
                                         <p class="mb-0 ml-2">&#8212; Забронировано</p>
+                                    
                                         <img src="img/clockforgrafik.svg" class="ml-5" width="40px" height="40px" alt="" style="border-radius: 30px;">
                                         <p class="mb-0 ml-2">&#8212; Ранний/поздний выезд</p>
                                     </div>
@@ -435,8 +447,8 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="generalinfoabouttheroom" role="tabpanel" aria-labelledby="generalinfoabouttheroom-tab">
-                                <div class="col-12 d-flex flex-row">
-                                    <div class="first-column d-flex flex-column align-items-start col-6 pt-5 pb-2">
+                                <div class="col-12 d-flex flex-row flex-wrap">
+                                    <div class="first-column d-flex flex-column align-items-start col-12 col-md-6 pt-3 pt-md-5 pb-2">
                                         <h5>Размер номера:</h5>
                                         <p>1.0*1.0*2.0</p>
                                         <h5>Сколько мест:</h5>
@@ -450,10 +462,10 @@
                                             <label class="mb-1" for="Check20">Показывать этот номер на главной</label>
                                         </div>
                                         <div class="d-flex flex-row justify-content-center align-items-start col-12 py-2">
-                                            <a href="b-cardhotelroomedit.html" class="btn btn-light col-6">Редактировать</a>
+                                            <a href="b-cardhotelroomedit.html" class="btn btn-light col-8 col-md-6">Редактировать</a>
                                         </div>
                                     </div>
-                                    <div class="second-column d-flex flex-column col-6 py-3">
+                                    <div class="second-column d-flex flex-column col-12 col-md-6 py-3">
                                         <div id="carousel-1" class="carousel slide" data-ride="carousel">
                                             <ol class="carousel-indicators">
                                             <li data-target="#carousel-1" data-slide-to="0" class="active"></li>

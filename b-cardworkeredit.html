@@ -9,7 +9,7 @@
     </head>
     <body>
         <section class="b-myprofile">
-            <header class="b-header d-flex flex-row justify-content-around">
+            <header class="b-header d-flex flex-row flex-wrap justify-content-around">
                 <div class="logo d-flex flex-column align-items-center">
                     <img src="img/logo_new.svg" width="70" height="70" alt="AnimalsChill" class="logo">
                     <p><a href="index.html">Отель для животных</a></p>
@@ -74,6 +74,23 @@
                 </ol>
             </nav>
             <div class="row d-flex flex-row justify-content-center col-12 pb-4 mx-0">
+                <div class="first-column-mobile col-12">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Меню
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a href="b-animalsinhotel.html" class="dropdown-item">Животные в отеле</a>
+                        <a href="b-workers.html" class="dropdown-item border" style="background-color: rgba(153, 120, 67, 0.3);">Сотрудники</a>
+                        <a href="b-clients.html" class="dropdown-item">Клиенты</a>
+                        <a href="b-orders.html" class="dropdown-item">Заказы</a>
+                        <a href="b-hotelrooms.html" class="dropdown-item">Номера отеля</a>
+                        <a href="b-chat.html" class="dropdown-item">Общение</a>
+                        <a href="b-myprofile.html" class="dropdown-item">Мой профиль</a>
+                        <a href="b-editposition.html" class="dropdown-item">Ред. должностей</a>
+                        <a href="b-finance.html" class="dropdown-item">Финансы</a>
+                        <a href="b-reviews.html" class="dropdown-item">Отзывы</a>
+                      </div>
+                </div>
                 <div class="first-column col-3">
                     <div class="btn-group-vertical col-12 mt-5">
                         <a href="b-animalsinhotel.html" class="btn btn-light text-uppercase">Животные в отеле</a>
@@ -88,12 +105,12 @@
                         <a href="b-reviews.html" class="btn btn-light text-uppercase">Отзывы</a>
                     </div>
                 </div>
-                <div class="second-column col-9 px-0 d-flex flex-row flex-wrap justify-content-center">
+                <div class="second-column col-md-12 col-lg-9 px-0 d-flex flex-row flex-wrap justify-content-center">
                     <h1 class="text-center py-3">Сотрудник</h1>
-                    <div class="card my-3 mx-0 pb-3 d-flex flex-row flex-wrap col-10">
+                    <div class="card my-3 mx-0 pb-3 d-flex flex-row flex-wrap col-12 col-md-10">
                         <h5 class="card-title text-center col-12 py-3">ID 0001</h5>
                         <div class="card-body d-flex flex-row flex-wrap justify-content-start align-items-start col-12 p-0">
-                            <div class="contetnfirst d-flex flex-row flex-wrap justify-content-start col-6">
+                            <div class="contetnfirst d-flex flex-row flex-wrap justify-content-start col-12 col-md-6">
                                 <img src="img/workers/worker-2.jpg" class="card-img-left col-9 py-3 px-0" alt="Животное">
                                 <div class="edit-btn d-flex flex-column justify-content-between py-3 pl-3">
                                     <button type="button" class="btn btn-light p-2">
@@ -105,8 +122,8 @@
                                 </div>
                                 <a href="b-workers.html" class="btn btn-light col-11">Удалить карточку сотрудника</a>
                             </div>
-                            <div class="d-flex flex-row flex-wrap col-6 my-2">
-                                <div class="loginpass d-flex flex-row flex-wrap justify-content-center col-12 p-3 ml-3">
+                            <div class="d-flex flex-row flex-wrap col-12 col-md-6 my-2">
+                                <div class="loginpass d-flex flex-row flex-wrap justify-content-center col-12 p-3 ml-0 ml-sm-3">
                                     <label class="col-4 p-2" for="InputClientLogin">Логин:</label>
                                     <input type="text" class="form-control col-7 p-2" id="InputClientLogin">
                                     <label class="col-4 p-2" for="InputClientPassword">Пароль:</label>
@@ -129,11 +146,11 @@
                                 <input type="text" class="form-control col-8" id="InputClientEmail">
                                 </div>
                             </div>
-                            <div class="d-flex flex-row justify-content-between align-items-center col-6 my-2">
-                                <label class="col-5" for="InputClientBirth">Дата рождения:</label>
-                                <input type="date" class="form-control col-6" id="InputClientBirth">
+                            <div class="d-flex flex-row justify-content-between align-items-center col-12 col-md-6 my-2">
+                                <label class="col-4 col-md-5" for="InputClientBirth">Дата рождения:</label>
+                                <input type="date" class="form-control col-8 col-md-6" id="InputClientBirth">
                             </div>
-                            <div class="d-flex flex-row justify-content-between align-items-center col-6 my-2">
+                            <div class="d-flex flex-row justify-content-between align-items-center col-12 col-md-6 my-2">
                                 <p class="col-4 mb-0">Пол:</p>
                                 <div class="form-check col-4">
                                     <input class="form-check-input" type="radio" name="Radios" id="Radios1" value="option1">
@@ -144,29 +161,21 @@
                                     <label class="form-check-label" for="Radios2">Мужской</label>
                                 </div>
                             </div>
-                            <div class="d-flex flex-row justify-content-between align-items-center col-6 my-2">
-                                <label class="col-5" for="SelectWorkerPosition">Должность:</label>
-                                <select class="form-control col-6" id="SelectWorkerPosition">
+                            <div class="d-flex flex-row justify-content-between align-items-center col-12 col-md-6 my-2">
+                                <label class="col-4 col-md-5" for="SelectWorkerPosition">Должность:</label>
+                                <select class="form-control col-8 col-md-6" id="SelectWorkerPosition">
                                     <option>Администратор</option>
                                 </select>
                             </div>
-                            <div class="d-flex flex-row justify-content-start align-items-center col-6 my-2">
+                            <div class="d-flex flex-row justify-content-start align-items-center col-12 col-md-6 my-2">
                                 <label class="col-4" for="WorkerExperience">Стаж:</label>
                                 <select class="form-control col-3" id="WorkerExperience">
                                     <option>7</option>
                                 </select>
                             </div>
-                            <!-- <div class="loginpass d-flex flex-row flex-wrap justify-content-center col-6 m-3 p-3">
-                                <label class="col-4 p-2" for="InputClientLogin">Логин:</label>
-                                <input type="text" class="form-control col-8 p-2" id="InputClientLogin">
-                                <label class="col-4 p-2" for="InputClientPassword">Пароль:</label>
-                                <input type="text" class="form-control col-8 p-2" id="InputClientPassword">
-                            </div> -->
-                           
-                            
                             <div class="d-flex flex-row justify-content-between col-12 px-0 my-1">
-                                <a href="b-cardworker.html" class="btn btn-light col-3">Отмена</a>
-                                <a href="b-cardworker.html" class="btn btn-light col-3">Сохранить</a>
+                                <a href="b-cardworker.html" class="btn btn-light col-6 col-md-3">Отмена</a>
+                                <a href="b-cardworker.html" class="btn btn-light col-6 col-md-3">Сохранить</a>
                             </div>
                         </div>
                     </div>

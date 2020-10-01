@@ -9,7 +9,7 @@
     </head>
     <body>
         <section class="b-finance">
-            <header class="b-header d-flex flex-row justify-content-around">
+            <header class="b-header d-flex flex-row flex-wrap justify-content-around">
                 <div class="logo d-flex flex-column align-items-center">
                     <img src="img/logo_new.svg" width="70" height="70" alt="AnimalsChill" class="logo">
                     <p><a href="index.html">Отель для животных</a></p>
@@ -75,6 +75,23 @@
                 </ol>
             </nav>
             <div class="row d-flex flex-row justify-content-center col-12 pb-4 mx-0">
+                <div class="first-column-mobile col-12">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Меню
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a href="b-animalsinhotel.html" class="dropdown-item">Животные в отеле</a>
+                        <a href="b-workers.html" class="dropdown-item border" style="background-color: rgba(153, 120, 67, 0.3);">Сотрудники</a>
+                        <a href="b-clients.html" class="dropdown-item">Клиенты</a>
+                        <a href="b-orders.html" class="dropdown-item">Заказы</a>
+                        <a href="b-hotelrooms.html" class="dropdown-item">Номера отеля</a>
+                        <a href="b-chat.html" class="dropdown-item">Общение</a>
+                        <a href="b-myprofile.html" class="dropdown-item">Мой профиль</a>
+                        <a href="b-editposition.html" class="dropdown-item">Ред. должностей</a>
+                        <a href="b-finance.html" class="dropdown-item">Финансы</a>
+                        <a href="b-reviews.html" class="dropdown-item">Отзывы</a>
+                      </div>
+                </div>
                 <div class="first-column col-3">
                     <div class="btn-group-vertical col-12 mt-5">
                         <a href="b-animalsinhotel.html" class="btn btn-primary text-uppercase">Животные в отеле</a>
@@ -89,87 +106,90 @@
                         <a href="b-reviews.html" class="btn btn-light text-uppercase">Отзывы</a>
                     </div>
                 </div>
-                <div class="second-column col-9 px-0 d-flex flex-row flex-wrap justify-content-center">
+                <div class="second-column col-md-12 col-lg-9 px-0 d-flex flex-row flex-wrap justify-content-center">
                     <h1 class="text-center py-3 col-12">Расписание по комнате</h1>
                     <div class="title d-flex flex-row col-12 justify-content-center">
-                        <h5 class="pr-3">Редактирование поручения по комнате №:</h5>
-                        <h5><a href="b-animalcard.html">201</a></h5>
+                        <h5 class="pr-3">Редактирование поручения по комнате №: <a href="b-animalcard.html">201</a></h5>
                     </div>
                     <div class="cards my-4 d-flex flex-column align-items-center flex-wrap col-12">
-                        <div class="loginpass my-3 py-3 d-flex flex-row flex-wrap col-10">
+                        <div class="loginpass my-3 py-3 d-flex flex-row flex-wrap col-12 col-lg-10">
                             <h5 class="card-title text-center col-12 py-2">Дата действия поручения</h5>
-                            <div class="card-body d-flex flex-column col-12 p-0">
-                                <div class="form-check d-flex flex-row align-items-center py-2 ml-3">
-                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                    <label class="form-check-label col-3 pr-3" for="exampleRadios1">
+                            <div class="card-body d-flex flex-row flex-wrap col-12 p-0 mx-2">
+                                <div class="d-flex flex-row align-items-center col-12 col-md-6">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="Rad1" value="option1" checked>
+                                    <label class="form-check-label col-6" for="Rad1">
                                       Диапазон дат с:
                                     </label>
-                                    <input id="inputDateStart" type="date" class="form-control col-3 mr-5">
-                                    <label class="form-check-label pr-3" for="exampleRadios1">
+                                    <input id="inputDateStart" type="date" class="form-control col-6 mr-0 mr-md-5">
+                                </div>
+                                <div class="d-flex flex-row flex-wrap align-items-center  col-12 col-md-6">
+                                    <label class="form-check-label col-6 col-md-2 pr-3" for="Rad1">
                                         По:
                                     </label>
-                                    <input id="inputDateStart" type="date" class="form-control col-3">
+                                    <input id="inputDateStart" type="date" class="form-control col-6">
                                 </div>
-                                <div class="form-check d-flex flex-row align-items-center py-2 ml-3">
+                                <div class="d-flex flex-row align-items-center col-12 col-md-6">
                                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                    <label class="form-check-label col-3 pr-3" for="exampleRadios2">
-                                      Определённая дата:
+                                    <label class="form-check-label col-6 pr-3" for="exampleRadios2">
+                                    Определённая дата:
                                     </label>
-                                    <input id="inputDateStart" type="date" class="form-control col-3">
+                                    <input id="inputDateStart" type="date" class="form-control col-6">
                                 </div>
                             </div>
                         </div>
-                        <div class="loginpass my-3 py-3 d-flex flex-row flex-wrap col-10">
+                        <div class="loginpass my-3 py-3 d-flex flex-row flex-wrap col-12 col-lg-10">
                             <h5 class="card-title text-center col-12 py-2">Время действия поручения</h5>
-                            <div class="card-body d-flex flex-column col-12 p-0">
-                                <div class="form-check d-flex flex-row align-items-center py-2 ml-3">
+                            <div class="card-body d-flex flex-row flex-wrap col-12 p-0 mx-2">
+                                <div class="d-flex flex-row align-items-center col-12 col-md-6 py-md-0 py-2">
                                     <input class="form-check-input" type="radio" name="exampleRadios" id="RadiosTime1" value="option1" checked>
-                                    <label class="form-check-label col-2 pr-3" for="RadiosTime1">
-                                      Время с:
+                                    <label class="form-check-label col-6 pr-3" for="RadiosTime1">
+                                    Время с:
                                     </label>
-                                    <input id="inputDateStart" type="time" class="form-control col-2 mr-5">
-                                    <label class="form-check-label pr-3" for="RadiosTime1">
+                                    <input id="inputDateStart" type="time" class="form-control col-4">
+                                </div>
+                                <div class="d-flex flex-row align-items-center col-12 col-md-6 py-md-0 py-2">
+                                    <label class="form-check-label col-6 col-md-2 pr-3" for="RadiosTime1">
                                         По:
                                     </label>
-                                    <input id="inputDateStart" type="time" class="form-control col-2">
+                                    <input id="inputDateStart" type="time" class="form-control col-4">
                                 </div>
-                                <div class="form-check d-flex flex-row align-items-start flex-wrap py-2 ml-3">
-                                    <div class="str d-flex flex-row col-12 px-0 py-2">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="RadiosTime" value="option2">
-                                        <label class="form-check-label col-4 pr-3" for="RadiosTime">
-                                        Время начала:
-                                        </label>
-                                        <input id="inputDateStart" type="time" class="form-control col-2">
-                                    </div>
-                                    <div class="str d-flex flex-row col-12 px-0 py-2">
-                                        <label class="form-check-label col-4 pr-3" for="RadiosTime">
-                                            Длительность поручения:
-                                        </label>
-                                        <input id="inputDateStart" type="time" class="form-control col-2">
-                                    </div>
-                                    <div class="str d-flex flex-row col-12 px-0 py-2">
-                                        <label class="form-check-label col-4 pr-3" for="RadiosTime">
-                                            Периодичность:
-                                        </label>
-                                        <input type="text" class="form-control col-1 mr-2" id="InputNamePosition">
-                                        <select class="form-control col-2" id="SelectPosition">
-                                            <option>Мин</option>
-                                            <option>Час</option>
-                                        </select>
-                                    </div>
+                                <div class="d-flex flex-row align-items-center col-12 col-md-12 py-2">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="RadiosTime" value="option2">
+                                    <label class="form-check-label col-6 col-md-4 pr-3" for="RadiosTime">
+                                    Время начала:
+                                    </label>
+                                    <input id="inputDateStart" type="time" class="form-control col-6 col-md-2">
+                                </div>
+                                <div class="d-flex flex-row align-items-center col-12 col-md-12 py-2">
+                                    <label class="form-check-label col-6 col-md-4 pr-3" for="RadiosTime">
+                                        Длительность поручения:
+                                    </label>
+                                    <input id="inputDateStart" type="time" class="form-control col-6 col-md-2">
+                                </div>
+                                <div class="d-flex flex-row align-items-center col-12 col-md-12 py-2">
+                                    <label class="form-check-label col-6 col-md-4 pr-3" for="RadiosTime">
+                                        Периодичность:
+                                    </label>
+                                    <input type="text" class="form-control col-2 col-md-1 mr-2" id="InputNamePosition">
+                                    <select class="form-control col-4 col-md-2" id="SelectPosition">
+                                        <option>Мин</option>
+                                        <option>Час</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
-                        <div class="card my-3 py-3 d-flex flex-row flex-wrap col-10">
-                            <div class="str d-flex flex-row align-items-center px-0 col-12">
-                                <label class="form-check-label col-2 pr-3" for="RadiosTime">
+                        <div class="card my-3 py-3 d-flex flex-row flex-wrap col-12 col-md-10">
+                            <div class="str d-flex flex-row flex-wrap align-items-center px-0 col-12">
+                                <label class="form-check-label col-6 col-md-2 pr-3" for="RadiosTime">
                                     Сотрудник:
                                 </label>
-                                <select class="form-control col-3" id="SelectPosition">
+                                <select class="form-control col-6 col-md-3" id="SelectPosition">
                                     <option>Точилова Е.А.</option>
                                     <option>Юрков Г.Ю.</option>
                                 </select>
-                                <a href="#" class="btn btn-light col-3 ml-4">Выбрать</a>
+                                <div class="col-12 col-md-3 d-flex justify-content-center flex-row">
+                                    <a href="#" class="btn btn-light col-6 col-md-12 ml-md-4 ml-0 my-md-0 my-2">Выбрать</a>
+                                </div>
                             </div>
                             <div class="item d-flex flex-column col-12 mt-3">
                                 <label for="Textarea1">Поручение:</label>
@@ -181,9 +201,9 @@
                             </div>
                             
                         </div>
-                        <div class="d-flex flex-row justify-content-between col-10 px-0 my-2">
-                            <a href="b-animalcard.html" class="btn btn-light col-3">Отмена</a>
-                            <a href="b-animalcard.html" class="btn btn-light col-3">Сохранить</a>
+                        <div class="d-flex flex-row justify-content-between col-12 col-md-10 px-0 my-2">
+                            <a href="b-animalcard.html" class="btn btn-light col-6 col-sm-3">Отмена</a>
+                            <a href="b-animalcard.html" class="btn btn-light col-6 col-sm-3">Сохранить</a>
                         </div>
                     </div>
                     

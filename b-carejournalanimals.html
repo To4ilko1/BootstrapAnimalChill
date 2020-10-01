@@ -9,7 +9,7 @@
     </head>
     <body>
         <section class="b-animalcard">
-            <header class="b-header d-flex flex-row justify-content-around">
+            <header class="b-header d-flex flex-row flex-wrap justify-content-around">
                 <div class="logo d-flex flex-column align-items-center">
                     <img src="img/logo_new.svg" width="70" height="70" alt="AnimalsChill" class="logo">
                     <p><a href="index.html">Отель для животных</a></p>
@@ -74,6 +74,23 @@
                 </ol>
             </nav>
             <div class="row d-flex flex-row justify-content-center col-12 pb-4 mx-0">
+                <div class="first-column-mobile col-12">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Меню
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a href="b-animalsinhotel.html" class="dropdown-item">Животные в отеле</a>
+                        <a href="b-workers.html" class="dropdown-item border" style="background-color: rgba(153, 120, 67, 0.3);">Сотрудники</a>
+                        <a href="b-clients.html" class="dropdown-item">Клиенты</a>
+                        <a href="b-orders.html" class="dropdown-item">Заказы</a>
+                        <a href="b-hotelrooms.html" class="dropdown-item">Номера отеля</a>
+                        <a href="b-chat.html" class="dropdown-item">Общение</a>
+                        <a href="b-myprofile.html" class="dropdown-item">Мой профиль</a>
+                        <a href="b-editposition.html" class="dropdown-item">Ред. должностей</a>
+                        <a href="b-finance.html" class="dropdown-item">Финансы</a>
+                        <a href="b-reviews.html" class="dropdown-item">Отзывы</a>
+                      </div>
+                </div>
                 <div class="first-column col-3">
                     <div class="btn-group-vertical col-12 mt-5">
                         <a href="b-animalsinhotel.html" class="btn btn-primary text-uppercase">Животные в отеле</a>
@@ -88,7 +105,7 @@
                         <a href="b-reviews.html" class="btn btn-light text-uppercase">Отзывы</a>
                     </div>
                 </div>
-                <div class="second-column col-9 px-0 d-flex flex-row flex-wrap justify-content-center">
+                <div class="second-column col-md-12 col-lg-9 px-0 d-flex flex-row flex-wrap justify-content-center">
                     <h1 class="text-center py-3 col-12">Журнал ухода</h1>
                     <div class="top-btns d-flex flex-row flex-wrap justify-content-center align-items-start col-12">
                         <div class="accordion" id="accordionFilter">
@@ -101,8 +118,8 @@
                                     </h5>
                                 </div>
                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFilter">
-                                    <div class="d-flex flex-row align-items-start justify-content-between col-12" style="width: 100%;">
-                                        <form class="search-form d-flex flex-row flex-wrap col-6 py-3 px-0">
+                                    <div class="d-flex flex-row flex-wrap align-items-start justify-content-between col-12" style="width: 100%;">
+                                        <form class="search-form d-flex flex-row flex-wrap col-12 col-md-6 py-3 px-0">
                                             <h5 class="col-12 py-2">Фильтрация по:</h5>
                                             <div class="form-check d-flex flex-row col-12 align-items-center py-2 px-0">
                                                 <label class="col-6" for="InputID">ID:</label>
@@ -125,7 +142,7 @@
                                             </div>
                                         </form>
                                       
-                                        <form class="search-form d-flex flex-row flex-wrap col-5 py-3 px-0">
+                                        <form class="search-form d-flex flex-row flex-wrap col-12 col-md-5 py-3 px-0">
                                             <h5 class="col-12 py-2 px-0">Сортировать по:</h5>
                                             <div class="form-check d-flex flex-row col-12 align-items-center py-2">
                                                 <input class="form-check-input" type="radio" name="Radios" id="Radios1" value="option1" checked>
@@ -162,20 +179,16 @@
                     </div>
                     
                     <div class="card d-flex flex-row justify-content-center flex-wrap my-4">
-                        <div class="title d-flex flex-row col-12 justify-content-center py-4">
-                            <h5 class="pr-3"><a name="animalscarejournal"></a>Журнал ухода за животным:</h5>
-                            <h5 class="pr-5"><a href="b-animalcard.html">Бесси</a></h5>
-                            <h5 class="pr-3">на:</h5>
-                            <h5>16.09.2019</h5>
+                        <div class="title d-flex flex-row flex-wrap col-12 justify-content-center py-4">
+                            <h5 class="pr-3"><a name="animalscarejournal"></a>Журнал ухода за животным: <a href="b-animalcard.html">Бесси</a></h5>
+                            <h5 class="pr-3">на: 16.09.2019</h5>
                         </div>
-                        <div class="col-12 d-flex flex-row justify-content-around pb-4">
-                            <div class="changedate d-flex flex-row justify-content-between col-12">
-                                <div class="d-flex flex-row align-items-center">
-                                    <label for="inputDate">Выбрать другую дату:</label>
-                                    <input type="date" class="form-control col-6 ml-3">
-                                </div>
-                                <a href="#" class="btn btn-light col-2 ml-4">См. больше</a>
+                        <div class="col-12 d-flex flex-row flex-wrap justify-content-around pb-4">
+                            <div class="changedate d-flex flex-row align-items-center col-12 col-md-5">
+                                <label for="inputDate">Выбрать другую дату:</label>
+                                <input type="date" class="form-control col-6 ml-3">
                             </div>
+                            <a href="#" class="btn btn-light col-6 col-sm-2 ml-4">См. больше</a>
                         </div>
                         <div class="cards-shedule d-flex flex-row justify-content-around flex-wrap py-2">
                         
@@ -550,20 +563,16 @@
                         
                     </div>
                     <div class="card d-flex flex-row justify-content-center flex-wrap my-4">
-                        <div class="title d-flex flex-row col-12 justify-content-center py-4">
-                            <h5 class="pr-3"><a name="animalscarejournal"></a>Журнал ухода за животным:</h5>
-                            <h5 class="pr-5"><a href="b-animalcard.html">Джек</a></h5>
-                            <h5 class="pr-3">на:</h5>
-                            <h5>16.09.2019</h5>
+                        <div class="title d-flex flex-row flex-wrap col-12 justify-content-center py-4">
+                            <h5 class="pr-3"><a name="animalscarejournal"></a>Журнал ухода за животным: <a href="b-animalcard.html">Джек</a></h5>
+                            <h5 class="pr-3">на: 16.09.2019</h5>
                         </div>
-                        <div class="col-12 d-flex flex-row justify-content-around pb-4">
-                            <div class="changedate d-flex flex-row justify-content-between col-12">
-                                <div class="d-flex flex-row align-items-center">
-                                    <label for="inputDate">Выбрать другую дату:</label>
-                                    <input type="date" class="form-control col-6 ml-3">
-                                </div>
-                                <a href="#" class="btn btn-light col-2 ml-4">См. больше</a>
+                        <div class="col-12 d-flex flex-row flex-wrap justify-content-around pb-4">
+                            <div class="changedate d-flex flex-row align-items-center col-12 col-md-5">
+                                <label for="inputDate">Выбрать другую дату:</label>
+                                <input type="date" class="form-control col-6 ml-3">
                             </div>
+                            <a href="#" class="btn btn-light col-6 col-sm-2 ml-4">См. больше</a>
                         </div>
                         <div class="cards-shedule d-flex flex-row justify-content-around flex-wrap py-2">
                             <div class="card loginpass my-3 py-2" style="width: 19rem;">

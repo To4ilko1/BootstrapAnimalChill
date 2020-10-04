@@ -210,9 +210,9 @@ body{
         display: none;
     }
     @media (min-width: 0) and (max-width: 576.98px) { 
-        // .b-finance .b-header .location,.b-finance .b-header .clock{
-        //     display: none;
-        // }
+        .clock{
+            display: none;
+        }
         .fortable{
             max-width: 400px!important;
         }

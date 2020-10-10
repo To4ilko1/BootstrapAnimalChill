@@ -5,6 +5,10 @@ $fon: #F6FFDE;
 $text-color: #1F2326;
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 body{
+    .clickcard:hover{
+        background-color: $green;
+        cursor: pointer!important;
+    }
     .fortable{
         max-width: 950px;
     }
@@ -87,6 +91,13 @@ body{
             border-color: rgba(153, 120, 67, 0.9);
         }
     }
+    .clickcard{
+        display: block;
+    }
+    .clickcard:hover{
+        cursor: pointer;
+        
+    }
     // .b-animalcard, .b-myprofile, .b-clients,.b-hotelrooms,.b-animalsinhotel, .b-finance{
     //     background-color: $fon;
     // }
@@ -104,6 +115,20 @@ body{
         &:hover{
             text-decoration: underline;
             color: $brown;
+        }
+    }
+    .specforcard{
+        text-decoration: none!important;
+        color: #1F2326!important;
+        &:hover{
+            color: #1F2326!important;
+            cursor: pointer;
+            .spec-card{
+                background-color:#E1FFB0;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
         }
     }
     .page-link{
@@ -210,6 +235,9 @@ body{
         display: none;
     }
     @media (min-width: 0) and (max-width: 576.98px) { 
+        .specforcard{
+            width: 100%!important;
+        }
         .clock{
             display: none;
         }
@@ -254,6 +282,9 @@ body{
     //  }
     // Малые девайсы («ландшафтные», < 768px)
     @media (min-width: 576.98px) and (max-width: 767.98px) { 
+        .spec-card{
+            width: 100%!important;
+        }
         .fortable{
             max-width: 570px!important;
         }

@@ -9,6 +9,11 @@ body {
   /*стили футер*/
 }
 
+body .clickcard:hover {
+  background-color: #E1FFB0;
+  cursor: pointer !important;
+}
+
 body .fortable {
   max-width: 950px;
 }
@@ -104,6 +109,14 @@ body .btn-primary:hover {
   border-color: rgba(153, 120, 67, 0.9);
 }
 
+body .clickcard {
+  display: block;
+}
+
+body .clickcard:hover {
+  cursor: pointer;
+}
+
 body section {
   background-color: #F6FFDE;
 }
@@ -120,6 +133,24 @@ body a {
 body a:hover {
   text-decoration: underline;
   color: #997843;
+}
+
+body .specforcard {
+  text-decoration: none !important;
+  color: #1F2326 !important;
+}
+
+body .specforcard:hover {
+  color: #1F2326 !important;
+  cursor: pointer;
+}
+
+body .specforcard:hover .spec-card {
+  background-color: #E1FFB0;
+}
+
+body .specforcard:hover .spec-card:hover {
+  cursor: pointer;
 }
 
 body .page-link {
@@ -263,6 +294,9 @@ body .first-column-mobile {
 }
 
 @media (min-width: 0) and (max-width: 576.98px) {
+  body .specforcard {
+    width: 100% !important;
+  }
   body .clock {
     display: none;
   }
@@ -321,6 +355,9 @@ body .first-column-mobile {
 }
 
 @media (min-width: 576.98px) and (max-width: 767.98px) {
+  body .spec-card {
+    width: 100% !important;
+  }
   body .fortable {
     max-width: 570px !important;
   }

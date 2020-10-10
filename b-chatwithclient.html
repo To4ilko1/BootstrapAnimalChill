@@ -68,7 +68,8 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="b-animalsinhotel.html">Личный кабинет</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Общение</li>
+                    <li class="breadcrumb-item"><a href="b-chat.html">Общение</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Чат с клиентом</li>
                 </ol>
             </nav>
             <div class="row d-flex flex-row justify-content-center col-12 pb-4 mx-0">
@@ -104,70 +105,94 @@
                     </div>
                 </div>
                 <div class="second-column col-md-12 col-lg-9 px-0 d-flex flex-row flex-wrap justify-content-center">
-                    <h1 class="text-center py-3 col-12">Общение</h1>
-                    <h4 class="col-12 text-center mb-4">Выберите клиента, с которым открыть чат</h4>
-                    <div class="cards d-flex flex-around flex-row flex-wrap justify-content-center">
-                        <a class="specforcard" href="b-chatwithclient.html">
-                            <div class="card spec-card py-3 px-2 mx-2 my-2">
-                                <h6 class="col-12 mb-2 text-center">001</h6>
-                                <object type="owo/uwu">
-                                    <p class="col-12 mb-1"><a href="b-cardclient.html">Собаков Михаил Дмитриевич</a></p>
-                                </object>
-                                <p class="col-12 mb-1">89500768814</p>
-                                <p class="col-12 mb-1">sobaka67@mail.ru</p>
-                                <p class="col-12 mb-0">Животные:</p>
-                                <object type="owo/uwu">
-                                    <ul>
-                                        <li><a href="b-animalcard.html">Бесси</a></li>
-                                    </ul>
-                                </object>
-                                <div class="d-flex flex-row px-3">
-                                    <p class="mb-0">Количество посещений:</p>
-                                    <p class="mb-0 ml-2">7</p>
+                    <h1 class="text-center py-3 col-12">Чат с клиентом</h1>
+                    <div class="chat-box d-flex flex-row flex-wrap justify-content-center">
+                        <div class="card p-2 my-3 mx-0 col-sm-9 col-12 d-flex flex-row flex-wrap">
+                            <div class="msg col-12 d-flex flex-row justify-content-between py-2">
+                                <div class="d-flex flex-row align-items-center">
+                                    <img class="mr-3 rounded-circle" src="img/comments/comment-1.jpg" width="40" height="40" alt="Аватар">
+                                    <div>
+                                        <p class="mb-0" style="color:#997843;"><b>Юлия Швецова</b></p>
+                                        <p class="mb-0">Привет! Как там поживает моя Бэська?</p>
+                                    </div>
                                 </div>
+                                <span class="time-right" style="color: #aaa;">11:00</span>
                             </div>
-                        </a>
-                        <a class="specforcard" href="b-chatwithclient.html">
-                            <div class="card spec-card py-3 px-2 mx-2 my-2">
-                                <h6 class="col-12 mb-2 text-center">002</h6>
-                                <object type="owo/uwu">
-                                    <p class="col-12 mb-1"><a href="b-cardclient.html">Собаков Михаил Дмитриевич</a></p>
-                                </object>
-                                <p class="col-12 mb-1">89500768814</p>
-                                <p class="col-12 mb-1">sobaka67@mail.ru</p>
-                                <p class="col-12 mb-0">Животные:</p>
-                                <object type="owo/uwu">
-                                    <ul>
-                                        <li><a href="b-animalcard.html">Бесси</a></li>
-                                        <li><a href="b-animalcard.html">Хрюндель</a></li>
-                                    </ul>
-                                </object>
-                                <div class="d-flex flex-row px-3">
-                                    <p class="mb-0">Количество посещений:</p>
-                                    <p class="mb-0 ml-2">7</p>
+                            <div class="msg col-12 d-flex flex-row justify-content-between py-2">
+                                <div class="d-flex flex-row align-items-center">
+                                    <img class="mr-3 rounded-circle" src="img/comments/comment-2.jpg" width="40" height="40" alt="Аватар" class="right">
+                                    <div>
+                                        <p class="mb-0" style="color:#997843;"><b>Анна Догадова</b></p>
+                                        <p class="mb-0">Привет! Как раз сейчас с ней играем, очень веселая кошка!</p>
+                                    </div>
                                 </div>
+                                <span class="time-left" style="color: #aaa;">11:01</span>
                             </div>
-                        </a>
-                        <a class="specforcard" href="b-chatwithclient.html">
-                            <div class="card spec-card py-3 px-2 mx-2 my-2">
-                                <h6 class="col-12 mb-2 text-center">003</h6>
-                                <object type="owo/uwu">
-                                    <p class="col-12 mb-1"><a href="b-cardclient.html">Собаков Михаил Дмитриевич</a></p>
-                                </object>
-                                <p class="col-12 mb-1">89500768814</p>
-                                <p class="col-12 mb-1">sobaka67@mail.ru</p>
-                                <p class="col-12 mb-0">Животные:</p>
-                                <object type="owo/uwu">
-                                    <ul>
-                                        <li><a href="b-animalcard.html">Бесси</a></li>
-                                    </ul>
-                                </object>
-                                <div class="d-flex flex-row px-3">
-                                    <p class="mb-0">Количество посещений:</p>
-                                    <p class="mb-0 ml-2">7</p>
+                            <div class="msg col-12 d-flex flex-row justify-content-between py-2">
+                                <div class="d-flex flex-row align-items-center">
+                                    <img class="mr-3 rounded-circle" src="img/comments/comment-1.jpg" width="40" height="40" alt="Аватар">
+                                    <div>
+                                        <p class="mb-0" style="color:#997843;"><b>Юлия Швецова</b></p>
+                                        <p class="mb-0">Отлично, не забудьте дать ей вкусняшку!</p>
+                                    </div>
                                 </div>
+                                <span class="time-right" style="color: #aaa;">11:00</span>
                             </div>
-                        </a>
+                            <div class="msg col-12 d-flex flex-row justify-content-between py-2">
+                                <div class="d-flex flex-row align-items-center">
+                                    <img class="mr-3 rounded-circle" src="img/comments/comment-2.jpg" width="40" height="40" alt="Аватар" class="right">
+                                    <div>  
+                                        <p class="mb-0" style="color:#997843;"><b>Анна Догадова</b></p>
+                                        <p class="mb-0">Будет сделано:)</p>
+                                    </div>
+                                </div>
+                                <span class="time-left" style="color: #aaa;">11:01</span>
+                            </div>
+                            <div class="msg col-12 d-flex flex-row justify-content-between py-2">
+                                <div class="d-flex flex-row align-items-center">
+                                    <img class="mr-3 rounded-circle" src="img/comments/comment-1.jpg" width="40" height="40" alt="Аватар">
+                                    <div>
+                                        <p class="mb-0" style="color:#997843;"><b>Юлия Швецова</b></p>
+                                        <p class="mb-0">Привет! Как там поживает моя Бэська?</p>
+                                    </div>
+                                </div>
+                                <span class="time-right" style="color: #aaa;">11:00</span>
+                            </div>
+                            <div class="msg col-12 d-flex flex-row justify-content-between py-2">
+                                <div class="d-flex flex-row align-items-center">
+                                    <img class="mr-3 rounded-circle" src="img/comments/comment-2.jpg" width="40" height="40" alt="Аватар" class="right">
+                                    <div>
+                                        <p class="mb-0" style="color:#997843;"><b>Анна Догадова</b></p>
+                                        <p class="mb-0">Привет! Как раз сейчас с ней играем, очень веселая кошка!</p>
+                                    </div>
+                                </div>
+                                <span class="time-left" style="color: #aaa;">11:01</span>
+                            </div>
+                            <div class="msg col-12 d-flex flex-row justify-content-between py-2">
+                                <div class="d-flex flex-row align-items-center">
+                                    <img class="mr-3 rounded-circle" src="img/comments/comment-1.jpg" width="40" height="40" alt="Аватар">
+                                    <div>
+                                        <p class="mb-0" style="color:#997843;"><b>Юлия Швецова</b></p>
+                                        <p class="mb-0">Отлично, не забудьте дать ей вкусняшку!</p>
+                                    </div>
+                                </div>
+                                <span class="time-right" style="color: #aaa;">11:00</span>
+                            </div>
+                            <div class="msg col-12 d-flex flex-row justify-content-between py-2">
+                                <div class="d-flex flex-row align-items-center">
+                                    <img class="mr-3 rounded-circle" src="img/comments/comment-2.jpg" width="40" height="40" alt="Аватар" class="right">
+                                    <div>  
+                                        <p class="mb-0" style="color:#997843;"><b>Анна Догадова</b></p>
+                                        <p class="mb-0">Будет сделано:)</p>
+                                    </div>
+                                </div>
+                                <span class="time-left" style="color: #aaa;">11:01</span>
+                            </div>
+                            <div class="sendmessage d-flex flex-row align-items-center col-12 mt-2 ">
+                                <textarea class="form-control col-10 col-sm-11" id="TextareaCommentAnimal" rows="2" placeholder="Введите ваше сообщение"></textarea>
+                                <a class="col-2 col-sm-1 pl-3 pl-sm-1 pl-md-3 pr-0" href="#"><img src="img/send.svg" alt="Удалить" width="100%"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <nav aria-label="Page navigation" class="pt-4">

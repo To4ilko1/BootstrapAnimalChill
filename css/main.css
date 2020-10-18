@@ -9,6 +9,21 @@ body {
   /*стили футер*/
 }
 
+body .msgs .name {
+  font-weight: bold;
+}
+
+body .newclone a {
+  padding-left: 20px;
+  color: #997843;
+  text-decoration: none !important;
+}
+
+body .newclone a:hover {
+  text-decoration: underline !important;
+  color: #997843 !important;
+}
+
 body .clickcard:hover {
   background-color: #E1FFB0;
   cursor: pointer !important;
@@ -203,6 +218,33 @@ body .b-header .instagram a:hover {
   background: #f09433;
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+body .navigation-menu1 {
+  background-color: #997843;
+}
+
+body .navigation-menu1 .nav-item .nav-link {
+  color: #F6FFDE;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: lighter;
+}
+
+body .navigation-menu1 .nav-item:hover {
+  background-color: #F6FFDE;
+}
+
+body .navigation-menu1 .nav-item:hover > a:hover {
+  color: #1F2326;
+}
+
+body .navigation-menu1 .active {
+  background-color: #F6FFDE;
+}
+
+body .navigation-menu1 .active a {
+  color: #1F2326 !important;
 }
 
 body .navigation-menu {

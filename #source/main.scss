@@ -5,6 +5,22 @@ $fon: #F6FFDE;
 $text-color: #1F2326;
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 body{
+    .msgs{
+        .name{
+            font-weight: bold;
+        }
+    }
+    .newclone{
+        & a{
+            padding-left: 20px;
+            color: $brown;
+            text-decoration: none!important;
+            &:hover{
+                text-decoration: underline!important;
+                color: $brown!important;
+            }
+        }
+    }
     .clickcard:hover{
         background-color: $green;
         cursor: pointer!important;
@@ -168,6 +184,27 @@ body{
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
         }
     }
+    .navigation-menu1{
+        background-color: $brown;
+        & .nav-item .nav-link{
+            color:$fon;
+            text-decoration: none;
+            font-size:1em;
+            font-weight: lighter;
+        }
+        & .nav-item:hover{
+            background-color: $fon;
+            &>a:hover{
+                color: $text-color;
+            }
+        }
+        & .active {
+            background-color: $fon;
+            & a{
+                color: $text-color!important;
+            }
+        }
+    }
     .navigation-menu{
         background-color: $brown;
         & .nav-item .nav-link{
@@ -303,7 +340,7 @@ body{
         .first-column{
             display: none;
         }
-     }
+    }
 
 // Средние девайсы («таблетки», < 992px) 
     @media (min-width: 767.98px) and (max-width: 991.98px) {
@@ -323,7 +360,6 @@ body{
         //     width: 100%!important;
         // }
     }
-
 // Большие девайсы (большие десктопы, < 1200px)
     @media (max-width: 1199.98px) {
         // .fortable{

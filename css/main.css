@@ -382,14 +382,16 @@ body .first-column-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    margin-left: 34%;
+  }
+  body .cont-footer .emptyblock {
+    display: none !important;
   }
   body .b-finance .card {
     width: 100%;

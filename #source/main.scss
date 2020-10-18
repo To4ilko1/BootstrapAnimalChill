@@ -306,14 +306,16 @@ body{
         }
         .cont-footer{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: start;
-            margin-left: 34%;
+            .emptyblock{
+                display: none!important;
+            }
         }
         .b-finance .card{
             width: 100%;
         }
-     }
+    }
     //  @media (max-width: 414px) { 
         
     //  }

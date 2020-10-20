@@ -24,7 +24,7 @@ body .newclone a:hover {
   color: #997843 !important;
 }
 
-body .clickcard:hover {
+body .clickcard:hover, body .clickcardroom:hover, body .clickcardjournal:hover {
   background-color: #E1FFB0;
   cursor: pointer !important;
 }

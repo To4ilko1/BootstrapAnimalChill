@@ -21,7 +21,7 @@ body{
             }
         }
     }
-    .clickcard:hover{
+    .clickcard:hover,.clickcardroom:hover,.clickcardjournal:hover{
         background-color: $green;
         cursor: pointer!important;
     }

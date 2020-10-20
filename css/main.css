@@ -336,8 +336,8 @@ body .first-column-mobile {
 }
 
 @media (min-width: 0) and (max-width: 576.98px) {
-  body .ancard {
-    width: 96%;
+  body .ancard, body .clickcardjournal, body .clickcard, body .clickcardroom, body .spec-card {
+    width: 96% !important;
   }
   body .specforcard {
     width: 100% !important;

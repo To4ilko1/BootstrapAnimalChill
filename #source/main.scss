@@ -272,8 +272,8 @@ body{
         display: none;
     }
     @media (min-width: 0) and (max-width: 576.98px) { 
-        .ancard{
-            width: 96%;
+        .ancard,.clickcardjournal,.clickcard,.clickcardroom,.spec-card{
+            width: 96%!important;
         }
         .specforcard{
             width: 100%!important;

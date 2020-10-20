@@ -24,7 +24,7 @@ body .newclone a:hover {
   color: #997843 !important;
 }
 
-body .clickcard:hover, body .clickcardroom:hover, body .clickcardjournal:hover {
+body .clickcard:hover, body .clickcardroom:hover, body .clickcardjournal:hover, body .ancard:hover {
   background-color: #E1FFB0;
   cursor: pointer !important;
 }
@@ -336,6 +336,9 @@ body .first-column-mobile {
 }
 
 @media (min-width: 0) and (max-width: 576.98px) {
+  body .ancard {
+    width: 96%;
+  }
   body .specforcard {
     width: 100% !important;
   }
@@ -399,6 +402,9 @@ body .first-column-mobile {
 }
 
 @media (min-width: 576.98px) and (max-width: 767.98px) {
+  body .ancard {
+    width: 46%;
+  }
   body .spec-card {
     width: 100% !important;
   }
@@ -426,6 +432,9 @@ body .first-column-mobile {
 }
 
 @media (min-width: 767.98px) and (max-width: 991.98px) {
+  body .ancard {
+    width: 33%;
+  }
   body .fortable {
     max-width: 760px !important;
   }
@@ -440,5 +449,11 @@ body .first-column-mobile {
   }
   body .first-column {
     display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body .ancard {
+    width: 33%;
   }
 }

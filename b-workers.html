@@ -181,7 +181,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="clickcard card d-flex flex-row flex-wrap my-3 mx-0 pb-3 align-items-start col-12 col-md-10">
+                    <div class="card d-flex flex-row flex-wrap my-3 mx-0 pb-3 align-items-start col-12 col-md-10">
                         <h5 class="card-title text-center col-12 py-3">ID 0001</h5>
                         <div class="card-column d-flex flex-row flex-wrap justify-content-start col-12 col-sm-5">
                             <img src="img/workers/worker-2.jpg" width="100%" class="mb-1">
@@ -212,7 +212,7 @@
                                 <p class="col-8">7 лет</p>
                             </div>
                             <div class="d-flex flex-row flex-wrap justify-content-center">
-                                <a href="#" class="btn btn-light col-6">Посмотреть график работы на месяц</a>
+                                <a href="#" onclick="return false" class="clickhref111 btn btn-light col-6">Посмотреть график работы на месяц</a>
                                 <a href="b-cardworker.html#workersworkinghour" class="clickhref btn btn-light col-6 py-3">Посмотреть расписание</a>
                             </div>
                         </div>
@@ -380,11 +380,25 @@
         });
         </script>
         <script>
-        $('.clickcard').click(function() {
-            document.location='b-cardworker.html';
-        });
-        $('.clickhref').click(function() {
-            document.location='b-cardworker.html#workersworkinghour';
+        // $('.clickcard').click(function() {
+        //     document.location='b-cardworker.html';
+        // });
+        // $('.clickhref').click(function() {
+        //     document.location='b-cardworker.html#workersworkinghour';
+        // });
+        $( document ).ready(function() {
+            $('.clickhref111').click(function() {
+                var hash = window.location.hash;
+                hash && $('ul.nav a[href="' + hash + '"]').tab('show'); // Это открывает вкладку
+
+                $('.nav-tabs a, .nav-pills a').click(function (e) { // А тут при клике по вкладке устанавливается адрес окна, который на вкладку идет.
+                $(this).tab('show');
+                var scrollmem = $('body').scrollTop();
+
+                window.location.hash = this.hash;
+                $('html,body').scrollTop(scrollmem);
+                });
+            });
         });
         </script>
     </body>

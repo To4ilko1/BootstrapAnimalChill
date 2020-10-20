@@ -185,10 +185,7 @@
                                 </div>
                                 <div class="cards-shedule d-flex flex-row justify-content-around flex-wrap py-4">
                                 
-                                    <div class="card loginpass my-3 py-2" style="width: 19rem;">
-                                        <div class="top-btn col-12 d-flex flex-row justify-content-center">
-                                            <a href="#" class="btn btn-light col-6">Увеличить</a>
-                                        </div>
+                                    <div class="clickcardroom card my-3 py-2" data-toggle="modal" data-target="#ModalRoom" style="width: 19rem;">
                                         <div class="card-body py-0">
                                             <div class="d-flex flex-row justify-content-between">
                                                 <p class="col-6 mb-1"><b>Дата:</b></p>
@@ -231,10 +228,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card loginpass my-3 py-2" style="width: 19rem;">
-                                        <div class="top-btn col-12 d-flex flex-row justify-content-center">
-                                            <a href="#" class="btn btn-light col-6">Увеличить</a>
-                                        </div>
+                                    <div class="clickcardroom card my-3 py-2" data-toggle="modal" data-target="#ModalRoom" style="width: 19rem;">
                                         <div class="card-body py-0">
                                             <div class="d-flex flex-row justify-content-between">
                                                 <p class="col-6 mb-1"><b>Дата:</b></p>
@@ -277,10 +271,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card loginpass my-3 py-2" style="width: 19rem;">
-                                        <div class="top-btn col-12 d-flex flex-row justify-content-center">
-                                            <a href="#" class="btn btn-light col-6">Увеличить</a>
-                                        </div>
+                                    <div class="clickcardroom card my-3 py-2" data-toggle="modal" data-target="#ModalRoom" style="width: 19rem;">
                                         <div class="card-body py-0">
                                             <div class="d-flex flex-row justify-content-between">
                                                 <p class="col-6 mb-1"><b>Дата:</b></p>
@@ -516,6 +507,53 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="modal" id="ModalRoom" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h4 class="modal-title" id="staticBackdropLabel">Поручение</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body d-flex flex-column flex-md-row">
+                                <div class="card-body py-0">
+                                    <div class="d-flex flex-row flex-wrap justify-content-between py-2">
+                                        <p class="big-txt col-6 col-md-3 mb-1"><b>Дата:</b></p>
+                                        <p class="big-txt col-6 col-md-3 mb-1">ПН 16.09.19</p>
+                                        <p class="big-txt col-6 col-md-3 mb-1"><b>Время:</b></p>
+                                        <p class="big-txt col-6 col-md-3 mb-1">8:30 - 9:00</p>
+                                    </div>
+                                    <div class="d-flex flex-row flex-wrap justify-content-between py-2">
+                                        <p class="big-txt col-6 col-md-3 mb-1"><b>Сотрудник:</b></p>
+                                        <p class="big-txt col-6 col-md-3 mb-1"><a href="#">Точилова Е.А.</a></p>
+                                        <p class="big-txt col-6 col-md-3 mb-1"><b>Комната №:</b></p>
+                                        <p class="big-txt col-6 col-md-3 mb-1"><a href="#">201</a></p>
+                                    </div>
+                                    <div class="d-flex flex-column py-2">
+                                        <p class="big-txt col-6 mb-1"><b>Поручение:</b></p>
+                                        <p class="big-txt card-text col-12">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-start py-2">
+                                        <p class="big-txt col-7 col-md-3 mb-1"><b>Статус:</b></p>
+                                        <div class="col-5 col-md-3">
+                                            <input type="checkbox" class="form-check-input my-2" id="Check11">
+                                            <label class="big-txt mb-1" for="Check11">Выполнено</label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column py-2">
+                                        <p class="big-txt col-7 mb-1"><b>Комментарий:</b></p>
+                                        <p class="big-txt card-text col-12">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Удалить</button>
+                                <a href="b-animalscheduleediting.html" class="btn btn-light">Редактировать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="topNubex"><img src="img/pointer-inside-a-circle.svg" width="40px" height="40px" /></div>
         </section>
